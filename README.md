@@ -1,5 +1,5 @@
 [![CRAN status](https://www.r-pkg.org/badges/version/mlr3verse)](https://cran.r-project.org/package=mlr3verse)
-[![Travis build status](https://travis-ci.org/mlr3verse/mlr3verse.svg?branch=master)](https://travis-ci.org/mlr3verse/mlr3verse)
+[![Travis build status](https://travis-ci.org/mlr3verse/mlr3verse.svg?branch=master)](https://travis-ci.org/mlr-org/mlr3verse)
 
 ## Overview
 
