@@ -54,14 +54,15 @@ Imports:
     mlr3misc,
     mlr3ordinal,
     mlr3pipelines,
+    mlr3spatiotemporal,
     mlr3survival,
     mlr3tuning,
     mlr3viz,
     paradox
 Suggests: 
-    purrr,
     feather,
     knitr,
+    purrr,
     rmarkdown,
     testthat
 VignetteBuilder: 
@@ -74,6 +75,7 @@ Remotes:
     mlr-org/mlr3misc,
     mlr-org/mlr3ordinal,
     mlr-org/mlr3pipelines,
+    mlr-org/mlr3spatiotemporal,
     mlr-org/mlr3survival,
     mlr-org/mlr3tuning,
     mlr-org/mlr3viz,
