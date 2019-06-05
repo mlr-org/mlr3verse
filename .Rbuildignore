@@ -1,2 +1,5 @@
 ^mlr3verse\.Rproj$
 ^\.Rproj\.user$
+^\.travis\.yml$
+^appveyor\.yml$
+^tic\.R$
