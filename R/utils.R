@@ -44,7 +44,9 @@ mlr3verse_packages <- function(include_self = TRUE) {
 }
 
 invert <- function(x) {
-  if (length(x) == 0) return()
+  if (length(x) == 0) {
+    return()
+  }
   stacked <- utils::stack(x)
   tapply(as.character(stacked$ind), stacked$values, list)
 }
@@ -59,8 +61,9 @@ style_grey <- function(level, ...) {
 
 .onAttach <- function(...) {
   needed <- core[!is_attached(core)]
-  if (length(needed) == 0)
+  if (length(needed) == 0) {
     return()
+  }
 
   crayon::num_colors(TRUE)
   mlr3verse_attach()

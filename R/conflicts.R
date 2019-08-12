@@ -12,6 +12,7 @@
 #' @examples
 #' mlr3verse_conflicts()
 mlr3verse_conflicts <- function() {
+
   envs <- grep("^package:", search(), value = TRUE)
   envs <- purrr::set_names(envs)
   objs <- invert(lapply(envs, ls_env))
@@ -28,7 +29,10 @@ mlr3verse_conflicts <- function() {
 }
 
 mlr3verse_conflict_message <- function(x) {
-  if (length(x) == 0) return("")
+
+  if (length(x) == 0) {
+    return("")
+  }
 
   header <- cli::rule(
     left = crayon::bold("Conflicts"),
@@ -60,19 +64,22 @@ print.mlr3verse_conflicts <- function(x, ..., startup = FALSE) {
 
 #' @importFrom magrittr %>%
 confirm_conflict <- function(packages, name) {
+
   # Only look at functions
   objs <- packages %>%
     purrr::map(~ get(name, pos = .)) %>%
     purrr::keep(is.function)
 
-  if (length(objs) <= 1)
+  if (length(objs) <= 1) {
     return()
+  }
 
   # Remove identical functions
   objs <- objs[!duplicated(objs)]
   packages <- packages[!duplicated(packages)]
-  if (length(objs) == 1)
+  if (length(objs) == 1) {
     return()
+  }
 
   packages
 }
