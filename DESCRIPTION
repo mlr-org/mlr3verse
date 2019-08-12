@@ -48,8 +48,9 @@ BugReports: https://github.com/mlr-org/mlr3verse/issues
 Depends:
     R (>= 3.1.0)
 Imports: 
+    mlr3,
     mlr3db,
-    mlr3featsel,
+    mlr3filters,
     mlr3learners,
     mlr3misc,
     mlr3ordinal,
@@ -60,7 +61,6 @@ Imports:
     mlr3viz,
     paradox
 Suggests: 
-    feather,
     knitr,
     purrr,
     rmarkdown,
@@ -70,16 +70,14 @@ VignetteBuilder:
 Remotes:
     mlr-org/mlr3,
     mlr-org/mlr3db,
-    mlr-org/mlr3featsel,
+    mlr-org/mlr3filters,
     mlr-org/mlr3learners,
-    mlr-org/mlr3misc,
     mlr-org/mlr3ordinal,
     mlr-org/mlr3pipelines,
     mlr-org/mlr3spatiotemporal,
     mlr-org/mlr3survival,
     mlr-org/mlr3tuning,
-    mlr-org/mlr3viz,
-    mlr-org/paradox
+    mlr-org/mlr3viz
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
