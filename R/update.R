@@ -46,8 +46,8 @@ mlr3verse_deps <- function(recursive = FALSE, repos = getOption("repos")) {
   # simple method until we are on CRAN
 
   remotes::update_packages(c("mlr3", "paradox", "mlr3pipelines", "mlr3learners",
-    "mlr3featsel", "mlr3misc", "mlr3tuning", "mlr3db", "mlr3ordinal", "mlr3survival",
-    "mlr3viz"))
+    "mlr3filters", "mlr3fswrap", "mlr3misc", "mlr3tuning", "mlr3db", "mlr3ordinal",
+    "mlr3spatiotemporal", "mlr3survival", "mlr3viz"))
 
   # stop(cli::cat_rule("Updating is not supported yet until most packages are on CRAN"))
   #

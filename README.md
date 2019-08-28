@@ -22,13 +22,14 @@ remotes::install_github("mlr-org/mlr3verse")
   - [mlr3learners](https://paradox.mlr-org.com/): Parameter specifications.
   - [mlr3learners](https://mlr3learners.mlr-org.com/): The core learners.
   - [mlr3tuning](https://mlr3tuning.mlr-org.com/): Tuning support.
-  - [mlr3featsel](https://mlr3featsel.mlr-org.com/): Feature selection support.
+  - [mlr3filters](https://mlr3filters.mlr-org.com/): Filter-based feature selection support.
+  - [mlr3fswrap](https://mlr3fswrap.mlr-org.com/): Wrapper-based feature selection support.
   - [mlr3pipelines](https://mlr3pipelines.mlr-org.com/): Pipeline integration for all packages.
   - [mlr3viz](https://mlr3viz.mlr-org.com/): Plotting support.
   - [mlr3db](https://mlr3db.mlr-org.com/): Database support.
   - [mlr3ordinal](https://mlr3ordinal.mlr-org.com/): Support for ordinal data.
   - [mlr3survival](https://mlr3ordinal.mlr-org.com/): Support for survival data.
-  - [mlr3spatiotemporal](https://mlr3.mlr-org.com/): Support for spatio-temporal data.
+  - [mlr3spatiotemporal](https://mlr3spatiotemporal.mlr-org.com/): Support for spatio-temporal data.
 
 And you can check that all mlr3verse packages are up-to-date with
 `mlr3verse_update()`
