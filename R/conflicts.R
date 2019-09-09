@@ -39,14 +39,14 @@ mlr3verse_conflict_message <- function(x) {
     right = "mlr3verse_conflicts()"
   )
 
-  pkgs <- x %>% purrr::map(~ gsub("^package:", "", .))
-  others <- pkgs %>% purrr::map(`[`, -1)
+  pkgs <- purrr::map(x, ~ gsub("^package:", "", .))
+  others <- purrr::map(pkgs, `[`, -1)
   other_calls <- purrr::map2_chr(
     others, names(others),
     ~ paste0(crayon::blue(.x), "::", .y, "()", collapse = ", ")
   )
 
-  winner <- pkgs %>% purrr::map_chr(1)
+  winner <- purrr::map_chr(pkgs, 1)
   funs <- format(paste0(crayon::blue(winner), "::", crayon::green(paste0(names(x), "()"))))
   bullets <- paste0(
     crayon::red(cli::symbol$cross), " ", funs,
@@ -62,13 +62,11 @@ print.mlr3verse_conflicts <- function(x, ..., startup = FALSE) {
   cli::cat_line(mlr3verse_conflict_message(x))
 }
 
-#' @importFrom magrittr %>%
 confirm_conflict <- function(packages, name) {
 
   # Only look at functions
-  objs <- packages %>%
-    purrr::map(~ get(name, pos = .)) %>%
-    purrr::keep(is.function)
+  tmp = purrr::map(packages, ~ get(name, pos = .))
+  objs = purrr::keep(tmp, is.function)
 
   if (length(objs) <= 1) {
     return()
