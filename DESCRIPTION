@@ -68,11 +68,8 @@ Suggests:
 VignetteBuilder: 
     knitr
 Remotes:
-    mlr-org/mlr3,
     mlr-org/mlr3db,
-    mlr-org/mlr3filters,
     mlr-org/mlr3fswrap,
-    mlr-org/mlr3learners,
     mlr-org/mlr3ordinal,
     mlr-org/mlr3pipelines,
     mlr-org/mlr3spatiotemporal,
