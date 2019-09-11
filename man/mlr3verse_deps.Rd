@@ -4,14 +4,18 @@
 \alias{mlr3verse_deps}
 \title{List all mlr3verse dependencies}
 \usage{
-mlr3verse_deps(recursive = FALSE, repos = getOption("repos"))
+mlr3verse_deps(recursive = FALSE, repos = getOption("repos"),
+  type = "cran")
 }
 \arguments{
-\item{recursive}{If \code{TRUE}, will also list all dependencies of
-mlr3verse packages.}
+\item{recursive}{If \code{TRUE}, will also list all dependencies of mlr3verse
+packages.}
 
-\item{repos}{The repositories to use to check for updates.
-Defaults to \code{getOptions("repos")}.}
+\item{repos}{The repositories to use to check for updates. Defaults to
+\code{getOptions("repos")}.}
+
+\item{type}{Which package type to use. Valid options are "cran", "dev" and
+"all".}
 }
 \description{
 List all mlr3verse dependencies
