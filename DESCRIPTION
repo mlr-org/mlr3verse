@@ -61,10 +61,17 @@ Imports:
     mlr3viz,
     paradox
 Suggests: 
+    cli,
+    crayon,
+    dplyr,
     knitr,
     purrr,
+    remotes,
+    rlang,
     rmarkdown,
-    testthat
+    rstudioapi,
+    testthat,
+    tibble
 VignetteBuilder: 
     knitr
 Remotes:
