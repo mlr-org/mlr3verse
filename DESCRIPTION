@@ -59,7 +59,8 @@ Imports:
     mlr3survival,
     mlr3tuning,
     mlr3viz,
-    paradox
+    paradox,
+    rstudioapi
 Suggests: 
     cli,
     crayon,
@@ -69,7 +70,6 @@ Suggests:
     remotes,
     rlang,
     rmarkdown,
-    rstudioapi,
     testthat,
     tibble
 VignetteBuilder: 
