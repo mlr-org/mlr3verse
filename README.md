@@ -19,7 +19,7 @@ remotes::install_github("mlr-org/mlr3verse")
 `library(mlr3verse)` will load the core mlr3verse packages:
 
   - [mlr3](https://mlr3.mlr-org.com/): The core package.
-  - [mlr3learners](https://paradox.mlr-org.com/): Parameter specifications.
+  - [paradox](https://paradox.mlr-org.com/): Parameter specifications.
   - [mlr3learners](https://mlr3learners.mlr-org.com/): The core learners.
   - [mlr3tuning](https://mlr3tuning.mlr-org.com/): Tuning support.
   - [mlr3filters](https://mlr3filters.mlr-org.com/): Filter-based feature selection support.
@@ -28,7 +28,7 @@ remotes::install_github("mlr-org/mlr3verse")
   - [mlr3viz](https://mlr3viz.mlr-org.com/): Plotting support.
   - [mlr3db](https://mlr3db.mlr-org.com/): Database support.
   - [mlr3ordinal](https://mlr3ordinal.mlr-org.com/): Support for ordinal data.
-  - [mlr3survival](https://mlr3ordinal.mlr-org.com/): Support for survival data.
+  - [mlr3survival](https://mlr3survival.mlr-org.com/): Support for survival data.
   - [mlr3spatiotemporal](https://mlr3spatiotemporal.mlr-org.com/): Support for spatio-temporal data.
 
 And you can check that all mlr3verse packages are up-to-date with
