@@ -16,7 +16,7 @@ remotes::install_github("mlr-org/mlr3verse")
 
 ## Usage
 
-`library(mlr3verse)` will load the core mlr3verse packages:
+`mlr3verse` includes the following set of packages:
 
   - [mlr3](https://mlr3.mlr-org.com/): The core package.
   - [paradox](https://paradox.mlr-org.com/): Parameter specifications.
