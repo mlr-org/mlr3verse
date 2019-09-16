@@ -51,6 +51,7 @@ Imports:
     mlr3,
     mlr3db,
     mlr3filters,
+    mlr3hyperband,
     mlr3learners,
     mlr3misc,
     mlr3ordinal,
@@ -77,6 +78,7 @@ VignetteBuilder:
 Remotes:
     mlr-org/mlr3db,
     mlr-org/mlr3fswrap,
+    mlr-org/mlr3hyperband,
     mlr-org/mlr3ordinal,
     mlr-org/mlr3pipelines,
     mlr-org/mlr3spatiotemporal,
