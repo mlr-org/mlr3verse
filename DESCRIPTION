@@ -52,6 +52,7 @@ Imports:
     mlr3db,
     mlr3filters,
     mlr3learners,
+    mlr3measures,
     mlr3misc,
     mlr3ordinal,
     mlr3pipelines,
@@ -75,13 +76,11 @@ Suggests:
 VignetteBuilder: 
     knitr
 Remotes:
-    mlr-org/mlr3db,
     mlr-org/mlr3fswrap,
     mlr-org/mlr3ordinal,
-    mlr-org/mlr3pipelines,
+    mlr-org/mlr3proba,
     mlr-org/mlr3spatiotemporal,
     mlr-org/mlr3survival,
-    mlr-org/mlr3tuning,
     mlr-org/mlr3viz
 Encoding: UTF-8
 LazyData: true
