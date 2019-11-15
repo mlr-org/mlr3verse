@@ -56,7 +56,7 @@ Imports:
     mlr3misc,
     mlr3ordinal,
     mlr3pipelines,
-    mlr3spatiotemporal,
+    mlr3spatiotempcv,
     mlr3survival,
     mlr3tuning,
     mlr3viz,
@@ -79,7 +79,7 @@ Remotes:
     mlr-org/mlr3fswrap,
     mlr-org/mlr3ordinal,
     mlr-org/mlr3proba,
-    mlr-org/mlr3spatiotemporal,
+    mlr-org/mlr3spatiotempcv,
     mlr-org/mlr3survival,
     mlr-org/mlr3viz
 Encoding: UTF-8

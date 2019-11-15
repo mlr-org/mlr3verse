@@ -29,7 +29,7 @@ remotes::install_github("mlr-org/mlr3verse")
   - [mlr3db](https://mlr3db.mlr-org.com/): Database support.
   - [mlr3ordinal](https://mlr3ordinal.mlr-org.com/): Support for ordinal data.
   - [mlr3survival](https://mlr3survival.mlr-org.com/): Support for survival data.
-  - [mlr3spatiotemporal](https://mlr3spatiotemporal.mlr-org.com/): Support for spatio-temporal data.
+  - [mlr3spatiotempcv](https://mlr3spatiotempcv.mlr-org.com/): Spatio-temporal resampling methods.
 
 And you can check that all mlr3verse packages are up-to-date with
 `mlr3verse_update()`
