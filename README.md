@@ -23,7 +23,7 @@ remotes::install_github("mlr-org/mlr3verse")
   - [mlr3learners](https://mlr3learners.mlr-org.com/): The core learners.
   - [mlr3tuning](https://mlr3tuning.mlr-org.com/): Tuning support.
   - [mlr3filters](https://mlr3filters.mlr-org.com/): Filter-based feature selection support.
-  - [mlr3fswrap](https://mlr3fswrap.mlr-org.com/): Wrapper-based feature selection support.
+  - [mlr3fselect](https://mlr3fselect.mlr-org.com/): Wrapper-based feature selection support.
   - [mlr3pipelines](https://mlr3pipelines.mlr-org.com/): Pipeline integration for all packages.
   - [mlr3viz](https://mlr3viz.mlr-org.com/): Plotting support.
   - [mlr3db](https://mlr3db.mlr-org.com/): Database support.

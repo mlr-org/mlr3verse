@@ -76,7 +76,7 @@ Suggests:
 VignetteBuilder: 
     knitr
 Remotes:
-    mlr-org/mlr3fswrap,
+    mlr-org/mlr3fselect,
     mlr-org/mlr3ordinal,
     mlr-org/mlr3proba,
     mlr-org/mlr3spatiotempcv,

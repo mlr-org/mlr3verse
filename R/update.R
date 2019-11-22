@@ -75,7 +75,7 @@ mlr3verse_deps <- function(recursive = FALSE, repos = getOption("repos"),
                            type = "cran") {
 
   pkgs = c("mlr3", "paradox", "mlr3pipelines", "mlr3learners", "mlr3proba",
-           "mlr3filters", "mlr3fswrap", "mlr3misc", "mlr3tuning", "mlr3db",
+           "mlr3filters", "mlr3fselect", "mlr3misc", "mlr3tuning", "mlr3db",
            "mlr3ordinal", "mlr3spatiotempcv", "mlr3survival", "mlr3viz", "mlr3measures")
   deps_cran = c("mlr3", "mlr3learners", "mlr3misc", "paradox", "mlr3filters",
                 "mlr3pipelines", "mlr3tuning", "mlr3db", "mlr3learners")
