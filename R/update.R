@@ -86,8 +86,6 @@ mlr3verse_deps = function(recursive = FALSE, repos = getOption("repos"),
   } else if (type == "cran") {
 
     pkgs = utils::available.packages(repos = repos)
-    deps = tools::package_dependencies("mlr3verse", pkgs, recursive = recursive)
-
     pkg_deps = unique(sort(unlist(deps_cran)))
 
     base_pkgs = c(
