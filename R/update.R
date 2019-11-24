@@ -18,13 +18,12 @@
 #' \dontrun{
 #' mlr3verse_update()
 #' }
-mlr3verse_update <- function(recursive = FALSE, repos = getOption("repos"),
-                             type  = "all") {
-
+mlr3verse_update = function(recursive = FALSE, repos = getOption("repos"),
+  type = "all") {
   cran_deps = mlr3verse_deps(recursive, repos, type = "cran")
   gh_deps = mlr3verse_deps(recursive, repos, type = "dev")
   all_pkgs = mlr3verse_deps(recursive, repos, type = "all")
-  behind <- dplyr::filter(cran_deps, behind)
+  behind = dplyr::filter(cran_deps, behind)
 
   if (type == "all" | type == "cran") {
 
@@ -34,7 +33,6 @@ mlr3verse_update <- function(recursive = FALSE, repos = getOption("repos"),
         return(invisible())
       }
     } else {
-
       cli::cat_line("The following packages are out of date:")
       cli::cat_line()
       cli::cat_bullet(format(behind$package), " (", behind$local, " -> ", behind$cran, ")")
@@ -42,7 +40,7 @@ mlr3verse_update <- function(recursive = FALSE, repos = getOption("repos"),
       cli::cat_line()
       cli::cat_line("Installing CRAN packages...")
 
-      #pkg_str <- paste0(deparse(behind$package), collapse = "\n")
+      # pkg_str = paste0(deparse(behind$package), collapse = "\n")
       do.call(install.packages, list(pkgs = deparse(behind$package)))
     }
     if (type == "all") {
@@ -71,14 +69,13 @@ mlr3verse_update <- function(recursive = FALSE, repos = getOption("repos"),
 #'   "all".
 #'
 #' @export
-mlr3verse_deps <- function(recursive = FALSE, repos = getOption("repos"),
-                           type = "cran") {
-
+mlr3verse_deps = function(recursive = FALSE, repos = getOption("repos"),
+  type = "cran") {
   pkgs = c("mlr3", "paradox", "mlr3pipelines", "mlr3learners", "mlr3proba",
-           "mlr3filters", "mlr3fselect", "mlr3misc", "mlr3tuning", "mlr3db",
-           "mlr3ordinal", "mlr3spatiotempcv", "mlr3survival", "mlr3viz", "mlr3measures")
+    "mlr3filters", "mlr3fselect", "mlr3misc", "mlr3tuning", "mlr3db",
+    "mlr3ordinal", "mlr3spatiotempcv", "mlr3survival", "mlr3viz", "mlr3measures")
   deps_cran = c("mlr3", "mlr3learners", "mlr3misc", "paradox", "mlr3filters",
-                "mlr3pipelines", "mlr3tuning", "mlr3db", "mlr3learners")
+    "mlr3pipelines", "mlr3tuning", "mlr3db", "mlr3learners")
   deps_gh = setdiff(pkgs, deps_cran)
 
   if (type == "dev") {
@@ -87,22 +84,22 @@ mlr3verse_deps <- function(recursive = FALSE, repos = getOption("repos"),
     return(pkgs)
   } else if (type == "cran") {
 
-    pkgs <- utils::available.packages(repos = repos)
-    deps <- tools::package_dependencies("mlr3verse", pkgs, recursive = recursive)
+    pkgs = utils::available.packages(repos = repos)
+    deps = tools::package_dependencies("mlr3verse", pkgs, recursive = recursive)
 
-    pkg_deps <- unique(sort(unlist(deps_cran)))
+    pkg_deps = unique(sort(unlist(deps_cran)))
 
-    base_pkgs <- c(
+    base_pkgs = c(
       "base", "compiler", "datasets", "graphics", "grDevices", "grid",
       "methods", "parallel", "splines", "stats", "stats4", "tools", "tcltk",
       "utils"
     )
-    pkg_deps <- setdiff(pkg_deps, base_pkgs)
+    pkg_deps = setdiff(pkg_deps, base_pkgs)
 
-    cran_version <- lapply(pkgs[pkg_deps, "Version"], base::package_version)
-    local_version <- lapply(pkg_deps, packageVersion)
+    cran_version = lapply(pkgs[pkg_deps, "Version"], base::package_version)
+    local_version = lapply(pkg_deps, packageVersion)
 
-    behind <- purrr::map2_lgl(cran_version, local_version, `>`)
+    behind = purrr::map2_lgl(cran_version, local_version, `>`)
 
     tibble::tibble(
       package = pkg_deps,
@@ -113,7 +110,7 @@ mlr3verse_deps <- function(recursive = FALSE, repos = getOption("repos"),
   }
 }
 
-packageVersion <- function(pkg) {
+packageVersion = function(pkg) {
   if (rlang::is_installed(pkg)) {
     utils::packageVersion(pkg)
   } else {

@@ -11,44 +11,44 @@
 #' @export
 #' @examples
 #' mlr3verse_conflicts()
-mlr3verse_conflicts <- function() {
+mlr3verse_conflicts = function() {
 
-  envs <- grep("^package:", search(), value = TRUE)
-  envs <- purrr::set_names(envs)
-  objs <- invert(lapply(envs, ls_env))
+  envs = grep("^package:", search(), value = TRUE)
+  envs = purrr::set_names(envs)
+  objs = invert(lapply(envs, ls_env))
 
-  conflicts <- purrr::keep(objs, ~ length(.x) > 1)
+  conflicts = purrr::keep(objs, ~ length(.x) > 1)
 
-  tidy_names <- paste0("package:", mlr3verse_packages())
-  conflicts <- purrr::keep(conflicts, ~ any(.x %in% tidy_names))
+  tidy_names = paste0("package:", mlr3verse_packages())
+  conflicts = purrr::keep(conflicts, ~ any(.x %in% tidy_names))
 
-  conflict_funs <- purrr::imap(conflicts, confirm_conflict)
-  conflict_funs <- purrr::compact(conflict_funs)
+  conflict_funs = purrr::imap(conflicts, confirm_conflict)
+  conflict_funs = purrr::compact(conflict_funs)
 
   structure(conflict_funs, class = "mlr3verse_conflicts")
 }
 
-mlr3verse_conflict_message <- function(x) {
+mlr3verse_conflict_message = function(x) {
 
   if (length(x) == 0) {
     return("")
   }
 
-  header <- cli::rule(
+  header = cli::rule(
     left = crayon::bold("Conflicts"),
     right = "mlr3verse_conflicts()"
   )
 
-  pkgs <- purrr::map(x, ~ gsub("^package:", "", .))
-  others <- purrr::map(pkgs, `[`, -1)
-  other_calls <- purrr::map2_chr(
+  pkgs = purrr::map(x, ~ gsub("^package:", "", .))
+  others = purrr::map(pkgs, `[`, -1)
+  other_calls = purrr::map2_chr(
     others, names(others),
     ~ paste0(crayon::blue(.x), "::", .y, "()", collapse = ", ")
   )
 
-  winner <- purrr::map_chr(pkgs, 1)
-  funs <- format(paste0(crayon::blue(winner), "::", crayon::green(paste0(names(x), "()"))))
-  bullets <- paste0(
+  winner = purrr::map_chr(pkgs, 1)
+  funs = format(paste0(crayon::blue(winner), "::", crayon::green(paste0(names(x), "()"))))
+  bullets = paste0(
     crayon::red(cli::symbol$cross), " ", funs,
     " masks ", other_calls,
     collapse = "\n"
@@ -58,11 +58,11 @@ mlr3verse_conflict_message <- function(x) {
 }
 
 #' @export
-print.mlr3verse_conflicts <- function(x, ..., startup = FALSE) {
+print.mlr3verse_conflicts = function(x, ..., startup = FALSE) {
   cli::cat_line(mlr3verse_conflict_message(x))
 }
 
-confirm_conflict <- function(packages, name) {
+confirm_conflict = function(packages, name) {
 
   # Only look at functions
   tmp = purrr::map(packages, ~ get(name, pos = .))
@@ -73,8 +73,8 @@ confirm_conflict <- function(packages, name) {
   }
 
   # Remove identical functions
-  objs <- objs[!duplicated(objs)]
-  packages <- packages[!duplicated(packages)]
+  objs = objs[!duplicated(objs)]
+  packages = packages[!duplicated(packages)]
   if (length(objs) == 1) {
     return()
   }
@@ -82,10 +82,10 @@ confirm_conflict <- function(packages, name) {
   packages
 }
 
-ls_env <- function(env) {
-  x <- ls(pos = env)
+ls_env = function(env) {
+  x = ls(pos = env)
   if (identical(env, "package:dplyr")) {
-    x <- setdiff(x, c("intersect", "setdiff", "setequal", "union"))
+    x = setdiff(x, c("intersect", "setdiff", "setequal", "union"))
   }
   x
 }
