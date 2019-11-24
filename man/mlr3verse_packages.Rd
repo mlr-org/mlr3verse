@@ -4,10 +4,12 @@
 \alias{mlr3verse_packages}
 \title{List all packages in the mlr3verse}
 \usage{
-mlr3verse_packages(include_self = TRUE)
+mlr3verse_packages(include_self = TRUE, cran_only = FALSE)
 }
 \arguments{
 \item{include_self}{Include mlr3verse in the list?}
+
+\item{cran_only}{Only show packages available on CRAN?}
 }
 \description{
 List all packages in the mlr3verse
