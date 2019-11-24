@@ -66,8 +66,7 @@ Suggests:
     cli,
     crayon,
     remotes,
-    rlang,
-    tibble
+    rlang
 VignetteBuilder: 
     knitr
 Remotes:
