@@ -43,7 +43,8 @@ Description: The 'mlr3' package family is a set of packages for
     packages.in Get more information about the 'mlr3' project at
     <https://mlr3book.mlr-org.com/>.
 License: GPL-3 | file LICENSE
-URL: https://mlr3book.mlr-org.com/, https://mlr-org.com/
+URL: https://mlr3verse.mlr-org.com
+    https://github.com/mlr-org/mlr3verse
 BugReports: https://github.com/mlr-org/mlr3verse/issues
 Depends:
     R (>= 3.1.0)
@@ -76,5 +77,6 @@ Remotes:
     mlr-org/mlr3survival,
     mlr-org/mlr3viz
 Encoding: UTF-8
+Issues: https://github.com/mlr-org/mlr3verse/issues
 LazyData: true
 RoxygenNote: 6.1.1
