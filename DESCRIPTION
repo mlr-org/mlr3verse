@@ -25,7 +25,7 @@ Imports:
     mlr3fselect,
     mlr3hyperband,
     mlr3learners,
-    mlr3MBO,
+    mlr3mbo,
     mlr3measures,
     mlr3misc,
     mlr3ordinal,
@@ -44,7 +44,7 @@ Suggests:
 Remotes:
     mlr-org/mlr3fselect,
     mlr-org/mlr3hyperband,
-    mlr-org/mlr3MBO,
+    mlr-org/mlr3mbo,
     mlr-org/mlr3ordinal,
     mlr-org/mlr3proba,
     mlr-org/mlr3spatiotempcv,
@@ -52,4 +52,4 @@ Remotes:
 Encoding: UTF-8
 Issues: https://github.com/mlr-org/mlr3verse/issues
 LazyData: true
-RoxygenNote: 7.0.0
+RoxygenNote: 7.0.1

@@ -74,7 +74,7 @@ mlr3verse_deps = function(recursive = FALSE, repos = getOption("repos"),
   pkgs = c("mlr3", "paradox", "mlr3pipelines", "mlr3learners", "mlr3proba",
     "mlr3filters", "mlr3fselect", "mlr3misc", "mlr3tuning", "mlr3db", "mlr3hyperband",
     "mlr3ordinal", "mlr3spatiotempcv", "mlr3viz", "mlr3measures",
-    "mlr3MBO")
+    "mlr3mbo")
   deps_cran = c("mlr3", "mlr3learners", "mlr3misc", "paradox", "mlr3filters",
     "mlr3pipelines", "mlr3tuning", "mlr3db", "mlr3learners")
   deps_gh = setdiff(pkgs, deps_cran)
