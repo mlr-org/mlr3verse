@@ -1,6 +1,6 @@
 Package: mlr3verse
 Title: Easily Install and Load the 'mlr3' package family
-Version: 0.1.0
+Version: 0.0.0.9000
 Authors@R:
     person(given = "Patrick",
            family = "Schratz",
@@ -9,7 +9,7 @@ Authors@R:
            comment = c(ORCID = "0000-0003-0748-6624"))
 Description: The 'mlr3' package family is a set of packages for
     machine-learning purposes built in a modular fashion. This wrapper
-    package is aimed to simplify the installation of all mlr3 related
+    package is aimed to simplify the installation of all 'mlr3' related
     packages. Get more information about the 'mlr3' project at
     <https://mlr3book.mlr-org.com/>.
 License: LGPL-3
@@ -22,18 +22,11 @@ Imports:
     mlr3,
     mlr3db,
     mlr3filters,
-    mlr3fselect,
-    mlr3hyperband,
     mlr3learners,
-    mlr3mbo,
     mlr3measures,
     mlr3misc,
-    mlr3ordinal,
     mlr3pipelines,
-    mlr3proba,
-    mlr3spatiotempcv,
     mlr3tuning,
-    mlr3viz,
     paradox,
     rstudioapi
 Suggests: 
@@ -41,15 +34,6 @@ Suggests:
     crayon,
     remotes,
     stats
-Remotes:
-    mlr-org/mlr3fselect,
-    mlr-org/mlr3hyperband,
-    mlr-org/mlr3mbo,
-    mlr-org/mlr3ordinal,
-    mlr-org/mlr3proba,
-    mlr-org/mlr3spatiotempcv,
-    mlr-org/mlr3viz
 Encoding: UTF-8
-Issues: https://github.com/mlr-org/mlr3verse/issues
 LazyData: true
 RoxygenNote: 7.0.1
