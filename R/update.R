@@ -71,12 +71,8 @@ mlr3verse_update = function(recursive = FALSE, repos = getOption("repos"),
 #' @export
 mlr3verse_deps = function(recursive = FALSE, repos = getOption("repos"),
   type = "cran") {
-  pkgs = c("mlr3", "paradox", "mlr3pipelines", "mlr3learners", "mlr3proba",
-    "mlr3filters", "mlr3fselect", "mlr3misc", "mlr3tuning", "mlr3db", "mlr3hyperband",
-    "mlr3ordinal", "mlr3spatiotempcv", "mlr3viz", "mlr3measures",
-    "mlr3mbo")
-  deps_cran = c("mlr3", "mlr3learners", "mlr3misc", "paradox", "mlr3filters",
-    "mlr3pipelines", "mlr3tuning", "mlr3db", "mlr3learners")
+  pkgs = deps_all()
+  deps_cran = deps_cran()
   deps_gh = setdiff(pkgs, deps_cran)
 
   if (type == "dev") {

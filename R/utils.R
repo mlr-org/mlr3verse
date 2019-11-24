@@ -59,3 +59,16 @@ style_grey = function(level, ...) {
 is_attached = function(x) {
   paste0("package:", x) %in% search()
 }
+
+deps_cran = function() {
+  return(c("mlr3", "mlr3learners", "mlr3misc", "paradox", "mlr3filters",
+    "mlr3pipelines", "mlr3tuning", "mlr3db", "mlr3learners", "mlr3measures")
+  )
+}
+
+deps_all = function() {
+  return(c("mlr3", "paradox", "mlr3pipelines", "mlr3learners", "mlr3proba",
+    "mlr3filters", "mlr3fselect", "mlr3misc", "mlr3tuning", "mlr3db", "mlr3hyperband",
+    "mlr3ordinal", "mlr3spatiotempcv", "mlr3viz", "mlr3measures",
+    "mlr3mbo"))
+}
