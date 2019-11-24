@@ -1,8 +1,10 @@
 do_package_checks(error_on = "warning")
 
-# for README
 get_stage("install") %>%
-  add_step(step_install_cran(c("flextable", "magrittr"))) %>%
+  # for README
+  add_step(step_install_cran("magrittr")) %>%
+  add_step(step_install_cran("knitr")) %>%
+  # gh pkgs
   add_step(step_install_github("mlr-org/mlr3fselect"))
   add_step(step_install_github("mlr-org/mlr3proba"))
   add_step(step_install_github("mlr-org/mlr3hyperband"))
