@@ -9,18 +9,20 @@
 mlr3verse_conflicts = function() {
 
   envs = grep("^package:", search(), value = TRUE)
-  envs = purrr::set_names(envs)
+  envs = setNames(envs, nm = envs)
+
   objs = invert(lapply(envs, ls_env))
 
-  conflicts = purrr::keep(objs, ~ length(.x) > 1)
+  conflicts2 = mlr3misc::keep(objs, function(x) length(x) > 1)
 
   tidy_names = paste0("package:", mlr3verse_packages())
-  conflicts = purrr::keep(conflicts, ~ any(.x %in% tidy_names))
 
-  conflict_funs = purrr::imap(conflicts, confirm_conflict)
-  conflict_funs = purrr::compact(conflict_funs)
+  conflicts3 = mlr3misc::keep(conflicts2, function(x) any(x %in% tidy_names))
+  conflict_funs2 = mlr3misc::imap(conflicts3, confirm_conflict)
 
-  structure(conflict_funs, class = "mlr3verse_conflicts")
+  conflict_funs3 = mlr3misc::discard(conflict_funs2, function(x) is.null(x))
+
+  structure(conflict_funs3, class = "mlr3verse_conflicts")
 }
 
 mlr3verse_conflict_message = function(x) {
@@ -34,14 +36,14 @@ mlr3verse_conflict_message = function(x) {
     right = "mlr3verse_conflicts()"
   )
 
-  pkgs = purrr::map(x, ~ gsub("^package:", "", .))
-  others = purrr::map(pkgs, `[`, -1)
-  other_calls = purrr::map2_chr(
-    others, names(others),
-    ~ paste0(crayon::blue(.x), "::", .y, "()", collapse = ", ")
+  pkgs = mlr3misc::map(x, function(x) gsub("^package:", "", x))
+  others = mlr3misc::map(pkgs, `[`, -1)
+  other_calls = mlr3misc::pmap_chr(
+    list(others, names(others)),
+    function(x, y) paste0(crayon::blue(x), "::", y, "()", collapse = ", ")
   )
 
-  winner = purrr::map_chr(pkgs, 1)
+  winner = mlr3misc::map_chr(pkgs, 1)
   funs = format(paste0(crayon::blue(winner), "::", crayon::green(paste0(names(x), "()"))))
   bullets = paste0(
     crayon::red(cli::symbol$cross), " ", funs,
@@ -60,8 +62,8 @@ print.mlr3verse_conflicts = function(x, ..., startup = FALSE) {
 confirm_conflict = function(packages, name) {
 
   # Only look at functions
-  tmp = purrr::map(packages, ~ get(name, pos = .))
-  objs = purrr::keep(tmp, is.function)
+  tmp = mlr3misc::map(packages, function(x) get(name, pos = x))
+  objs = mlr3misc::keep(tmp, is.function)
 
   if (length(objs) <= 1) {
     return()

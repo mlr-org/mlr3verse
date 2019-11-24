@@ -65,12 +65,8 @@ Imports:
 Suggests: 
     cli,
     crayon,
-    knitr,
-    purrr,
     remotes,
     rlang,
-    rmarkdown,
-    testthat,
     tibble
 VignetteBuilder: 
     knitr

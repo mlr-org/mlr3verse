@@ -99,9 +99,9 @@ mlr3verse_deps = function(recursive = FALSE, repos = getOption("repos"),
     cran_version = lapply(pkgs[pkg_deps, "Version"], base::package_version)
     local_version = lapply(pkg_deps, packageVersion)
 
-    behind = purrr::map2_lgl(cran_version, local_version, `>`)
+    behind = mlr3misc::pmap_lgl(list(cran_version, local_version), `>`)
 
-    tibble::tibble(
+    data.table::data.table(
       package = pkg_deps,
       cran = lapply(cran_version, function(x) as.character(x)),
       local = lapply(local_version, function(x) as.character(x)),
