@@ -70,3 +70,4 @@ If you call `library("mlr3verse")` the following core packages will be loaded:
 - mlr3learners
 - paradox
 - mlr3tuning
+- mlr3measures

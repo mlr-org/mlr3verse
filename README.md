@@ -73,3 +73,4 @@ loaded:
   - mlr3learners
   - paradox
   - mlr3tuning
+  - mlr3measures
