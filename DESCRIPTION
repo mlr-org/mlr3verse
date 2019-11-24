@@ -2,15 +2,15 @@ Package: mlr3verse
 Title: Easily Install and Load the 'mlr3' package family
 Version: 0.1.0.9000
 Authors@R:
-    c(person(given = "Patrick",
-             family = "Schratz",
-             role = c("cre", "aut"),
-             email = "patrick.schratz@gmail.com",
-             comment = c(ORCID = "0000-0003-0748-6624"))
+    person(given = "Patrick",
+           family = "Schratz",
+           role = c("cre", "aut"),
+           email = "patrick.schratz@gmail.com",
+           comment = c(ORCID = "0000-0003-0748-6624"))
 Description: The 'mlr3' package family is a set of packages for
-    machine-learning purposes built in a modular fashion.  This wrapper
+    machine-learning purposes built in a modular fashion. This wrapper
     package is aimed to simplify the installation of all mlr3 related
-    packages.in Get more information about the 'mlr3' project at
+    packages. Get more information about the 'mlr3' project at
     <https://mlr3book.mlr-org.com/>.
 License: LGPL-3
 URL: https://mlr3verse.mlr-org.com
@@ -22,13 +22,16 @@ Imports:
     mlr3,
     mlr3db,
     mlr3filters,
+    mlr3fselect,
+    mlr3hyperband,
     mlr3learners,
+    mlr3MBO,
     mlr3measures,
     mlr3misc,
     mlr3ordinal,
     mlr3pipelines,
+    mlr3proba,
     mlr3spatiotempcv,
-    mlr3survival,
     mlr3tuning,
     mlr3viz,
     paradox,
@@ -40,10 +43,11 @@ Suggests:
     stats
 Remotes:
     mlr-org/mlr3fselect,
+    mlr-org/mlr3hyperband,
+    mlr-org/mlr3MBO,
     mlr-org/mlr3ordinal,
     mlr-org/mlr3proba,
     mlr-org/mlr3spatiotempcv,
-    mlr-org/mlr3survival,
     mlr-org/mlr3viz
 Encoding: UTF-8
 Issues: https://github.com/mlr-org/mlr3verse/issues

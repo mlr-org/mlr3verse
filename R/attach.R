@@ -1,4 +1,5 @@
-core = c("mlr3", "paradox", "mlr3pipelines", "mlr3learners", "mlr3tuning")
+core = c("mlr3", "paradox", "mlr3pipelines", "mlr3learners", "mlr3tuning",
+         "mlr3measures")
 
 core_unloaded = function() {
   search = paste0("package:", core)
