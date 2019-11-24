@@ -65,7 +65,6 @@ Imports:
 Suggests: 
     cli,
     crayon,
-    dplyr,
     knitr,
     purrr,
     remotes,

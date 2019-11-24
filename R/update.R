@@ -23,7 +23,7 @@ mlr3verse_update = function(recursive = FALSE, repos = getOption("repos"),
   cran_deps = mlr3verse_deps(recursive, repos, type = "cran")
   gh_deps = mlr3verse_deps(recursive, repos, type = "dev")
   all_pkgs = mlr3verse_deps(recursive, repos, type = "all")
-  behind = dplyr::filter(cran_deps, behind)
+  behind = cran_deps[cran_deps$behind == TRUE, ]
 
   if (type == "all" | type == "cran") {
 
