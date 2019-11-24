@@ -111,7 +111,7 @@ mlr3verse_deps = function(recursive = FALSE, repos = getOption("repos"),
 }
 
 packageVersion = function(pkg) {
-  if (rlang::is_installed(pkg)) {
+  if (is_true(requireNamespace(pkg, quietly = TRUE))) {
     utils::packageVersion(pkg)
   } else {
     0
