@@ -63,7 +63,7 @@ You can check that all *mlr3verse* packages are up-to-date with
 
 <a href="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"><img src="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true" /></a>
 
-## Loading
+## Core packages
 
 If you call `library("mlr3verse")` the following core packages will be
 loaded:
