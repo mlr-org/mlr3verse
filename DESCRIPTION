@@ -67,8 +67,6 @@ Suggests:
     cli,
     crayon,
     remotes
-VignetteBuilder: 
-    knitr
 Remotes:
     mlr-org/mlr3fselect,
     mlr-org/mlr3ordinal,
