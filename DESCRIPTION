@@ -6,43 +6,13 @@ Authors@R:
              family = "Schratz",
              role = c("cre", "aut"),
              email = "patrick.schratz@gmail.com",
-             comment = c(ORCID = "0000-0003-0748-6624")),
-      person(given = "Michel",
-             family = "Lang",
-             role = "aut",
-             email = "michellang@gmail.com",
-             comment = c(ORCID = "0000-0001-9754-0393")),
-      person(given = "Bernd",
-             family = "Bischl",
-             role = "aut",
-             email = "bernd_bischl@gmx.net",
-             comment = c(ORCID = "0000-0001-6002-6980")),
-      person(given = "Jakob",
-             family = "Richter",
-             role = "aut",
-             email = "jakob1richter@gmail.com",
-             comment = c(ORCID = "0000-0003-4481-5554")),
-      person(given = "Giuseppe",
-             family = "Casalicchio",
-             role = "aut",
-             email = "giuseppe.casalicchio@stat.uni-muenchen.de",
-             comment = c(ORCID = "0000-0001-5324-5966")),
-      person(given = "Stefan",
-             family = "Coors",
-             role = "aut",
-             email = "mail@stefancoors.de",
-             comment = c(ORCID = "0000-0002-7465-2146")),
-      person(given = "Quay",
-             family = "Au",
-             role = "aut",
-             email = "quayau@gmail.com",
-             comment = c(ORCID = "0000-0002-5252-8902")))
+             comment = c(ORCID = "0000-0003-0748-6624"))
 Description: The 'mlr3' package family is a set of packages for
     machine-learning purposes built in a modular fashion.  This wrapper
     package is aimed to simplify the installation of all mlr3 related
     packages.in Get more information about the 'mlr3' project at
     <https://mlr3book.mlr-org.com/>.
-License: GPL-3 | file LICENSE
+License: LGPL-3
 URL: https://mlr3verse.mlr-org.com
     https://github.com/mlr-org/mlr3verse
 BugReports: https://github.com/mlr-org/mlr3verse/issues
