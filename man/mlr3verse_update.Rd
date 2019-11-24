@@ -4,8 +4,7 @@
 \alias{mlr3verse_update}
 \title{Update mlr3verse packages}
 \usage{
-mlr3verse_update(recursive = FALSE, repos = getOption("repos"),
-  type = "all")
+mlr3verse_update(recursive = FALSE, repos = getOption("repos"), type = "all")
 }
 \arguments{
 \item{recursive}{If \code{TRUE}, will also list all dependencies of mlr3verse

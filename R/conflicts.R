@@ -9,7 +9,7 @@
 mlr3verse_conflicts = function() {
 
   envs = grep("^package:", search(), value = TRUE)
-  envs = setNames(envs, nm = envs)
+  envs = stats::setNames(envs, nm = envs)
 
   objs = invert(lapply(envs, ls_env))
 

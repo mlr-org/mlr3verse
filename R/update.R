@@ -101,7 +101,7 @@ mlr3verse_deps = function(recursive = FALSE, repos = getOption("repos"),
 
     behind = mlr3misc::pmap_lgl(list(cran_version, local_version), `>`)
 
-    data.table::data.table(
+    data.frame(
       package = pkg_deps,
       cran = lapply(cran_version, function(x) as.character(x)),
       local = lapply(local_version, function(x) as.character(x)),
@@ -111,7 +111,7 @@ mlr3verse_deps = function(recursive = FALSE, repos = getOption("repos"),
 }
 
 packageVersion = function(pkg) {
-  if (is_true(requireNamespace(pkg, quietly = TRUE))) {
+  if (isTRUE(requireNamespace(pkg, quietly = TRUE))) {
     utils::packageVersion(pkg)
   } else {
     0

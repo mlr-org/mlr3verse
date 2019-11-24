@@ -4,8 +4,7 @@
 \alias{mlr3verse_deps}
 \title{List all mlr3verse dependencies}
 \usage{
-mlr3verse_deps(recursive = FALSE, repos = getOption("repos"),
-  type = "cran")
+mlr3verse_deps(recursive = FALSE, repos = getOption("repos"), type = "cran")
 }
 \arguments{
 \item{recursive}{If \code{TRUE}, will also list all dependencies of mlr3verse
