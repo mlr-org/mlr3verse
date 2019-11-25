@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mlr3verse.mlr-org.com/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mlr3verse.mlr-org.com/reference/mlr3verse_conflicts.html</loc>
+  </url>
+  <url>
+    <loc>https://mlr3verse.mlr-org.com/reference/mlr3verse_deps.html</loc>
+  </url>
+  <url>
+    <loc>https://mlr3verse.mlr-org.com/reference/mlr3verse_packages.html</loc>
+  </url>
+  <url>
+    <loc>https://mlr3verse.mlr-org.com/reference/mlr3verse_update.html</loc>
+  </url>
+</urlset>
