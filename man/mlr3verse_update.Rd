@@ -23,11 +23,11 @@ confirmation.
 }
 \section{Type}{
 
-  When parameter `type = "all"`, all packages from the mlr3
-  ecosystem will be updated using the CRAN versions for the ones which are on
-  CRAN and the development versions from Github for those which are not yet
-  released. When `type = "dev"` is set, all packages will be updated using
-  their Github versions.
+When parameter \code{type = "all"}, all packages from the mlr3
+ecosystem will be updated using the CRAN versions for the ones which are on
+CRAN and the development versions from Github for those which are not yet
+released. When \code{type = "dev"} is set, all packages will be updated using
+their Github versions.
 }
 
 \examples{
