@@ -15,8 +15,8 @@ The 'mlr3' package family is a set of packages for
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://mlr3verse.mlr-org.com
-    https://github.com/mlr-org/mlr3verse}
+  \item \url{https://mlr3verse.mlr-org.com}
+  \item \url{https://github.com/mlr-org/mlr3verse}
   \item Report bugs at \url{https://github.com/mlr-org/mlr3verse/issues}
 }
 

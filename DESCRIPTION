@@ -13,8 +13,7 @@ Description: The 'mlr3' package family is a set of packages for
     packages. Get more information about the 'mlr3' project at
     <https://mlr3book.mlr-org.com/>.
 License: LGPL-3
-URL: https://mlr3verse.mlr-org.com
-    https://github.com/mlr-org/mlr3verse
+URL: https://mlr3verse.mlr-org.com, https://github.com/mlr-org/mlr3verse
 BugReports: https://github.com/mlr-org/mlr3verse/issues
 Depends:
     R (>= 3.1.0),
