@@ -2,7 +2,7 @@
 % Please edit documentation in R/mlr3verse_info.R
 \name{mlr3verse_info}
 \alias{mlr3verse_info}
-\title{Print package versions}
+\title{Print mlr3* package versions}
 \usage{
 mlr3verse_info()
 }
