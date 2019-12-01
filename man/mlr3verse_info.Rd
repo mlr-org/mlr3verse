@@ -7,7 +7,7 @@
 mlr3verse_info()
 }
 \description{
-Returns the package versions of loaded mlr3 packages as \code{\link[=data.table]{data.table()}}.
+Returns the package versions of loaded mlr3 packages as a \link{data.frame}.
 }
 \examples{
 mlr3verse_info()

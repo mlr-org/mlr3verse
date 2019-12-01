@@ -8,8 +8,8 @@
 \description{
 The 'mlr3' package family is a set of packages for
     machine-learning purposes built in a modular fashion. This wrapper
-    package is aimed to simplify the installation and loading of the core 'mlr3'
-    packages. Get more information about the 'mlr3' project at
+    package is aimed to simplify the installation and loading of the core
+    'mlr3' packages. Get more information about the 'mlr3' project at
     <https://mlr3book.mlr-org.com/>.
 }
 \seealso{
@@ -23,5 +23,10 @@ Useful links:
 }
 \author{
 \strong{Maintainer}: Patrick Schratz \email{patrick.schratz@gmail.com} (\href{https://orcid.org/0000-0003-0748-6624}{ORCID})
+
+Authors:
+\itemize{
+  \item Michel Lang \email{michellang@gmail.com} (\href{https://orcid.org/0000-0001-9754-0393}{ORCID})
+}
 
 }
