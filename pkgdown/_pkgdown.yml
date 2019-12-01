@@ -7,7 +7,7 @@ template:
   default_assets: false
 
 development:
-  mode: release
+  mode: auto
   version_label: default
   version_tooltip: "Version"
 
