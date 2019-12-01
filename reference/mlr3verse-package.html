@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Update mlr3verse packages — mlr3verse_update • mlr3verse</title>
+<title>mlr3verse: Easily Install and Load the 'mlr3' package family — mlr3verse-package • mlr3verse</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -43,10 +43,12 @@
 
 
 
-<meta property="og:title" content="Update mlr3verse packages — mlr3verse_update" />
-<meta property="og:description" content="This will check to see if all mlr3verse packages (and optionally, their
-dependencies) are up-to-date, and will install after an interactive
-confirmation." />
+<meta property="og:title" content="mlr3verse: Easily Install and Load the 'mlr3' package family — mlr3verse-package" />
+<meta property="og:description" content="The 'mlr3' package family is a set of packages for
+    machine-learning purposes built in a modular fashion. This wrapper
+    package is aimed to simplify the installation and loading of the core
+    'mlr3' packages. Get more information about the 'mlr3' project at
+    &amp;lt;https://mlr3book.mlr-org.com/&amp;gt;." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -79,7 +81,7 @@ confirmation." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">mlr3verse</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -141,61 +143,44 @@ confirmation." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Update mlr3verse packages</h1>
-    <small class="dont-index">Source: <a href='https://github.com/mlr-org/mlr3verse/blob/master/R/update.R'><code>R/update.R</code></a></small>
-    <div class="hidden name"><code>mlr3verse_update.Rd</code></div>
+    <h1>mlr3verse: Easily Install and Load the 'mlr3' package family</h1>
+    <small class="dont-index">Source: <a href='https://github.com/mlr-org/mlr3verse/blob/master/R/zzz.R'><code>R/zzz.R</code></a></small>
+    <div class="hidden name"><code>mlr3verse-package.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This will check to see if all mlr3verse packages (and optionally, their
-dependencies) are up-to-date, and will install after an interactive
-confirmation.</p>
+    <p>The 'mlr3' package family is a set of packages for
+    machine-learning purposes built in a modular fashion. This wrapper
+    package is aimed to simplify the installation and loading of the core
+    'mlr3' packages. Get more information about the 'mlr3' project at
+    &lt;https://mlr3book.mlr-org.com/&gt;.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>mlr3verse_update</span>(<span class='kw'>recursive</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>repos</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/options.html'>getOption</a></span>(<span class='st'>"repos"</span>), <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"all"</span>)</pre>
 
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>recursive</th>
-      <td><p>If <code>TRUE</code>, will also list all dependencies of mlr3verse
-packages.</p></td>
-    </tr>
-    <tr>
-      <th>repos</th>
-      <td><p>The repositories to use to check for updates. Defaults to
-<code>getOptions("repos")</code>.</p></td>
-    </tr>
-    <tr>
-      <th>type</th>
-      <td><p>Which package type to use. Valid options are "cran", "dev" and
-"all".</p></td>
-    </tr>
-    </table>
 
-    <h2 class="hasAnchor" id="type"><a class="anchor" href="#type"></a>Type</h2>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    
+    <div class='dont-index'><p>Useful links:</p><ul>
+<li><p><a href='https://mlr3verse.mlr-org.com'>https://mlr3verse.mlr-org.com</a></p></li>
+<li><p><a href='https://github.com/mlr-org/mlr3verse'>https://github.com/mlr-org/mlr3verse</a></p></li>
+<li><p>Report bugs at <a href='https://github.com/mlr-org/mlr3verse/issues'>https://github.com/mlr-org/mlr3verse/issues</a></p></li>
+</ul>
 
-<p>When parameter <code>type = "all"</code>, all packages from the mlr3
-ecosystem will be updated using the CRAN versions for the ones which are on
-CRAN and the development versions from Github for those which are not yet
-released. When <code>type = "dev"</code> is set, all packages will be updated using
-their Github versions.</p>
+</div>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='fu'>mlr3verse_update</span>()
-}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      <li><a href="#type">Type</a></li>
-      <li><a href="#examples">Examples</a></li>
+      <li><a href="#see-also">See also</a></li>
     </ul>
+
+    <h2>Author</h2>
+    <p><strong>Maintainer</strong>: Patrick Schratz <a href='mailto:patrick.schratz@gmail.com'>patrick.schratz@gmail.com</a> (<a href='https://orcid.org/0000-0003-0748-6624'>ORCID</a>)</p>
+<p>Authors:</p><ul>
+<li><p>Michel Lang <a href='mailto:michellang@gmail.com'>michellang@gmail.com</a> (<a href='https://orcid.org/0000-0001-9754-0393'>ORCID</a>)</p></li>
+</ul>
+
 
   </div>
 </div>
@@ -203,7 +188,7 @@ their Github versions.</p>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Patrick Schratz.</p>
+  <p>Developed by Patrick Schratz, Michel Lang.</p>
 </div>
 
 <div class="pkgdown">
