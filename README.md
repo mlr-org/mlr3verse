@@ -33,7 +33,7 @@ The following packages are attached by this meta package:
 | Name          | Title                                                        | URL                                 |
 | :------------ | :----------------------------------------------------------- | :---------------------------------- |
 | mlr3          | Machine Learning in R - Next Generation                      | <https://mlr3.mlr-org.com>          |
-| mlr3db        | Data Base Backend for ‘mlr3’                                 | <https:///mlr3db.mlr-org.com>       |
+| mlr3db        | Data Base Backend for ‘mlr3’                                 | <https://mlr3db.mlr-org.com>       |
 | mlr3filters   | Filter Based Feature Selection for ‘mlr3’                    | <https://mlr3filters.mlr-org.com>   |
 | mlr3learners  | Recommended Learners for ‘mlr3’                              | <https://mlr3learners.mlr-org.com>  |
 | mlr3pipelines | Preprocessing Operators and Pipelines for ‘mlr3’             | <https://mlr3pipelines.mlr-org.com> |
