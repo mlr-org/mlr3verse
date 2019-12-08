@@ -41,7 +41,35 @@ The following packages are attached by this meta package:
 | paradox       | Define and Work with Parameter Spaces for Complex Algorithms | <https://paradox.mlr-org.com>       |
 
 
-By loading the `mlr3verse` package, you are all set to deal with most regression and classification tasks.
-More packages, e.g. for survival analysis, are available on CRAN/GitHub, and may be included in this meta package in the future:
+By loading the `mlr3verse` package, you are all set to deal with most regression and classification tasks:
+
+```r
+library("mlr3verse")
+
+Loading required package: mlr3
+Loading required package: mlr3db
+Loading required package: mlr3filters
+Loading required package: mlr3learners
+Loading required package: mlr3pipelines
+Loading required package: mlr3tuning
+Loading required package: paradox
+```
+
+If you want to get more detailed information about the loaded packages, you can call `mlr3verse_info()`:
+
+```r
+# A tibble: 7 x 2
+  Package       Version   
+  <fct>         <fct>     
+1 mlr3          0.1.4.9000
+2 mlr3tuning    0.1.0.9000
+3 mlr3pipelines 0.1.1     
+4 paradox       0.1.0.9000
+5 mlr3filters   0.1.0.9000
+6 mlr3db        0.1.3     
+7 mlr3learners  0.1.5  
+```
+
+More extension packages are available on CRAN/GitHub, and may be included in this meta package in the future.
 
 <a href="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"><img src="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true" /></a>
