@@ -10,7 +10,7 @@ Meta-package for installing/loading core [mlr3 packages](https://github.com/mlr-
 
 [![CRAN Status Badge](https://www.r-pkg.org/badges/version-ago/mlr3verse)](https://cran.r-project.org/package=mlr3verse)
 [![codecov](https://codecov.io/gh/mlr-org/mlr3verse/branch/master/graph/badge.svg)](https://codecov.io/gh/mlr-org/mlr3verse)
-[![StackOverflow](https://img.shields.io/badge/stackoverflow-mlr3verse-orange.svg)](https://stackoverflow.com/questions/tagged/mlr3verse)
+[![StackOverflow](https://img.shields.io/badge/stackoverflow-mlr3-orange.svg)](https://stackoverflow.com/questions/tagged/mlr3)
 
 ## Overview
 
