@@ -8,3 +8,4 @@
 ^LICENSE$
 ^README\.Rmd$
 ^.editorconfig$
+^\.pre-commit-config\.yaml$
