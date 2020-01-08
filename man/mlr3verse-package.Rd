@@ -4,7 +4,7 @@
 \name{mlr3verse-package}
 \alias{mlr3verse}
 \alias{mlr3verse-package}
-\title{mlr3verse: Easily Install and Load the 'mlr3' package family}
+\title{mlr3verse: Easily Install and Load the 'mlr3' Package Family}
 \description{
 The 'mlr3' package family is a set of packages for
     machine-learning purposes built in a modular fashion. This wrapper
