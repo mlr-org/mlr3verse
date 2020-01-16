@@ -1,4 +1,4 @@
-# mlr3verse (development version)
+# mlr3verse 0.1.1
 
 * add [mlr3viz} to core package stack
 
