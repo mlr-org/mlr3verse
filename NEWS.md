@@ -1,5 +1,7 @@
 # mlr3verse (development version)
 
+* add [mlr3viz} to core package stack
+
 # mlr3verse 0.1.0
 
 Initial CRAN release.
