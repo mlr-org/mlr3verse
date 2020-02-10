@@ -8,3 +8,8 @@
 #' @importFrom mlr3tuning mlr_tuners
 #' @importFrom paradox Param
 "_PACKAGE"
+
+dummy_import = function() {
+  mlr3data::kc_housing
+  mlr3viz::autoplot()
+}

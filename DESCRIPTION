@@ -32,7 +32,8 @@ Depends:
     paradox,
     R (>= 3.1.0)
 Imports:
-    mlr3misc
+    mlr3misc,
+    mlr3data
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
