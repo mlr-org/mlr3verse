@@ -23,7 +23,6 @@ URL: https://mlr3verse.mlr-org.com,
 BugReports: https://github.com/mlr-org/mlr3verse/issues
 Depends:
     mlr3,
-    mlr3db,
     mlr3filters,
     mlr3learners,
     mlr3pipelines,
