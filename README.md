@@ -43,7 +43,6 @@ The following packages are attached by this meta package:
 | Name          | Title                                                        | URL                                 |
 | :------------ | :----------------------------------------------------------- | :---------------------------------- |
 | mlr3          | Machine Learning in R - Next Generation                      | <https://mlr3.mlr-org.com>          |
-| mlr3db        | Data Base Backend for ‘mlr3’                                 | <https://mlr3db.mlr-org.com>        |
 | mlr3filters   | Filter Based Feature Selection for ‘mlr3’                    | <https://mlr3filters.mlr-org.com>   |
 | mlr3learners  | Recommended Learners for ‘mlr3’                              | <https://mlr3learners.mlr-org.com>  |
 | mlr3pipelines | Preprocessing Operators and Pipelines for ‘mlr3’             | <https://mlr3pipelines.mlr-org.com> |
@@ -57,7 +56,6 @@ regression and classification tasks:
 ``` r
 library("mlr3verse")
 #> Loading required package: mlr3
-#> Loading required package: mlr3db
 #> Loading required package: mlr3filters
 #> Loading required package: mlr3learners
 #> Loading required package: mlr3pipelines
@@ -77,7 +75,6 @@ mlr3verse_info()
 #> 3 mlr3pipelines 0.1.2.9000
 #> 4       paradox 0.1.0.9000
 #> 5   mlr3filters 0.1.1.9000
-#> 6        mlr3db 0.1.3.9000
 #> 7  mlr3learners      0.1.5
 #> 8       mlr3viz      0.1.0
 ```
