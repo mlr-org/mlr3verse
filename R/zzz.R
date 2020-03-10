@@ -7,4 +7,5 @@
 #' @importFrom mlr3pipelines mlr_pipeops
 #' @importFrom mlr3tuning mlr_tuners
 #' @importFrom paradox Param
+#' @importFrom mlr3viz autoplot
 "_PACKAGE"
