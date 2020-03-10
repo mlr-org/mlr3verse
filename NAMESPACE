@@ -2,7 +2,6 @@
 
 export(mlr3verse_info)
 importFrom(mlr3,Task)
-importFrom(mlr3db,DataBackendDplyr)
 importFrom(mlr3filters,mlr_filters)
 importFrom(mlr3learners,LearnerRegrLM)
 importFrom(mlr3misc,map_chr)
