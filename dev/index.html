@@ -79,7 +79,7 @@
   </a>
 </li>
 <li>
-  <a href="https://stackoverflow.com/questions/tagged/mlr">
+  <a href="https://stackoverflow.com/questions/tagged/mlr3">
     <span class="fab fa fab fa-stack-overflow"></span>
      
   </a>
@@ -180,22 +180,24 @@
 <p>By loading the <code>mlr3verse</code> package, you are all set to deal with most regression and classification tasks:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st">"mlr3verse"</span>)</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="co">#&gt; Loading required package: mlr3</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co">#&gt; Loading required package: mlr3filters</span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co">#&gt; Loading required package: mlr3learners</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co">#&gt; Loading required package: mlr3pipelines</span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co">#&gt; Loading required package: mlr3tuning</span></a>
-<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="co">#&gt; Loading required package: mlr3viz</span></a>
-<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="co">#&gt; Loading required package: paradox</span></a></code></pre></div>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co">#&gt; Loading required package: mlr3db</span></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co">#&gt; Loading required package: mlr3filters</span></a>
+<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co">#&gt; Loading required package: mlr3learners</span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co">#&gt; Loading required package: mlr3pipelines</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="co">#&gt; Loading required package: mlr3tuning</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="co">#&gt; Loading required package: mlr3viz</span></a>
+<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="co">#&gt; Loading required package: paradox</span></a></code></pre></div>
 <p>If you want to get more detailed information about the loaded packages, you can call <code><a href="reference/mlr3verse_info.html">mlr3verse_info()</a></code>:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="reference/mlr3verse_info.html">mlr3verse_info</a></span>()</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt;         Package    Version</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; 1          mlr3      0.1.6</span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt; 2    mlr3tuning      0.1.1</span></a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt; 3 mlr3pipelines 0.1.2.9000</span></a>
-<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt; 4       paradox 0.1.0.9000</span></a>
-<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt; 5   mlr3filters 0.1.1.9000</span></a>
-<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt; 7  mlr3learners      0.1.5</span></a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt; 8       mlr3viz      0.1.0</span></a></code></pre></div>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; 1          mlr3      0.1.8</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt; 2    mlr3tuning      0.1.2</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt; 3 mlr3pipelines      0.1.2</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt; 4       paradox      0.1.0</span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt; 5   mlr3filters 0.1.1.9002</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt; 6        mlr3db      0.1.5</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt; 7  mlr3learners      0.1.6</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt; 8       mlr3viz      0.1.1</span></a></code></pre></div>
 <p>More extension packages are available on CRAN/GitHub, and may be included in this meta package in the future.</p>
 <p><a href="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"><img src="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"></a></p>
 </div>
@@ -233,6 +235,7 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://travis-ci.org/mlr-org/mlr3verse"><img src="https://img.shields.io/travis/mlr-org/mlr3verse/master?label=Linux&amp;logo=travis&amp;style=flat-square" alt="Build Status"></a></li>
+<li><a href="https://github.com/mlr-org/mlr3verse/actions"><img src="https://img.shields.io/github/workflow/status/mlr-org/mlr3verse/R%20CMD%20Check%20via%20%7Btic%7D?logo=github&amp;label=R%20CMD%20Check%20via%20%7Btic%7D&amp;style=flat-square" alt="R CMD Check via {tic}"></a></li>
 <li><a href="https://cran.r-project.org/web/checks/check_results_mlr3verse.html"><img src="https://cranchecks.info/badges/worst/mlr3verse" alt="cran checks"></a></li>
 <li><a href="https://cran.r-project.org/package=mlr3verse"><img src="https://www.r-pkg.org/badges/version-ago/mlr3verse" alt="CRAN Status Badge"></a></li>
 <li><a href="https://codecov.io/gh/mlr-org/mlr3verse"><img src="https://codecov.io/gh/mlr-org/mlr3verse/branch/master/graph/badge.svg" alt="codecov"></a></li>
