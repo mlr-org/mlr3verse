@@ -31,6 +31,7 @@ Depends:
     paradox,
     R (>= 3.1.0)
 Imports:
+    mlr3data,
     mlr3misc
 Encoding: UTF-8
 LazyData: true

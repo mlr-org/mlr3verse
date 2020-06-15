@@ -8,3 +8,8 @@
 #' @importFrom paradox Param
 #' @importFrom mlr3viz autoplot
 "_PACKAGE"
+
+dummy_import = function() {
+  mlr3data::kc_housing
+  mlr3viz::autoplot()
+}
