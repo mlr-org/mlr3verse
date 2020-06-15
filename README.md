@@ -11,8 +11,7 @@ packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
 
 <!-- badges: start -->
 
-[![R CMD Check via
-{tic}](https://github.com/mlr-org/mlr3verse/workflows/R%20CMD%20Check%20via%20%7Btic%7D/badge.svg?branch=master)](https://github.com/mlr-org/mlr3verse/actions)
+[![tic](https://github.com/mlr-org/mlr3verse/workflows/tic/badge.svg?branch=master)](https://github.com/mlr-org/mlr3verse/actions)
 [![cran
 checks](https://cranchecks.info/badges/worst/mlr3verse)](https://cran.r-project.org/web/checks/check_results_mlr3verse.html)
 [![CRAN Status
@@ -55,6 +54,14 @@ regression and classification tasks:
 
 ``` r
 library("mlr3verse")
+#> Loading required package: mlr3
+#> Loading required package: mlr3db
+#> Loading required package: mlr3filters
+#> Loading required package: mlr3learners
+#> Loading required package: mlr3pipelines
+#> Loading required package: mlr3tuning
+#> Loading required package: mlr3viz
+#> Loading required package: paradox
 ```
 
 If you want to get more detailed information about the loaded packages,
@@ -62,15 +69,15 @@ you can call `mlr3verse_info()`:
 
 ``` r
 mlr3verse_info()
-#>         Package    Version
-#> 1          mlr3 0.1.8.9000
-#> 2    mlr3tuning      0.1.2
-#> 3 mlr3pipelines      0.1.2
-#> 4       paradox      0.1.0
-#> 5   mlr3filters      0.2.0
-#> 6        mlr3db      0.1.5
-#> 7  mlr3learners      0.1.6
-#> 8       mlr3viz      0.1.1
+#>         Package Version
+#> 1          mlr3   0.3.0
+#> 2    mlr3tuning   0.1.2
+#> 3 mlr3pipelines   0.1.3
+#> 4       paradox   0.2.0
+#> 5   mlr3filters   0.2.0
+#> 6        mlr3db   0.1.5
+#> 7  mlr3learners   0.2.0
+#> 8       mlr3viz   0.1.1
 ```
 
 More extension packages are available on CRAN/GitHub, and may be

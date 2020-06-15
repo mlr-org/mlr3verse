@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 # mlr3verse
 
 <!-- badges: start -->
-[![R CMD Check via {tic}](https://github.com/mlr-org/mlr3verse/workflows/R%20CMD%20Check%20via%20{tic}/badge.svg?branch=master)](https://github.com/mlr-org/mlr3verse/actions)
+[![tic](https://github.com/mlr-org/mlr3verse/workflows/tic/badge.svg?branch=master)](https://github.com/mlr-org/mlr3verse/actions)
 [![cran checks](https://cranchecks.info/badges/worst/mlr3verse)](https://cran.r-project.org/web/checks/check_results_mlr3verse.html)
 [![CRAN Status Badge](https://www.r-pkg.org/badges/version-ago/mlr3verse)](https://cran.r-project.org/package=mlr3verse)
 [![codecov](https://codecov.io/gh/mlr-org/mlr3verse/branch/master/graph/badge.svg)](https://codecov.io/gh/mlr-org/mlr3verse)
