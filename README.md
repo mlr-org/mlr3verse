@@ -11,8 +11,7 @@ packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
 
 <!-- badges: start -->
 
-[![Build
-Status](https://img.shields.io/travis/mlr-org/mlr3verse/master?label=Linux&logo=travis&style=flat-square)](https://travis-ci.org/mlr-org/mlr3verse)
+[![tic](https://github.com/mlr-org/mlr3verse/workflows/tic/badge.svg?branch=master)](https://github.com/mlr-org/mlr3verse/actions)
 [![cran
 checks](https://cranchecks.info/badges/worst/mlr3verse)](https://cran.r-project.org/web/checks/check_results_mlr3verse.html)
 [![CRAN Status
@@ -43,7 +42,6 @@ The following packages are attached by this meta package:
 | Name          | Title                                                        | URL                                 |
 | :------------ | :----------------------------------------------------------- | :---------------------------------- |
 | mlr3          | Machine Learning in R - Next Generation                      | <https://mlr3.mlr-org.com>          |
-| mlr3db        | Data Base Backend for ‘mlr3’                                 | <https://mlr3db.mlr-org.com>        |
 | mlr3filters   | Filter Based Feature Selection for ‘mlr3’                    | <https://mlr3filters.mlr-org.com>   |
 | mlr3learners  | Recommended Learners for ‘mlr3’                              | <https://mlr3learners.mlr-org.com>  |
 | mlr3pipelines | Preprocessing Operators and Pipelines for ‘mlr3’             | <https://mlr3pipelines.mlr-org.com> |
@@ -71,15 +69,15 @@ you can call `mlr3verse_info()`:
 
 ``` r
 mlr3verse_info()
-#>         Package    Version
-#> 1          mlr3      0.1.6
-#> 2    mlr3tuning      0.1.1
-#> 3 mlr3pipelines 0.1.2.9000
-#> 4       paradox 0.1.0.9000
-#> 5   mlr3filters 0.1.1.9000
-#> 6        mlr3db 0.1.3.9000
-#> 7  mlr3learners      0.1.5
-#> 8       mlr3viz      0.1.0
+#>         Package Version
+#> 1          mlr3   0.3.0
+#> 2    mlr3tuning   0.1.2
+#> 3 mlr3pipelines   0.1.3
+#> 4       paradox   0.2.0
+#> 5   mlr3filters   0.2.0
+#> 6        mlr3db   0.1.5
+#> 7  mlr3learners   0.2.0
+#> 8       mlr3viz   0.1.1
 ```
 
 More extension packages are available on CRAN/GitHub, and may be

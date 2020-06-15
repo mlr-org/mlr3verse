@@ -9,3 +9,6 @@
 ^README\.Rmd$
 ^.editorconfig$
 ^\.pre-commit-config\.yaml$
+^\.ccache$
+^\.github$
+^clang-.*

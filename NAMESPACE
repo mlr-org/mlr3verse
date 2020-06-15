@@ -2,11 +2,11 @@
 
 export(mlr3verse_info)
 importFrom(mlr3,Task)
-importFrom(mlr3db,DataBackendDplyr)
 importFrom(mlr3filters,mlr_filters)
 importFrom(mlr3learners,LearnerRegrLM)
 importFrom(mlr3misc,map_chr)
 importFrom(mlr3pipelines,mlr_pipeops)
 importFrom(mlr3tuning,mlr_tuners)
+importFrom(mlr3viz,autoplot)
 importFrom(paradox,Param)
 importFrom(utils,packageVersion)

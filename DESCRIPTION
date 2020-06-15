@@ -1,6 +1,6 @@
 Package: mlr3verse
 Title: Easily Install and Load the 'mlr3' Package Family
-Version: 0.1.1
+Version: 0.1.1.9000
 Authors@R:
     c(person(given = "Patrick",
              family = "Schratz",
@@ -23,7 +23,6 @@ URL: https://mlr3verse.mlr-org.com,
 BugReports: https://github.com/mlr-org/mlr3verse/issues
 Depends:
     mlr3,
-    mlr3db,
     mlr3filters,
     mlr3learners,
     mlr3pipelines,
