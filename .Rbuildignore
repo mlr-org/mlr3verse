@@ -12,3 +12,5 @@
 ^\.ccache$
 ^\.github$
 ^clang-.*
+^CRAN-RELEASE$
+^\.vscode$
