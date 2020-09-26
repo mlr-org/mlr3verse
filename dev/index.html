@@ -121,11 +121,10 @@
 <a href="#installation" class="anchor"></a>Installation</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit">
 <span class="co"># From CRAN:</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"mlr3verse"</span>)
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"mlr3verse"</span><span class="op">)</span>
 
 <span class="co"># From Github:</span>
-<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"mlr-org/mlr3verse"</span>)
-</pre></div>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"mlr-org/mlr3verse"</span><span class="op">)</span></pre></div>
 </div>
 <div id="batteries-included" class="section level2">
 <h2 class="hasAnchor">
@@ -182,7 +181,7 @@
 </table>
 <p>By loading the <code>mlr3verse</code> package, you are all set to deal with most regression and classification tasks:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st"><a href="https://mlr3verse.mlr-org.com">"mlr3verse"</a></span>)
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://mlr3verse.mlr-org.com">"mlr3verse"</a></span><span class="op">)</span>
 <span class="co">#&gt; Loading required package: mlr3</span>
 <span class="co">#&gt; Loading required package: mlr3db</span>
 <span class="co">#&gt; Loading required package: mlr3filters</span>
@@ -190,11 +189,10 @@
 <span class="co">#&gt; Loading required package: mlr3pipelines</span>
 <span class="co">#&gt; Loading required package: mlr3tuning</span>
 <span class="co">#&gt; Loading required package: mlr3viz</span>
-<span class="co">#&gt; Loading required package: paradox</span>
-</pre></div>
+<span class="co">#&gt; Loading required package: paradox</span></pre></div>
 <p>If you want to get more detailed information about the loaded packages, you can call <code><a href="reference/mlr3verse_info.html">mlr3verse_info()</a></code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="fu"><a href="reference/mlr3verse_info.html">mlr3verse_info</a></span>()
+<span class="fu"><a href="reference/mlr3verse_info.html">mlr3verse_info</a></span><span class="op">(</span><span class="op">)</span>
 <span class="co">#&gt;         Package Version</span>
 <span class="co">#&gt; 1          mlr3   0.3.0</span>
 <span class="co">#&gt; 2    mlr3tuning   0.1.2</span>
@@ -203,8 +201,7 @@
 <span class="co">#&gt; 5   mlr3filters   0.2.0</span>
 <span class="co">#&gt; 6        mlr3db   0.1.5</span>
 <span class="co">#&gt; 7  mlr3learners   0.2.0</span>
-<span class="co">#&gt; 8       mlr3viz   0.1.1</span>
-</pre></div>
+<span class="co">#&gt; 8       mlr3viz   0.1.1</span></pre></div>
 <p>More extension packages are available on CRAN/GitHub, and may be included in this meta package in the future.</p>
 <p><a href="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"><img src="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"></a></p>
 </div>
