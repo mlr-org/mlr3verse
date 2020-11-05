@@ -29,6 +29,7 @@ Imports:
     mlr3,
     mlr3data,
     mlr3filters,
+    mlr3fselect,
     mlr3learners,
     mlr3misc,
     mlr3pipelines,
