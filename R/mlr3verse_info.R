@@ -10,7 +10,7 @@
 mlr3verse_info <- function() {
   pkgs <- sort(c(
     "mlr3", "bbotk", "mlr3tuning", "mlr3pipelines", "paradox",
-    "mlr3filters", "mlr3fselect",
+    "mlr3filters", "mlr3fselect", "mlr3cluster",
     "mlr3data", "mlr3learners", "mlr3viz"
   ))
   data.frame(Package = pkgs, Version = map_chr(pkgs, function(x) {
