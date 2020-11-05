@@ -2,7 +2,8 @@
 % Please edit documentation in R/reexports_bbotk.R, R/reexports_data.table.R,
 %   R/reexports_mlr3.R, R/reexports_mlr3cluster.R, R/reexports_mlr3filters.R,
 %   R/reexports_mlr3fselect.R, R/reexports_mlr3pipelines.R,
-%   R/reexports_mlr3tuning.R, R/reexports_mlr3viz.R, R/reexports_paradox.R
+%   R/reexports_mlr3proba.R, R/reexports_mlr3tuning.R, R/reexports_mlr3viz.R,
+%   R/reexports_paradox.R
 \docType{import}
 \name{reexports}
 \alias{reexports}
@@ -59,6 +60,33 @@
 \alias{selector_setdiff}
 \alias{selector_type}
 \alias{selector_union}
+\alias{MeasureSurvCalibrationBeta}
+\alias{MeasureSurvCalibrationAlpha}
+\alias{MeasureSurvOQuigleyR2}
+\alias{MeasureSurvNagelkR2}
+\alias{MeasureSurvGonenC}
+\alias{MeasureSurvSongAUC}
+\alias{MeasureSurvUnoAUC}
+\alias{MeasureSurvLogloss}
+\alias{MeasureSurvHungAUC}
+\alias{MeasureSurvRMSESE}
+\alias{MeasureSurvMAE}
+\alias{MeasureSurvMAESE}
+\alias{MeasureDensLogloss}
+\alias{PipeOpPredSurvRegr}
+\alias{PipeOpTaskTransformer}
+\alias{PipeOpTransformer}
+\alias{PipeOpProbregrCompositor}
+\alias{PipeOpTaskRegrSurv}
+\alias{PipeOpSurvAvg}
+\alias{PipeOpCrankCompositor}
+\alias{PipeOpDistrCompositor}
+\alias{PipeOpTaskSurvRegr}
+\alias{PipeOpPredTransformer}
+\alias{TaskDens}
+\alias{TaskSurv}
+\alias{TaskGeneratorSimsurv}
+\alias{TaskGeneratorSimdens}
 \alias{mlr_tuners}
 \alias{tnr}
 \alias{tnrs}
@@ -94,6 +122,8 @@ below to see their documentation.
   \item{mlr3fselect}{\code{\link[mlr3fselect]{fs}}, \code{\link[mlr3fselect]{mlr_fselectors}}}
 
   \item{mlr3pipelines}{\code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{\%>>\%}}, \code{\link[mlr3pipelines:mlr_learners_graph]{GraphLearner}}, \code{\link[mlr3pipelines]{as_graph}}, \code{\link[mlr3pipelines]{greplicate}}, \code{\link[mlr3pipelines]{gunion}}, \code{\link[mlr3pipelines]{mlr_graphs}}, \code{\link[mlr3pipelines]{mlr_pipeops}}, \code{\link[mlr3pipelines]{po}}, \code{\link[mlr3pipelines]{ppl}}, \code{\link[mlr3pipelines:Selector]{selector_all}}, \code{\link[mlr3pipelines:Selector]{selector_cardinality_greater_than}}, \code{\link[mlr3pipelines:Selector]{selector_grep}}, \code{\link[mlr3pipelines:Selector]{selector_intersect}}, \code{\link[mlr3pipelines:Selector]{selector_invert}}, \code{\link[mlr3pipelines:Selector]{selector_missing}}, \code{\link[mlr3pipelines:Selector]{selector_name}}, \code{\link[mlr3pipelines:Selector]{selector_none}}, \code{\link[mlr3pipelines:Selector]{selector_setdiff}}, \code{\link[mlr3pipelines:Selector]{selector_type}}, \code{\link[mlr3pipelines:Selector]{selector_union}}}
+
+  \item{mlr3proba}{\code{\link[mlr3proba:mlr_measures_dens.logloss]{MeasureDensLogloss}}, \code{\link[mlr3proba:mlr_measures_surv.calib_alpha]{MeasureSurvCalibrationAlpha}}, \code{\link[mlr3proba:mlr_measures_surv.calib_beta]{MeasureSurvCalibrationBeta}}, \code{\link[mlr3proba:mlr_measures_surv.gonenC]{MeasureSurvGonenC}}, \code{\link[mlr3proba:mlr_measures_surv.hung_auc]{MeasureSurvHungAUC}}, \code{\link[mlr3proba:mlr_measures_surv.logloss]{MeasureSurvLogloss}}, \code{\link[mlr3proba:mlr_measures_surv.mae]{MeasureSurvMAE}}, \code{\link[mlr3proba:mlr_measures_surv.maeSE]{MeasureSurvMAESE}}, \code{\link[mlr3proba:mlr_measures_surv.nagelk_r2]{MeasureSurvNagelkR2}}, \code{\link[mlr3proba:mlr_measures_surv.oquigley_r2]{MeasureSurvOQuigleyR2}}, \code{\link[mlr3proba:mlr_measures_surv.rmseSE]{MeasureSurvRMSESE}}, \code{\link[mlr3proba:mlr_measures_surv.song_auc]{MeasureSurvSongAUC}}, \code{\link[mlr3proba:mlr_measures_surv.uno_auc]{MeasureSurvUnoAUC}}, \code{\link[mlr3proba:mlr_pipeops_compose_crank]{PipeOpCrankCompositor}}, \code{\link[mlr3proba:mlr_pipeops_compose_distr]{PipeOpDistrCompositor}}, \code{\link[mlr3proba:mlr_pipeops_trafopred_survregr]{PipeOpPredSurvRegr}}, \code{\link[mlr3proba]{PipeOpPredTransformer}}, \code{\link[mlr3proba:mlr_pipeops_compose_probregr]{PipeOpProbregrCompositor}}, \code{\link[mlr3proba:mlr_pipeops_survavg]{PipeOpSurvAvg}}, \code{\link[mlr3proba:mlr_pipeops_trafotask_regrsurv]{PipeOpTaskRegrSurv}}, \code{\link[mlr3proba:mlr_pipeops_trafotask_survregr]{PipeOpTaskSurvRegr}}, \code{\link[mlr3proba]{PipeOpTaskTransformer}}, \code{\link[mlr3proba]{PipeOpTransformer}}, \code{\link[mlr3proba]{TaskDens}}, \code{\link[mlr3proba:mlr_task_generators_simdens]{TaskGeneratorSimdens}}, \code{\link[mlr3proba:mlr_task_generators_simsurv]{TaskGeneratorSimsurv}}, \code{\link[mlr3proba]{TaskSurv}}}
 
   \item{mlr3tuning}{\code{\link[mlr3tuning]{AutoTuner}}, \code{\link[mlr3tuning]{TuningInstanceMultiCrit}}, \code{\link[mlr3tuning]{TuningInstanceSingleCrit}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}}
 
