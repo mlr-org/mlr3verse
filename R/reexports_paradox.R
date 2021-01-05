@@ -1,22 +1,30 @@
-#' @importFrom paradox ParamSet
+#' @importFrom paradox ps
 #' @export
-paradox::ParamSet
+paradox::ps
 
-#' @importFrom paradox ParamLgl
+#' @importFrom paradox p_lgl
 #' @export
-paradox::ParamLgl
+paradox::p_lgl
 
-#' @importFrom paradox ParamInt
+#' @importFrom paradox p_int
 #' @export
-paradox::ParamInt
+paradox::p_int
 
-#' @importFrom paradox ParamDbl
+#' @importFrom paradox p_dbl
 #' @export
-paradox::ParamDbl
+paradox::p_dbl
 
-#' @importFrom paradox ParamFct
+#' @importFrom paradox p_fct
 #' @export
-paradox::ParamFct
+paradox::p_fct
+
+#' @importFrom paradox p_uty
+#' @export
+paradox::p_uty
+
+#' @importFrom paradox to_tune
+#' @export
+paradox::to_tune
 
 #' @importFrom paradox generate_design_grid
 #' @export

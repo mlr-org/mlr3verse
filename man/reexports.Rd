@@ -66,11 +66,13 @@
 \alias{TuningInstanceMultiCrit}
 \alias{autoplot}
 \alias{fortify}
-\alias{ParamSet}
-\alias{ParamLgl}
-\alias{ParamInt}
-\alias{ParamDbl}
-\alias{ParamFct}
+\alias{ps}
+\alias{p_lgl}
+\alias{p_int}
+\alias{p_dbl}
+\alias{p_fct}
+\alias{p_uty}
+\alias{to_tune}
 \alias{generate_design_grid}
 \alias{generate_design_lhs}
 \title{Objects exported from other packages}
@@ -98,6 +100,6 @@ below to see their documentation.
 
   \item{mlr3viz}{\code{\link[mlr3viz:reexports]{autoplot}}, \code{\link[mlr3viz:reexports]{fortify}}}
 
-  \item{paradox}{\code{\link[paradox]{ParamDbl}}, \code{\link[paradox]{ParamFct}}, \code{\link[paradox]{ParamInt}}, \code{\link[paradox]{ParamLgl}}, \code{\link[paradox]{ParamSet}}, \code{\link[paradox]{generate_design_grid}}, \code{\link[paradox]{generate_design_lhs}}}
+  \item{paradox}{\code{\link[paradox]{generate_design_grid}}, \code{\link[paradox]{generate_design_lhs}}, \code{\link[paradox:Domain]{p_dbl}}, \code{\link[paradox:Domain]{p_fct}}, \code{\link[paradox:Domain]{p_int}}, \code{\link[paradox:Domain]{p_lgl}}, \code{\link[paradox:Domain]{p_uty}}, \code{\link[paradox]{ps}}, \code{\link[paradox]{to_tune}}}
 }}
 
