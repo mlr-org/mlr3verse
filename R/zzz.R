@@ -1,8 +1,13 @@
 #' @keywords internal
 "_PACKAGE"
 
-# dummy calls to silence R CMD check
-dummy = function() {
-  mlr3data::titanic
-  mlr3learners::LearnerClassifRanger
+.onLoad = function(libname, pkgname) {
+  # these are not loaded automatically
+  requireNamespace("mlr3data")
+  requireNamespace("mlr3learners")
+
+  if (FALSE) {
+    mlr3data::penguins
+    mlr3learners::LearnerClassifLDA
+  }
 }
