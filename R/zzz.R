@@ -3,8 +3,8 @@
 
 .onLoad = function(libname, pkgname) {
   # these are not loaded automatically
-  requireNamespace("mlr3data")
-  requireNamespace("mlr3learners")
+  requireNamespace("mlr3data", quietly = TRUE)
+  requireNamespace("mlr3learners", quietly = TRUE)
 
   if (FALSE) {
     mlr3data::penguins
