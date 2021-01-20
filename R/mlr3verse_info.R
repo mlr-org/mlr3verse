@@ -1,19 +1,18 @@
 #' @title Print mlr3* package versions
 #'
 #' @description
-#' Returns the package versions of loaded mlr3 packages as a [data.frame].
+#' Returns the package versions of imported mlr3 packages as a [data.table()].
 #'
 #' @importFrom mlr3misc map_chr
 #' @export
 #' @examples
 #' mlr3verse_info()
-mlr3verse_info <- function() {
-  pkgs <- sort(c(
-    "mlr3", "bbotk", "mlr3tuning", "mlr3pipelines", "paradox",
-    "mlr3filters", "mlr3fselect", "mlr3cluster", "mlr3proba",
-    "mlr3data", "mlr3learners", "mlr3viz"
-  ))
-  data.frame(Package = pkgs, Version = map_chr(pkgs, function(x) {
+mlr3verse_info = function() {
+  imports = read.dcf(system.file("DESCRIPTION", package = "mlr3verse"), fields = "Imports")[[1L]]
+  imports = strsplit(imports, ",\n", fixed = TRUE)[[1L]]
+  imports = setdiff(imports, "data.table")
+
+  data.table(Package = imports, Version = map_chr(imports, function(x) {
     as.character(utils::packageVersion(x))
-  }))
+  }), key = "Package")
 }
