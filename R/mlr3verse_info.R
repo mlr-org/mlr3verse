@@ -4,6 +4,7 @@
 #' Returns the package versions of imported mlr3 packages as a [data.table()].
 #'
 #' @importFrom mlr3misc map_chr
+#' @importFrom data.table data.table
 #' @export
 #' @examples
 #' mlr3verse_info()
