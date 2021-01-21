@@ -4,11 +4,10 @@
 Package website: [release](https://mlr3verse.mlr-org.com/) \|
 [dev](https://mlr3verse.mlr-org.com/dev)
 
-Meta-package for installing/loading core [mlr3
+Meta-package for installing and using core [mlr3
 packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
 
-mlr3verse
-=========
+# mlr3verse
 
 <!-- badges: start -->
 
@@ -19,63 +18,74 @@ Status](https://cranchecks.info/badges/worst/mlr3verse)](https://cran.r-project.
 [![Mattermost](https://img.shields.io/badge/chat-mattermost-orange.svg)](https://lmmisld-lmu-stats-slds.srv.mwn.de/mlr_invite/)
 <!-- badges: end -->
 
-Overview
---------
+## Overview
 
 This package is intended to simplify both installation and loading of
-packages from the mlr3 ecosystem.
+packages from the mlr3 ecosystem. Instead of depending on the extension
+packages, functions required for data analysis are re-exported,
+providing a thin view on the most important functionality of the mlr3
+ecosystem.
 
-Installation
-------------
+## Installation
 
-    # From CRAN:
-    install.packages("mlr3verse")
+``` r
+# From CRAN:
+install.packages("mlr3verse")
 
-    # From Github:
-    remotes::install_github("mlr-org/mlr3verse")
+# From Github:
+remotes::install_github("mlr-org/mlr3verse")
+```
 
-Batteries included
-------------------
+## Batteries included
 
-The following packages are attached by this meta package:
+Functions and objects from The following packages are imported by this
+meta package:
 
-| Name          | Title                                                        | URL                                                                                           |
-|:--------------|:-------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
-| mlr3          | Machine Learning in R - Next Generation                      | <a href="https://mlr3.mlr-org.com" class="uri">https://mlr3.mlr-org.com</a>                   |
-| mlr3filters   | Filter Based Feature Selection for ‘mlr3’                    | <a href="https://mlr3filters.mlr-org.com" class="uri">https://mlr3filters.mlr-org.com</a>     |
-| mlr3learners  | Recommended Learners for ‘mlr3’                              | <a href="https://mlr3learners.mlr-org.com" class="uri">https://mlr3learners.mlr-org.com</a>   |
-| mlr3pipelines | Preprocessing Operators and Pipelines for ‘mlr3’             | <a href="https://mlr3pipelines.mlr-org.com" class="uri">https://mlr3pipelines.mlr-org.com</a> |
-| mlr3tuning    | Tuning for ‘mlr3’                                            | <a href="https://mlr3tuning.mlr-org.com" class="uri">https://mlr3tuning.mlr-org.com</a>       |
-| mlr3viz       | Visualizations for ‘mlr3’                                    | <a href="https://mlr3viz.mlr-org.com" class="uri">https://mlr3viz.mlr-org.com</a>             |
-| paradox       | Define and Work with Parameter Spaces for Complex Algorithms | <a href="https://paradox.mlr-org.com" class="uri">https://paradox.mlr-org.com</a>             |
+| Name          | Title                                        | URL                                 |
+|:--------------|:---------------------------------------------|:------------------------------------|
+| mlr3          | Machine Learning in R - Next Generation      | <https://mlr3.mlr-org.com>          |
+| mlr3cluster   | Unsupervised Clustering                      | <https://mlr3cluser.mlr-org.com>    |
+| mlr3data      | Additional data sets and tasks               | <https://mlr3data.mlr-org.com>      |
+| mlr3filters   | Filter Based Feature Selection               | <https://mlr3filters.mlr-org.com>   |
+| mlr3fselect   | Wrapper Based Feature Selection              | <https://mlr3fselect.mlr--org.com>  |
+| mlr3learners  | Recommended Learners                         | <https://mlr3learners.mlr-org.com>  |
+| mlr3pipelines | Preprocessing Operators and Pipelines        | <https://mlr3pipelines.mlr-org.com> |
+| mlr3proba     | Probalistic Regression and Survival Analysis | <https://mlr3proba.mlr-org.com>     |
+| mlr3tuning    | Hyperparameter Tuning                        | <https://mlr3tuning.mlr-org.com>    |
+| mlr3viz       | Visualizations                               | <https://mlr3viz.mlr-org.com>       |
+| paradox       | Parameter Spaces                             | <https://paradox.mlr-org.com>       |
 
 By loading the `mlr3verse` package, you are all set to deal with most
-regression and classification tasks:
+regression, classification, cluster and survival tasks:
 
-    library("mlr3verse")
-    #> Loading required package: mlr3
-    #> Loading required package: mlr3filters
-    #> Loading required package: mlr3learners
-    #> Loading required package: mlr3pipelines
-    #> Loading required package: mlr3tuning
-    #> Loading required package: mlr3viz
-    #> Loading required package: paradox
+``` r
+library("mlr3verse")
+```
 
 If you want to get more detailed information about the loaded packages,
 you can call `mlr3verse_info()`:
 
-    mlr3verse_info()
-    #>         Package    Version
-    #> 1          mlr3      0.7.0
-    #> 2    mlr3tuning 0.3.0.9000
-    #> 3 mlr3pipelines      0.3.0
-    #> 4       paradox      0.4.0
-    #> 5   mlr3filters      0.3.0
-    #> 6      mlr3data      0.2.0
-    #> 7  mlr3learners      0.4.0
-    #> 8       mlr3viz      0.3.0
+``` r
+mlr3verse_info()
+#>           package    version
+#>  1:         bbotk 0.2.2.9000
+#>  2:          mlr3     0.10.0
+#>  3:   mlr3cluster      0.1.1
+#>  4:      mlr3data      0.3.0
+#>  5:   mlr3filters      0.4.0
+#>  6:   mlr3fselect      0.4.1
+#>  7:  mlr3learners      0.4.3
+#>  8:      mlr3misc      0.7.0
+#>  9: mlr3pipelines 0.3.1.9000
+#> 10:     mlr3proba      0.2.6
+#> 11:    mlr3tuning 0.5.0.9000
+#> 12:       mlr3viz 0.5.0.9000
+#> 13:       paradox 0.6.0.9000
+```
 
-More extension packages are available on CRAN/GitHub, and may be
-included in this meta package in the future.
+More [extension
+packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages) are
+available on CRAN/GitHub, and may be included in this meta package in
+the future.
 
 <a href="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"><img src="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true" /></a>
