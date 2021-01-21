@@ -27,7 +27,6 @@ Imports:
     bbotk,
     data.table,
     mlr3,
-    mlr3benchmark,
     mlr3cluster,
     mlr3data,
     mlr3filters,

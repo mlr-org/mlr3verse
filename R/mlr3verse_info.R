@@ -10,7 +10,8 @@
 #' mlr3verse_info()
 mlr3verse_info = function() {
   imports = read.dcf(system.file("DESCRIPTION", package = "mlr3verse"), fields = "Imports")[[1L]]
-  imports = strsplit(imports, ",\n", fixed = TRUE)[[1L]]
+  imports = strsplit(imports, ",[[:space:]]*")[[1L]]
+  imports = sub("^([[:alnum:].]+).*", "\\1", imports)
   imports = setdiff(imports, "data.table")
 
   data.table(Package = imports, Version = map_chr(imports, function(x) {
