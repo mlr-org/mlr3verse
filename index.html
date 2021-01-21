@@ -104,7 +104,7 @@
   <div class="contents col-md-9">
 
 <p>Package website: <a href="https://mlr3verse.mlr-org.com/">release</a> | <a href="https://mlr3verse.mlr-org.com/dev">dev</a></p>
-<p>Meta-package for installing/loading core <a href="https://github.com/mlr-org/mlr3/wiki/Extension-Packages">mlr3 packages</a>.</p>
+<p>Meta-package for installing and using core <a href="https://github.com/mlr-org/mlr3/wiki/Extension-Packages">mlr3 packages</a>.</p>
 <div id="mlr3verse" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#mlr3verse" class="anchor"></a>mlr3verse</h1></div>
@@ -113,26 +113,27 @@
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p>This package is intended to simplify both installation and loading of packages from the mlr3 ecosystem.</p>
+<p>This package is intended to simplify both installation and loading of packages from the mlr3 ecosystem. Instead of depending on the extension packages, functions required for data analysis are re-exported, providing a thin view on the most important functionality of the mlr3 ecosystem.</p>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># From CRAN:</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">install.packages</span>(<span class="st">"mlr3verse"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="co"># From Github:</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"mlr-org/mlr3verse"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># From CRAN:</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"mlr3verse"</span><span class="op">)</span>
+
+<span class="co"># From Github:</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"mlr-org/mlr3verse"</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="batteries-included" class="section level2">
 <h2 class="hasAnchor">
 <a href="#batteries-included" class="anchor"></a>Batteries included</h2>
-<p>The following packages are attached by this meta package:</p>
+<p>Functions and objects from The following packages are imported by this meta package:</p>
 <table class="table">
 <colgroup>
-<col width="8%">
-<col width="36%">
-<col width="55%">
+<col width="15%">
+<col width="46%">
+<col width="37%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">Name</th>
@@ -146,58 +147,78 @@
 <td align="left"><a href="https://mlr3.mlr-org.com" class="uri">https://mlr3.mlr-org.com</a></td>
 </tr>
 <tr class="even">
+<td align="left">mlr3cluster</td>
+<td align="left">Unsupervised Clustering</td>
+<td align="left"><a href="https://mlr3cluser.mlr-org.com" class="uri">https://mlr3cluser.mlr-org.com</a></td>
+</tr>
+<tr class="odd">
+<td align="left">mlr3data</td>
+<td align="left">Additional data sets and tasks</td>
+<td align="left"><a href="https://mlr3data.mlr-org.com" class="uri">https://mlr3data.mlr-org.com</a></td>
+</tr>
+<tr class="even">
 <td align="left">mlr3filters</td>
-<td align="left">Filter Based Feature Selection for ‘mlr3’</td>
+<td align="left">Filter Based Feature Selection</td>
 <td align="left"><a href="https://mlr3filters.mlr-org.com" class="uri">https://mlr3filters.mlr-org.com</a></td>
 </tr>
 <tr class="odd">
-<td align="left">mlr3learners</td>
-<td align="left">Recommended Learners for ‘mlr3’</td>
-<td align="left"><a href="https://mlr3learners.mlr-org.com" class="uri">https://mlr3learners.mlr-org.com</a></td>
+<td align="left">mlr3fselect</td>
+<td align="left">Wrapper Based Feature Selection</td>
+<td align="left"><a href="https://mlr3fselect.mlr--org.com" class="uri">https://mlr3fselect.mlr--org.com</a></td>
 </tr>
 <tr class="even">
+<td align="left">mlr3learners</td>
+<td align="left">Recommended Learners</td>
+<td align="left"><a href="https://mlr3learners.mlr-org.com" class="uri">https://mlr3learners.mlr-org.com</a></td>
+</tr>
+<tr class="odd">
 <td align="left">mlr3pipelines</td>
-<td align="left">Preprocessing Operators and Pipelines for ‘mlr3’</td>
+<td align="left">Preprocessing Operators and Pipelines</td>
 <td align="left"><a href="https://mlr3pipelines.mlr-org.com" class="uri">https://mlr3pipelines.mlr-org.com</a></td>
+</tr>
+<tr class="even">
+<td align="left">mlr3proba</td>
+<td align="left">Probalistic Regression and Survival Analysis</td>
+<td align="left"><a href="https://mlr3proba.mlr-org.com" class="uri">https://mlr3proba.mlr-org.com</a></td>
 </tr>
 <tr class="odd">
 <td align="left">mlr3tuning</td>
-<td align="left">Tuning for ‘mlr3’</td>
+<td align="left">Hyperparameter Tuning</td>
 <td align="left"><a href="https://mlr3tuning.mlr-org.com" class="uri">https://mlr3tuning.mlr-org.com</a></td>
 </tr>
 <tr class="even">
 <td align="left">mlr3viz</td>
-<td align="left">Visualizations for ‘mlr3’</td>
+<td align="left">Visualizations</td>
 <td align="left"><a href="https://mlr3viz.mlr-org.com" class="uri">https://mlr3viz.mlr-org.com</a></td>
 </tr>
 <tr class="odd">
 <td align="left">paradox</td>
-<td align="left">Define and Work with Parameter Spaces for Complex Algorithms</td>
+<td align="left">Parameter Spaces</td>
 <td align="left"><a href="https://paradox.mlr-org.com" class="uri">https://paradox.mlr-org.com</a></td>
 </tr>
 </tbody>
 </table>
-<p>By loading the <code>mlr3verse</code> package, you are all set to deal with most regression and classification tasks:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">library</span>(<span class="st">"mlr3verse"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="co">#&gt; Loading required package: mlr3</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co">#&gt; Loading required package: mlr3filters</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#&gt; Loading required package: mlr3learners</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#&gt; Loading required package: mlr3pipelines</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#&gt; Loading required package: mlr3tuning</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="co">#&gt; Loading required package: mlr3viz</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="co">#&gt; Loading required package: paradox</span></span></code></pre></div>
+<p>By loading the <code>mlr3verse</code> package, you are all set to deal with most regression, classification, cluster and survival tasks:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://mlr3verse.mlr-org.com">"mlr3verse"</a></span><span class="op">)</span></code></pre></div>
 <p>If you want to get more detailed information about the loaded packages, you can call <code><a href="reference/mlr3verse_info.html">mlr3verse_info()</a></code>:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">mlr3verse_info</span>()</span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="co">#&gt;         Package    Version</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="co">#&gt; 1          mlr3      0.7.0</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="co">#&gt; 2    mlr3tuning 0.3.0.9000</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="co">#&gt; 3 mlr3pipelines      0.3.0</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="co">#&gt; 4       paradox      0.4.0</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="co">#&gt; 5   mlr3filters      0.3.0</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="co">#&gt; 6      mlr3data      0.2.0</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="co">#&gt; 7  mlr3learners      0.4.0</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="co">#&gt; 8       mlr3viz      0.3.0</span></span></code></pre></div>
-<p>More extension packages are available on CRAN/GitHub, and may be included in this meta package in the future.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="reference/mlr3verse_info.html">mlr3verse_info</a></span><span class="op">(</span><span class="op">)</span>
+<span class="co">#&gt;           package    version</span>
+<span class="co">#&gt;  1:         bbotk 0.2.2.9000</span>
+<span class="co">#&gt;  2:          mlr3     0.10.0</span>
+<span class="co">#&gt;  3:   mlr3cluster      0.1.1</span>
+<span class="co">#&gt;  4:      mlr3data      0.3.0</span>
+<span class="co">#&gt;  5:   mlr3filters      0.4.0</span>
+<span class="co">#&gt;  6:   mlr3fselect      0.4.1</span>
+<span class="co">#&gt;  7:  mlr3learners      0.4.3</span>
+<span class="co">#&gt;  8:      mlr3misc      0.7.0</span>
+<span class="co">#&gt;  9: mlr3pipelines 0.3.1.9000</span>
+<span class="co">#&gt; 10:     mlr3proba      0.2.6</span>
+<span class="co">#&gt; 11:    mlr3tuning 0.5.0.9000</span>
+<span class="co">#&gt; 12:       mlr3viz 0.5.0.9000</span>
+<span class="co">#&gt; 13:       paradox 0.6.0.9000</span></code></pre></div>
+<p>More <a href="https://github.com/mlr-org/mlr3/wiki/Extension-Packages">extension packages</a> are available on CRAN/GitHub, and may be included in this meta package in the future.</p>
 <p><a href="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"><img src="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"></a></p>
 </div>
 </div>
