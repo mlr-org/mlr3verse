@@ -4,8 +4,7 @@
 on:
   workflow_dispatch:
   push:
-    branches:
-      - master
+    branches: [ $default-branch ]
   pull_request:
   # for now, CRON jobs only run on the default branch of the repo (i.e. usually on master)
   schedule:
