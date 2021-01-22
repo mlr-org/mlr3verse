@@ -14,7 +14,7 @@ mlr3verse_info = function() {
   imports = sub("^([[:alnum:].]+).*", "\\1", imports)
   imports = setdiff(imports, "data.table")
 
-  data.table(Package = imports, Version = map_chr(imports, function(x) {
+  data.table(package = imports, version = map_chr(imports, function(x) {
     as.character(utils::packageVersion(x))
-  }), key = "Package")
+  }), key = "package")
 }

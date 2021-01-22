@@ -6,7 +6,7 @@ output: github_document
 
 Package website: [release](https://mlr3verse.mlr-org.com/) | [dev](https://mlr3verse.mlr-org.com/dev)
 
-Meta-package for installing/loading core [mlr3 packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
+Meta-package for installing and using core [mlr3 packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -29,6 +29,7 @@ knitr::opts_chunk$set(
 ## Overview
 
 This package is intended to simplify both installation and loading of packages from the mlr3 ecosystem.
+Instead of depending on the extension packages, functions required for data analysis are re-exported, providing a thin view on the most important functionality of the mlr3 ecosystem.
 
 ## Installation
 
@@ -42,19 +43,23 @@ remotes::install_github("mlr-org/mlr3verse")
 
 ## Batteries included
 
-The following packages are attached by this meta package:
+Functions and objects from The following packages are imported by this meta package:
 
 | Name          | Title                                                        | URL                                 |
 | :------------ | :----------------------------------------------------------- | :---------------------------------- |
 | mlr3          | Machine Learning in R - Next Generation                      | <https://mlr3.mlr-org.com>          |
-| mlr3filters   | Filter Based Feature Selection for ‘mlr3’                    | <https://mlr3filters.mlr-org.com>   |
-| mlr3learners  | Recommended Learners for ‘mlr3’                              | <https://mlr3learners.mlr-org.com>  |
-| mlr3pipelines | Preprocessing Operators and Pipelines for ‘mlr3’             | <https://mlr3pipelines.mlr-org.com> |
-| mlr3tuning    | Tuning for ‘mlr3’                                            | <https://mlr3tuning.mlr-org.com>    |
-| mlr3viz       | Visualizations for ‘mlr3’                                    | <https://mlr3viz.mlr-org.com>       |
-| paradox       | Define and Work with Parameter Spaces for Complex Algorithms | <https://paradox.mlr-org.com>       |
+| mlr3cluster   | Unsupervised Clustering                                      | <https://mlr3cluser.mlr-org.com>    |
+| mlr3data      | Additional data sets and tasks                               | <https://mlr3data.mlr-org.com>      |
+| mlr3filters   | Filter Based Feature Selection                               | <https://mlr3filters.mlr-org.com>   |
+| mlr3fselect   | Wrapper Based Feature Selection                              | <https://mlr3fselect.mlr--org.com>  |
+| mlr3learners  | Recommended Learners                                         | <https://mlr3learners.mlr-org.com>  |
+| mlr3pipelines | Preprocessing Operators and Pipelines                        | <https://mlr3pipelines.mlr-org.com> |
+| mlr3proba     | Probalistic Regression and Survival Analysis                 | <https://mlr3proba.mlr-org.com>     |
+| mlr3tuning    | Hyperparameter Tuning                                        | <https://mlr3tuning.mlr-org.com>    |
+| mlr3viz       | Visualizations                                               | <https://mlr3viz.mlr-org.com>       |
+| paradox       | Parameter Spaces                                             | <https://paradox.mlr-org.com>       |
 
-By loading the `mlr3verse` package, you are all set to deal with most regression and classification tasks:
+By loading the `mlr3verse` package, you are all set to deal with most regression, classification, cluster and survival tasks:
 
 ```{r}
 library("mlr3verse")
@@ -66,6 +71,6 @@ If you want to get more detailed information about the loaded packages, you can 
 mlr3verse_info()
 ```
 
-More extension packages are available on CRAN/GitHub, and may be included in this meta package in the future.
+More [extension packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages) are available on CRAN/GitHub, and may be included in this meta package in the future.
 
 <a href="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"><img src="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true" /></a>
