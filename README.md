@@ -2,7 +2,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 Package website: [release](https://mlr3verse.mlr-org.com/) \|
-[dev](https://mlr3verse.mlr-org.com/dev)
+[dev](https://mlr3verse.mlr-org.com/dev/)
 
 Meta-package for installing and using core [mlr3
 packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
@@ -44,10 +44,10 @@ meta package:
 | Name          | Title                                        | URL                                 |
 |:--------------|:---------------------------------------------|:------------------------------------|
 | mlr3          | Machine Learning in R - Next Generation      | <https://mlr3.mlr-org.com>          |
-| mlr3cluster   | Unsupervised Clustering                      | <https://mlr3cluser.mlr-org.com>    |
+| mlr3cluster   | Unsupervised Clustering                      | <https://mlr3cluster.mlr-org.com>   |
 | mlr3data      | Additional data sets and tasks               | <https://mlr3data.mlr-org.com>      |
 | mlr3filters   | Filter Based Feature Selection               | <https://mlr3filters.mlr-org.com>   |
-| mlr3fselect   | Wrapper Based Feature Selection              | <https://mlr3fselect.mlr--org.com>  |
+| mlr3fselect   | Wrapper Based Feature Selection              | <https://mlr3fselect.mlr-org.com>   |
 | mlr3learners  | Recommended Learners                         | <https://mlr3learners.mlr-org.com>  |
 | mlr3pipelines | Preprocessing Operators and Pipelines        | <https://mlr3pipelines.mlr-org.com> |
 | mlr3proba     | Probalistic Regression and Survival Analysis | <https://mlr3proba.mlr-org.com>     |
@@ -68,19 +68,19 @@ you can call `mlr3verse_info()`:
 ``` r
 mlr3verse_info()
 #>           package    version
-#>  1:         bbotk 0.2.2.9000
-#>  2:          mlr3     0.10.0
+#>  1:         bbotk 0.3.0.9000
+#>  2:          mlr3 0.9.0.9000
 #>  3:   mlr3cluster      0.1.1
 #>  4:      mlr3data      0.3.0
 #>  5:   mlr3filters      0.4.0
-#>  6:   mlr3fselect      0.4.1
+#>  6:   mlr3fselect 0.4.1.9000
 #>  7:  mlr3learners      0.4.3
 #>  8:      mlr3misc      0.7.0
-#>  9: mlr3pipelines 0.3.1.9000
-#> 10:     mlr3proba      0.2.6
+#>  9: mlr3pipelines      0.3.2
+#> 10:     mlr3proba 0.2.6.9000
 #> 11:    mlr3tuning 0.5.0.9000
-#> 12:       mlr3viz 0.5.0.9000
-#> 13:       paradox 0.6.0.9000
+#> 12:       mlr3viz      0.5.0
+#> 13:       paradox      0.7.0
 ```
 
 More [extension

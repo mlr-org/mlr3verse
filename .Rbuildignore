@@ -1,13 +1,11 @@
 ^mlr3verse\.Rproj$
 ^\.Rproj\.user$
-^\.travis\.yml$
-^appveyor\.yml$
 ^tic\.R$
 ^pkgdown$
 ^cran-comments\.md$
 ^LICENSE$
 ^README\.Rmd$
-^.editorconfig$
+^\.editorconfig$
 ^\.pre-commit-config\.yaml$
 ^\.ccache$
 ^\.github$

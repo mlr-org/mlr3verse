@@ -4,7 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-Package website: [release](https://mlr3verse.mlr-org.com/) | [dev](https://mlr3verse.mlr-org.com/dev)
+Package website: [release](https://mlr3verse.mlr-org.com/) | [dev](https://mlr3verse.mlr-org.com/dev/)
 
 Meta-package for installing and using core [mlr3 packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
 
@@ -48,10 +48,10 @@ Functions and objects from The following packages are imported by this meta pack
 | Name          | Title                                                        | URL                                 |
 | :------------ | :----------------------------------------------------------- | :---------------------------------- |
 | mlr3          | Machine Learning in R - Next Generation                      | <https://mlr3.mlr-org.com>          |
-| mlr3cluster   | Unsupervised Clustering                                      | <https://mlr3cluser.mlr-org.com>    |
+| mlr3cluster   | Unsupervised Clustering                                      | <https://mlr3cluster.mlr-org.com>   |
 | mlr3data      | Additional data sets and tasks                               | <https://mlr3data.mlr-org.com>      |
 | mlr3filters   | Filter Based Feature Selection                               | <https://mlr3filters.mlr-org.com>   |
-| mlr3fselect   | Wrapper Based Feature Selection                              | <https://mlr3fselect.mlr--org.com>  |
+| mlr3fselect   | Wrapper Based Feature Selection                              | <https://mlr3fselect.mlr-org.com>   |
 | mlr3learners  | Recommended Learners                                         | <https://mlr3learners.mlr-org.com>  |
 | mlr3pipelines | Preprocessing Operators and Pipelines                        | <https://mlr3pipelines.mlr-org.com> |
 | mlr3proba     | Probalistic Regression and Survival Analysis                 | <https://mlr3proba.mlr-org.com>     |
