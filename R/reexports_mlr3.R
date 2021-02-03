@@ -82,6 +82,38 @@ mlr3::benchmark
 #' @export
 mlr3::as_data_backend
 
+#' @importFrom mlr3 as_learner
+#' @export
+mlr3::as_learner
+
+#' @importFrom mlr3 as_task
+#' @export
+mlr3::as_task
+
+#' @importFrom mlr3 as_task_classif
+#' @export
+mlr3::as_task_classif
+
+#' @importFrom mlr3 as_task_regr
+#' @export
+mlr3::as_task_regr
+
+#' @importFrom mlr3 as_resampling
+#' @export
+mlr3::as_resampling
+
+#' @importFrom mlr3 as_measure
+#' @export
+mlr3::as_measure
+
+#' @importFrom mlr3 as_prediction
+#' @export
+mlr3::as_prediction
+
+#' @importFrom mlr3 as_resample_result
+#' @export
+mlr3::as_resample_result
+
 #' @importFrom mlr3 as_benchmark_result
 #' @export
 mlr3::as_benchmark_result
