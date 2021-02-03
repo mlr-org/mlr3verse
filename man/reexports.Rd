@@ -31,13 +31,18 @@
 \alias{resample}
 \alias{benchmark_grid}
 \alias{benchmark}
+\alias{mlr_reflections}
 \alias{as_data_backend}
 \alias{as_learner}
+\alias{as_learners}
 \alias{as_task}
+\alias{as_tasks}
 \alias{as_task_classif}
 \alias{as_task_regr}
 \alias{as_resampling}
+\alias{as_resamplings}
 \alias{as_measure}
+\alias{as_measures}
 \alias{as_prediction}
 \alias{as_resample_result}
 \alias{as_benchmark_result}
@@ -68,6 +73,8 @@
 \alias{selector_type}
 \alias{selector_union}
 \alias{TaskSurv}
+\alias{TaskDens}
+\alias{pecs}
 \alias{mlr_tuners}
 \alias{tnr}
 \alias{tnrs}
@@ -96,7 +103,7 @@ below to see their documentation.
 
   \item{data.table}{\code{\link[data.table]{as.data.table}}}
 
-  \item{mlr3}{\code{\link[mlr3]{TaskClassif}}, \code{\link[mlr3]{TaskRegr}}, \code{\link[mlr3]{as_benchmark_result}}, \code{\link[mlr3]{as_data_backend}}, \code{\link[mlr3:mlr_coercions]{as_learner}}, \code{\link[mlr3:mlr_coercions]{as_measure}}, \code{\link[mlr3:PredictionData]{as_prediction}}, \code{\link[mlr3]{as_resample_result}}, \code{\link[mlr3:mlr_coercions]{as_resampling}}, \code{\link[mlr3:mlr_coercions]{as_task}}, \code{\link[mlr3:convert_task]{as_task_classif}}, \code{\link[mlr3:convert_task]{as_task_regr}}, \code{\link[mlr3]{benchmark}}, \code{\link[mlr3]{benchmark_grid}}, \code{\link[mlr3:mlr_sugar]{lrn}}, \code{\link[mlr3:mlr_sugar]{lrns}}, \code{\link[mlr3]{mlr_learners}}, \code{\link[mlr3]{mlr_measures}}, \code{\link[mlr3]{mlr_resamplings}}, \code{\link[mlr3]{mlr_task_generators}}, \code{\link[mlr3]{mlr_tasks}}, \code{\link[mlr3:mlr_sugar]{msr}}, \code{\link[mlr3:mlr_sugar]{msrs}}, \code{\link[mlr3]{resample}}, \code{\link[mlr3:mlr_sugar]{rsmp}}, \code{\link[mlr3:mlr_sugar]{rsmps}}, \code{\link[mlr3:mlr_sugar]{tgen}}, \code{\link[mlr3:mlr_sugar]{tgens}}, \code{\link[mlr3:mlr_sugar]{tsk}}, \code{\link[mlr3:mlr_sugar]{tsks}}}
+  \item{mlr3}{\code{\link[mlr3]{TaskClassif}}, \code{\link[mlr3]{TaskRegr}}, \code{\link[mlr3]{as_benchmark_result}}, \code{\link[mlr3]{as_data_backend}}, \code{\link[mlr3:mlr_coercions]{as_learner}}, \code{\link[mlr3:mlr_coercions]{as_learners}}, \code{\link[mlr3:mlr_coercions]{as_measure}}, \code{\link[mlr3:mlr_coercions]{as_measures}}, \code{\link[mlr3:PredictionData]{as_prediction}}, \code{\link[mlr3]{as_resample_result}}, \code{\link[mlr3:mlr_coercions]{as_resampling}}, \code{\link[mlr3:mlr_coercions]{as_resamplings}}, \code{\link[mlr3:mlr_coercions]{as_task}}, \code{\link[mlr3:convert_task]{as_task_classif}}, \code{\link[mlr3:convert_task]{as_task_regr}}, \code{\link[mlr3:mlr_coercions]{as_tasks}}, \code{\link[mlr3]{benchmark}}, \code{\link[mlr3]{benchmark_grid}}, \code{\link[mlr3:mlr_sugar]{lrn}}, \code{\link[mlr3:mlr_sugar]{lrns}}, \code{\link[mlr3]{mlr_learners}}, \code{\link[mlr3]{mlr_measures}}, \code{\link[mlr3]{mlr_reflections}}, \code{\link[mlr3]{mlr_resamplings}}, \code{\link[mlr3]{mlr_task_generators}}, \code{\link[mlr3]{mlr_tasks}}, \code{\link[mlr3:mlr_sugar]{msr}}, \code{\link[mlr3:mlr_sugar]{msrs}}, \code{\link[mlr3]{resample}}, \code{\link[mlr3:mlr_sugar]{rsmp}}, \code{\link[mlr3:mlr_sugar]{rsmps}}, \code{\link[mlr3:mlr_sugar]{tgen}}, \code{\link[mlr3:mlr_sugar]{tgens}}, \code{\link[mlr3:mlr_sugar]{tsk}}, \code{\link[mlr3:mlr_sugar]{tsks}}}
 
   \item{mlr3cluster}{\code{\link[mlr3cluster]{TaskClust}}}
 
@@ -106,7 +113,7 @@ below to see their documentation.
 
   \item{mlr3pipelines}{\code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{\%>>\%}}, \code{\link[mlr3pipelines:mlr_learners_graph]{GraphLearner}}, \code{\link[mlr3pipelines]{as_graph}}, \code{\link[mlr3pipelines]{greplicate}}, \code{\link[mlr3pipelines]{gunion}}, \code{\link[mlr3pipelines]{mlr_graphs}}, \code{\link[mlr3pipelines]{mlr_pipeops}}, \code{\link[mlr3pipelines]{po}}, \code{\link[mlr3pipelines]{ppl}}, \code{\link[mlr3pipelines:Selector]{selector_all}}, \code{\link[mlr3pipelines:Selector]{selector_cardinality_greater_than}}, \code{\link[mlr3pipelines:Selector]{selector_grep}}, \code{\link[mlr3pipelines:Selector]{selector_intersect}}, \code{\link[mlr3pipelines:Selector]{selector_invert}}, \code{\link[mlr3pipelines:Selector]{selector_missing}}, \code{\link[mlr3pipelines:Selector]{selector_name}}, \code{\link[mlr3pipelines:Selector]{selector_none}}, \code{\link[mlr3pipelines:Selector]{selector_setdiff}}, \code{\link[mlr3pipelines:Selector]{selector_type}}, \code{\link[mlr3pipelines:Selector]{selector_union}}}
 
-  \item{mlr3proba}{\code{\link[mlr3proba]{TaskSurv}}}
+  \item{mlr3proba}{\code{\link[mlr3proba]{TaskDens}}, \code{\link[mlr3proba]{TaskSurv}}, \code{\link[mlr3proba]{pecs}}}
 
   \item{mlr3tuning}{\code{\link[mlr3tuning]{AutoTuner}}, \code{\link[mlr3tuning]{TuningInstanceMultiCrit}}, \code{\link[mlr3tuning]{TuningInstanceSingleCrit}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}}
 

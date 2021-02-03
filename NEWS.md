@@ -1,3 +1,7 @@
+# mlr3verse 0.2.1
+
+* Updated reexports.
+
 # mlr3verse 0.2.0
 
 * Instead of depending on mlr3 packages, all packages are now imported.

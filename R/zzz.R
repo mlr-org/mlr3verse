@@ -30,7 +30,7 @@
 
   # silence usage checks
   if (FALSE) {
-    mlr3data::penguins
+    mlr3data::titanic
     mlr3learners::LearnerClassifLDA
   }
 }
