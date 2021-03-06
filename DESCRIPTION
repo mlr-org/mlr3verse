@@ -1,6 +1,6 @@
 Package: mlr3verse
 Title: Easily Install and Load the 'mlr3' Package Family
-Version: 0.2.0-9000
+Version: 0.2.1
 Authors@R:
     c(person(given = "Michel",
              family = "Lang",
@@ -26,7 +26,7 @@ Depends:
 Imports:
     bbotk,
     data.table,
-    mlr3,
+    mlr3 (>= 0.11.0),
     mlr3cluster,
     mlr3data,
     mlr3filters,

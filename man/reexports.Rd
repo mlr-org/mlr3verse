@@ -44,8 +44,11 @@
 \alias{as_measure}
 \alias{as_measures}
 \alias{as_prediction}
+\alias{as_prediction_classif}
+\alias{as_prediction_regr}
 \alias{as_resample_result}
 \alias{as_benchmark_result}
+\alias{set_threads}
 \alias{TaskClust}
 \alias{mlr_filters}
 \alias{flt}
@@ -103,7 +106,7 @@ below to see their documentation.
 
   \item{data.table}{\code{\link[data.table]{as.data.table}}}
 
-  \item{mlr3}{\code{\link[mlr3]{TaskClassif}}, \code{\link[mlr3]{TaskRegr}}, \code{\link[mlr3]{as_benchmark_result}}, \code{\link[mlr3]{as_data_backend}}, \code{\link[mlr3:mlr_coercions]{as_learner}}, \code{\link[mlr3:mlr_coercions]{as_learners}}, \code{\link[mlr3:mlr_coercions]{as_measure}}, \code{\link[mlr3:mlr_coercions]{as_measures}}, \code{\link[mlr3:PredictionData]{as_prediction}}, \code{\link[mlr3]{as_resample_result}}, \code{\link[mlr3:mlr_coercions]{as_resampling}}, \code{\link[mlr3:mlr_coercions]{as_resamplings}}, \code{\link[mlr3:mlr_coercions]{as_task}}, \code{\link[mlr3:convert_task]{as_task_classif}}, \code{\link[mlr3:convert_task]{as_task_regr}}, \code{\link[mlr3:mlr_coercions]{as_tasks}}, \code{\link[mlr3]{benchmark}}, \code{\link[mlr3]{benchmark_grid}}, \code{\link[mlr3:mlr_sugar]{lrn}}, \code{\link[mlr3:mlr_sugar]{lrns}}, \code{\link[mlr3]{mlr_learners}}, \code{\link[mlr3]{mlr_measures}}, \code{\link[mlr3]{mlr_reflections}}, \code{\link[mlr3]{mlr_resamplings}}, \code{\link[mlr3]{mlr_task_generators}}, \code{\link[mlr3]{mlr_tasks}}, \code{\link[mlr3:mlr_sugar]{msr}}, \code{\link[mlr3:mlr_sugar]{msrs}}, \code{\link[mlr3]{resample}}, \code{\link[mlr3:mlr_sugar]{rsmp}}, \code{\link[mlr3:mlr_sugar]{rsmps}}, \code{\link[mlr3:mlr_sugar]{tgen}}, \code{\link[mlr3:mlr_sugar]{tgens}}, \code{\link[mlr3:mlr_sugar]{tsk}}, \code{\link[mlr3:mlr_sugar]{tsks}}}
+  \item{mlr3}{\code{\link[mlr3]{TaskClassif}}, \code{\link[mlr3]{TaskRegr}}, \code{\link[mlr3]{as_benchmark_result}}, \code{\link[mlr3]{as_data_backend}}, \code{\link[mlr3]{as_learner}}, \code{\link[mlr3:as_learner]{as_learners}}, \code{\link[mlr3]{as_measure}}, \code{\link[mlr3:as_measure]{as_measures}}, \code{\link[mlr3]{as_prediction}}, \code{\link[mlr3]{as_prediction_classif}}, \code{\link[mlr3]{as_prediction_regr}}, \code{\link[mlr3]{as_resample_result}}, \code{\link[mlr3]{as_resampling}}, \code{\link[mlr3:as_resampling]{as_resamplings}}, \code{\link[mlr3]{as_task}}, \code{\link[mlr3]{as_task_classif}}, \code{\link[mlr3]{as_task_regr}}, \code{\link[mlr3:as_task]{as_tasks}}, \code{\link[mlr3]{benchmark}}, \code{\link[mlr3]{benchmark_grid}}, \code{\link[mlr3:mlr_sugar]{lrn}}, \code{\link[mlr3:mlr_sugar]{lrns}}, \code{\link[mlr3]{mlr_learners}}, \code{\link[mlr3]{mlr_measures}}, \code{\link[mlr3]{mlr_reflections}}, \code{\link[mlr3]{mlr_resamplings}}, \code{\link[mlr3]{mlr_task_generators}}, \code{\link[mlr3]{mlr_tasks}}, \code{\link[mlr3:mlr_sugar]{msr}}, \code{\link[mlr3:mlr_sugar]{msrs}}, \code{\link[mlr3]{resample}}, \code{\link[mlr3:mlr_sugar]{rsmp}}, \code{\link[mlr3:mlr_sugar]{rsmps}}, \code{\link[mlr3]{set_threads}}, \code{\link[mlr3:mlr_sugar]{tgen}}, \code{\link[mlr3:mlr_sugar]{tgens}}, \code{\link[mlr3:mlr_sugar]{tsk}}, \code{\link[mlr3:mlr_sugar]{tsks}}}
 
   \item{mlr3cluster}{\code{\link[mlr3cluster]{TaskClust}}}
 

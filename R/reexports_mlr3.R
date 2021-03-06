@@ -130,6 +130,14 @@ mlr3::as_measures
 #' @export
 mlr3::as_prediction
 
+#' @importFrom mlr3 as_prediction_classif
+#' @export
+mlr3::as_prediction_classif
+
+#' @importFrom mlr3 as_prediction_regr
+#' @export
+mlr3::as_prediction_regr
+
 #' @importFrom mlr3 as_resample_result
 #' @export
 mlr3::as_resample_result
@@ -137,3 +145,7 @@ mlr3::as_resample_result
 #' @importFrom mlr3 as_benchmark_result
 #' @export
 mlr3::as_benchmark_result
+
+#' @importFrom mlr3 set_threads
+#' @export
+mlr3::set_threads

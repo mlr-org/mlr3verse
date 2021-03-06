@@ -12,8 +12,8 @@ packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
 <!-- badges: start -->
 
 [![tic](https://github.com/mlr-org/mlr3verse/workflows/tic/badge.svg?branch=master)](https://github.com/mlr-org/mlr3verse/actions)
-[![Cran
-Status](https://cranchecks.info/badges/worst/mlr3verse)](https://cran.r-project.org/web/checks/check_results_mlr3verse.html)
+[![CRAN
+Status](https://www.r-pkg.org/badges/version-ago/mlr3verse)](https://cran.r-project.org/package=mlr3verse)
 [![StackOverflow](https://img.shields.io/badge/stackoverflow-mlr3-orange.svg)](https://stackoverflow.com/questions/tagged/mlr3)
 [![Mattermost](https://img.shields.io/badge/chat-mattermost-orange.svg)](https://lmmisld-lmu-stats-slds.srv.mwn.de/mlr_invite/)
 <!-- badges: end -->
@@ -67,20 +67,6 @@ you can call `mlr3verse_info()`:
 
 ``` r
 mlr3verse_info()
-#>           package    version
-#>  1:         bbotk 0.3.0.9000
-#>  2:          mlr3 0.9.0.9000
-#>  3:   mlr3cluster      0.1.1
-#>  4:      mlr3data      0.3.0
-#>  5:   mlr3filters      0.4.0
-#>  6:   mlr3fselect 0.4.1.9000
-#>  7:  mlr3learners      0.4.3
-#>  8:      mlr3misc      0.7.0
-#>  9: mlr3pipelines      0.3.2
-#> 10:     mlr3proba 0.2.6.9000
-#> 11:    mlr3tuning 0.5.0.9000
-#> 12:       mlr3viz      0.5.0
-#> 13:       paradox      0.7.0
 ```
 
 More [extension
