@@ -33,3 +33,7 @@ paradox::generate_design_grid
 #' @importFrom paradox generate_design_lhs
 #' @export
 paradox::generate_design_lhs
+
+#' @importFrom paradox generate_design_random
+#' @export
+paradox::generate_design_random

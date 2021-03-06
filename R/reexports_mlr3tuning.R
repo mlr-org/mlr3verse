@@ -21,3 +21,7 @@ mlr3tuning::TuningInstanceSingleCrit
 #' @importFrom mlr3tuning TuningInstanceMultiCrit
 #' @export
 mlr3tuning::TuningInstanceMultiCrit
+
+#' @importFrom mlr3tuning extract_inner_tuning_results
+#' @export
+mlr3tuning::extract_inner_tuning_results

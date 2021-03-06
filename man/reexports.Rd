@@ -84,6 +84,7 @@
 \alias{AutoTuner}
 \alias{TuningInstanceSingleCrit}
 \alias{TuningInstanceMultiCrit}
+\alias{extract_inner_tuning_results}
 \alias{autoplot}
 \alias{fortify}
 \alias{ps}
@@ -95,6 +96,7 @@
 \alias{to_tune}
 \alias{generate_design_grid}
 \alias{generate_design_lhs}
+\alias{generate_design_random}
 \title{Objects exported from other packages}
 \keyword{internal}
 \description{
@@ -118,10 +120,10 @@ below to see their documentation.
 
   \item{mlr3proba}{\code{\link[mlr3proba]{TaskDens}}, \code{\link[mlr3proba]{TaskSurv}}, \code{\link[mlr3proba]{pecs}}}
 
-  \item{mlr3tuning}{\code{\link[mlr3tuning]{AutoTuner}}, \code{\link[mlr3tuning]{TuningInstanceMultiCrit}}, \code{\link[mlr3tuning]{TuningInstanceSingleCrit}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}}
+  \item{mlr3tuning}{\code{\link[mlr3tuning]{AutoTuner}}, \code{\link[mlr3tuning]{TuningInstanceMultiCrit}}, \code{\link[mlr3tuning]{TuningInstanceSingleCrit}}, \code{\link[mlr3tuning]{extract_inner_tuning_results}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}}
 
   \item{mlr3viz}{\code{\link[mlr3viz:reexports]{autoplot}}, \code{\link[mlr3viz:reexports]{fortify}}}
 
-  \item{paradox}{\code{\link[paradox]{generate_design_grid}}, \code{\link[paradox]{generate_design_lhs}}, \code{\link[paradox:Domain]{p_dbl}}, \code{\link[paradox:Domain]{p_fct}}, \code{\link[paradox:Domain]{p_int}}, \code{\link[paradox:Domain]{p_lgl}}, \code{\link[paradox:Domain]{p_uty}}, \code{\link[paradox]{ps}}, \code{\link[paradox]{to_tune}}}
+  \item{paradox}{\code{\link[paradox]{generate_design_grid}}, \code{\link[paradox]{generate_design_lhs}}, \code{\link[paradox]{generate_design_random}}, \code{\link[paradox:Domain]{p_dbl}}, \code{\link[paradox:Domain]{p_fct}}, \code{\link[paradox:Domain]{p_int}}, \code{\link[paradox:Domain]{p_lgl}}, \code{\link[paradox:Domain]{p_uty}}, \code{\link[paradox]{ps}}, \code{\link[paradox]{to_tune}}}
 }}
 
