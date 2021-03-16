@@ -56,6 +56,8 @@
 \alias{mlr_fselectors}
 \alias{fs}
 \alias{AutoFSelector}
+\alias{FSelectInstanceSingleCrit}
+\alias{FSelectInstanceMultiCrit}
 \alias{mlr_pipeops}
 \alias{po}
 \alias{mlr_graphs}
@@ -118,7 +120,7 @@ below to see their documentation.
 
   \item{mlr3filters}{\code{\link[mlr3filters]{flt}}, \code{\link[mlr3filters:flt]{flts}}, \code{\link[mlr3filters]{mlr_filters}}}
 
-  \item{mlr3fselect}{\code{\link[mlr3fselect]{AutoFSelector}}, \code{\link[mlr3fselect]{fs}}, \code{\link[mlr3fselect]{mlr_fselectors}}}
+  \item{mlr3fselect}{\code{\link[mlr3fselect]{AutoFSelector}}, \code{\link[mlr3fselect]{FSelectInstanceMultiCrit}}, \code{\link[mlr3fselect]{FSelectInstanceSingleCrit}}, \code{\link[mlr3fselect]{fs}}, \code{\link[mlr3fselect]{mlr_fselectors}}}
 
   \item{mlr3pipelines}{\code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{\%>>\%}}, \code{\link[mlr3pipelines:mlr_learners_graph]{GraphLearner}}, \code{\link[mlr3pipelines]{as_graph}}, \code{\link[mlr3pipelines]{greplicate}}, \code{\link[mlr3pipelines]{gunion}}, \code{\link[mlr3pipelines]{mlr_graphs}}, \code{\link[mlr3pipelines]{mlr_pipeops}}, \code{\link[mlr3pipelines]{po}}, \code{\link[mlr3pipelines]{ppl}}, \code{\link[mlr3pipelines:Selector]{selector_all}}, \code{\link[mlr3pipelines:Selector]{selector_cardinality_greater_than}}, \code{\link[mlr3pipelines:Selector]{selector_grep}}, \code{\link[mlr3pipelines:Selector]{selector_intersect}}, \code{\link[mlr3pipelines:Selector]{selector_invert}}, \code{\link[mlr3pipelines:Selector]{selector_missing}}, \code{\link[mlr3pipelines:Selector]{selector_name}}, \code{\link[mlr3pipelines:Selector]{selector_none}}, \code{\link[mlr3pipelines:Selector]{selector_setdiff}}, \code{\link[mlr3pipelines:Selector]{selector_type}}, \code{\link[mlr3pipelines:Selector]{selector_union}}}
 
