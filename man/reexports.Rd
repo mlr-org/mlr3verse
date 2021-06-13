@@ -87,10 +87,11 @@
 \alias{AutoTuner}
 \alias{TuningInstanceSingleCrit}
 \alias{TuningInstanceMultiCrit}
-\alias{extract_inner_tuning_results}
 \alias{tune}
 \alias{tune_nested}
 \alias{auto_tuner}
+\alias{extract_inner_tuning_results}
+\alias{extract_inner_tuning_archives}
 \alias{autoplot}
 \alias{fortify}
 \alias{ps}
@@ -126,7 +127,7 @@ below to see their documentation.
 
   \item{mlr3proba}{\code{\link[mlr3proba]{TaskDens}}, \code{\link[mlr3proba]{TaskSurv}}, \code{\link[mlr3proba]{pecs}}}
 
-  \item{mlr3tuning}{\code{\link[mlr3tuning]{AutoTuner}}, \code{\link[mlr3tuning]{TuningInstanceMultiCrit}}, \code{\link[mlr3tuning]{TuningInstanceSingleCrit}}, \code{\link[mlr3tuning]{auto_tuner}}, \code{\link[mlr3tuning]{extract_inner_tuning_results}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}, \code{\link[mlr3tuning]{tune}}, \code{\link[mlr3tuning]{tune_nested}}}
+  \item{mlr3tuning}{\code{\link[mlr3tuning]{AutoTuner}}, \code{\link[mlr3tuning]{TuningInstanceMultiCrit}}, \code{\link[mlr3tuning]{TuningInstanceSingleCrit}}, \code{\link[mlr3tuning]{auto_tuner}}, \code{\link[mlr3tuning]{extract_inner_tuning_archives}}, \code{\link[mlr3tuning]{extract_inner_tuning_results}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}, \code{\link[mlr3tuning]{tune}}, \code{\link[mlr3tuning]{tune_nested}}}
 
   \item{mlr3viz}{\code{\link[mlr3viz:reexports]{autoplot}}, \code{\link[mlr3viz:reexports]{fortify}}}
 
