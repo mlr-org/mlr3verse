@@ -37,3 +37,11 @@ mlr3tuning::tune_nested
 #' @importFrom mlr3tuning auto_tuner
 #' @export
 mlr3tuning::auto_tuner
+
+#' @importFrom mlr3tuning extract_inner_tuning_results
+#' @export
+mlr3tuning::extract_inner_tuning_results
+
+#' @importFrom mlr3tuning extract_inner_tuning_archives
+#' @export
+mlr3tuning::extract_inner_tuning_archives
