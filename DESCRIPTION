@@ -1,6 +1,6 @@
 Package: mlr3verse
 Title: Easily Install and Load the 'mlr3' Package Family
-Version: 0.2.1.9000
+Version: 0.2.2
 Authors@R:
     c(person(given = "Michel",
              family = "Lang",
@@ -22,11 +22,11 @@ URL: https://mlr3verse.mlr-org.com,
     https://github.com/mlr-org/mlr3verse
 BugReports: https://github.com/mlr-org/mlr3verse/issues
 Depends:
-    R (>= 3.1.0)
+    R (>= 3.1.0),
+    mlr3 (>= 0.12.0),
 Imports:
     bbotk,
     data.table,
-    mlr3 (>= 0.11.0),
     mlr3cluster,
     mlr3data,
     mlr3filters,
@@ -34,8 +34,8 @@ Imports:
     mlr3learners,
     mlr3misc,
     mlr3pipelines,
-    mlr3proba,
-    mlr3tuning (>= 0.7.0),
+    mlr3proba (>= 0.4.0),
+    mlr3tuning (>= 0.8.0),
     mlr3viz,
     paradox (>= 0.6.0)
 Encoding: UTF-8

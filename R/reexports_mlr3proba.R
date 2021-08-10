@@ -9,3 +9,12 @@ mlr3proba::TaskDens
 #' @importFrom mlr3proba pecs
 #' @export
 mlr3proba::pecs
+
+
+#' @importFrom mlr3proba as_task_surv
+#' @export
+mlr3proba::as_task_surv
+
+#' @importFrom mlr3proba as_prediction_surv
+#' @export
+mlr3proba::as_prediction_surv

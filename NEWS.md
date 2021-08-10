@@ -1,7 +1,6 @@
-# mlr3verse 0.2.1.9000
+# mlr3verse 0.2.2
 
-- Internal changes only.
-
+- Updated reexports.
 
 # mlr3verse 0.2.1
 

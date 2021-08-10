@@ -15,6 +15,7 @@
 #' * Hyperband tuning algorithm: \CRANpkg{mlr3hyperband}
 #' * Interface to real (out-of-memory) data bases: \CRANpkg{mlr3db}
 #'
+#' @import mlr3
 "_PACKAGE"
 
 .onLoad = function(libname, pkgname) {
