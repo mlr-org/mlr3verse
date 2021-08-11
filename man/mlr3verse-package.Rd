@@ -17,23 +17,24 @@ The 'mlr3' package family is a set of packages for
 \itemize{
 \item Book on mlr3: \url{https://mlr3book.mlr-org.com}
 \item Use cases and examples gallery: \url{https://mlr3gallery.mlr-org.com}
-\item Cheat Sheets: \url{https://cheatsheets.mlr-org.com}
+\item Cheat Sheets: \url{https://github.com/mlr-org/mlr3cheatsheets}
 }
 }
 
 \section{Additional Extension Packages}{
 
 The \CRANpkg{mlr3verse} only installs the subset of packages which are on the
-one hand frequently required to perform a data analysis and on the other
-hand do not pull in too many dependencies.
+one hand frequently required to perform a data analysis, and on the other
+hand do not pull in too many dependencies or system requirements.
 
 Additional extension packages include:
 \itemize{
 \item Analysis of benchmark experiments: \CRANpkg{mlr3benchmark}
+\item Task interface for data bases: \CRANpkg{mlr3db}
 \item Connector to \href{https://www.openml.org}{OpenML}: \CRANpkg{mlr3oml}
 \item Additional learners: \url{https://github.com/mlr-org/mlr3extralearners}
 \item Hyperband tuning algorithm: \CRANpkg{mlr3hyperband}
-\item Interface to real (out-of-memory) data bases: \CRANpkg{mlr3db}
+\item Spatio-temporal resampling: \CRANpkg{mlr3spatiotempcv}
 }
 }
 
