@@ -18,24 +18,23 @@ Description: The 'mlr3' package family is a set of packages for
     'mlr3' packages. Get more information about the 'mlr3' project at
     <https://mlr3book.mlr-org.com/>.
 License: LGPL-3
-URL: https://mlr3verse.mlr-org.com,
-    https://github.com/mlr-org/mlr3verse
+URL: https://mlr3verse.mlr-org.com, https://github.com/mlr-org/mlr3verse
 BugReports: https://github.com/mlr-org/mlr3verse/issues
 Depends:
-    R (>= 3.1.0),
     mlr3 (>= 0.12.0),
+    R (>= 3.1.0)
 Imports:
     bbotk,
     data.table,
     mlr3cluster,
     mlr3data,
     mlr3filters,
-    mlr3fselect,
+    mlr3fselect (>= 0.6.0),
     mlr3learners,
     mlr3misc,
-    mlr3pipelines,
+    mlr3pipelines (>= 0.3.6),
     mlr3proba (>= 0.4.0),
-    mlr3tuning (>= 0.8.0),
+    mlr3tuning (>= 0.9.0),
     mlr3viz,
     paradox (>= 0.6.0)
 Encoding: UTF-8
