@@ -1,6 +1,6 @@
 Package: mlr3verse
 Title: Easily Install and Load the 'mlr3' Package Family
-Version: 0.2.2-9000
+Version: 0.2.3
 Authors@R:
     c(person(given = "Michel",
              family = "Lang",
