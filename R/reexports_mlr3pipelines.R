@@ -6,6 +6,10 @@ mlr3pipelines::mlr_pipeops
 #' @export
 mlr3pipelines::po
 
+#' @importFrom mlr3pipelines pos
+#' @export
+mlr3pipelines::pos
+
 #' @importFrom mlr3pipelines mlr_graphs
 #' @export
 mlr3pipelines::mlr_graphs
@@ -18,6 +22,10 @@ mlr3pipelines::ppl
 #' @export
 mlr3pipelines::`%>>%`
 
+#' @importFrom mlr3pipelines `%>>!%`
+#' @export
+mlr3pipelines::`%>>!%`
+
 #' @importFrom mlr3pipelines greplicate
 #' @export
 mlr3pipelines::greplicate
@@ -25,6 +33,14 @@ mlr3pipelines::greplicate
 #' @importFrom mlr3pipelines gunion
 #' @export
 mlr3pipelines::gunion
+
+#' @importFrom mlr3pipelines chain_graphs
+#' @export
+mlr3pipelines::chain_graphs
+
+#' @importFrom mlr3pipelines concat_graphs
+#' @export
+mlr3pipelines::concat_graphs
 
 #' @importFrom mlr3pipelines GraphLearner
 #' @export
