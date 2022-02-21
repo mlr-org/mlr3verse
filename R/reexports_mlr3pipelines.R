@@ -50,6 +50,10 @@ mlr3pipelines::GraphLearner
 #' @export
 mlr3pipelines::as_graph
 
+#' @importFrom mlr3pipelines as_pipeop
+#' @export
+mlr3pipelines::as_pipeop
+
 #' @importFrom mlr3pipelines selector_all
 #' @export
 mlr3pipelines::selector_all

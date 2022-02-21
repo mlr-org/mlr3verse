@@ -12,6 +12,8 @@
 \alias{trms}
 \alias{as.data.table}
 \alias{TaskClust}
+\alias{as_task_clust}
+\alias{as_prediction_clust}
 \alias{mlr_filters}
 \alias{flt}
 \alias{flts}
@@ -38,6 +40,7 @@
 \alias{concat_graphs}
 \alias{GraphLearner}
 \alias{as_graph}
+\alias{as_pipeop}
 \alias{selector_all}
 \alias{selector_cardinality_greater_than}
 \alias{selector_grep}
@@ -53,7 +56,9 @@
 \alias{TaskDens}
 \alias{pecs}
 \alias{as_task_surv}
+\alias{as_task_dens}
 \alias{as_prediction_surv}
+\alias{as_prediction_dens}
 \alias{mlr_tuners}
 \alias{tnr}
 \alias{tnrs}
@@ -65,10 +70,12 @@
 \alias{tune}
 \alias{tune_nested}
 \alias{auto_tuner}
+\alias{mlr_tuning_spaces}
 \alias{lts}
 \alias{ltss}
 \alias{autoplot}
 \alias{fortify}
+\alias{plot_learner_prediction}
 \alias{ps}
 \alias{p_lgl}
 \alias{p_int}
@@ -90,21 +97,21 @@ below to see their documentation.
 
   \item{data.table}{\code{\link[data.table]{as.data.table}}}
 
-  \item{mlr3cluster}{\code{\link[mlr3cluster]{TaskClust}}}
+  \item{mlr3cluster}{\code{\link[mlr3cluster]{TaskClust}}, \code{\link[mlr3cluster]{as_prediction_clust}}, \code{\link[mlr3cluster]{as_task_clust}}}
 
   \item{mlr3filters}{\code{\link[mlr3filters]{flt}}, \code{\link[mlr3filters:flt]{flts}}, \code{\link[mlr3filters]{mlr_filters}}}
 
   \item{mlr3fselect}{\code{\link[mlr3fselect]{AutoFSelector}}, \code{\link[mlr3fselect]{FSelectInstanceMultiCrit}}, \code{\link[mlr3fselect]{FSelectInstanceSingleCrit}}, \code{\link[mlr3fselect]{auto_fselector}}, \code{\link[mlr3fselect]{extract_inner_fselect_archives}}, \code{\link[mlr3fselect]{extract_inner_fselect_results}}, \code{\link[mlr3fselect]{fs}}, \code{\link[mlr3fselect]{fselect}}, \code{\link[mlr3fselect]{fselect_nested}}, \code{\link[mlr3fselect]{mlr_fselectors}}}
 
-  \item{mlr3pipelines}{\code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{\%>>!\%}}, \code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{\%>>\%}}, \code{\link[mlr3pipelines:mlr_learners_graph]{GraphLearner}}, \code{\link[mlr3pipelines]{as_graph}}, \code{\link[mlr3pipelines]{chain_graphs}}, \code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{concat_graphs}}, \code{\link[mlr3pipelines]{greplicate}}, \code{\link[mlr3pipelines]{gunion}}, \code{\link[mlr3pipelines]{mlr_graphs}}, \code{\link[mlr3pipelines]{mlr_pipeops}}, \code{\link[mlr3pipelines]{po}}, \code{\link[mlr3pipelines:po]{pos}}, \code{\link[mlr3pipelines]{ppl}}, \code{\link[mlr3pipelines:Selector]{selector_all}}, \code{\link[mlr3pipelines:Selector]{selector_cardinality_greater_than}}, \code{\link[mlr3pipelines:Selector]{selector_grep}}, \code{\link[mlr3pipelines:Selector]{selector_intersect}}, \code{\link[mlr3pipelines:Selector]{selector_invert}}, \code{\link[mlr3pipelines:Selector]{selector_missing}}, \code{\link[mlr3pipelines:Selector]{selector_name}}, \code{\link[mlr3pipelines:Selector]{selector_none}}, \code{\link[mlr3pipelines:Selector]{selector_setdiff}}, \code{\link[mlr3pipelines:Selector]{selector_type}}, \code{\link[mlr3pipelines:Selector]{selector_union}}}
+  \item{mlr3pipelines}{\code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{\%>>!\%}}, \code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{\%>>\%}}, \code{\link[mlr3pipelines:mlr_learners_graph]{GraphLearner}}, \code{\link[mlr3pipelines]{as_graph}}, \code{\link[mlr3pipelines]{as_pipeop}}, \code{\link[mlr3pipelines]{chain_graphs}}, \code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{concat_graphs}}, \code{\link[mlr3pipelines]{greplicate}}, \code{\link[mlr3pipelines]{gunion}}, \code{\link[mlr3pipelines]{mlr_graphs}}, \code{\link[mlr3pipelines]{mlr_pipeops}}, \code{\link[mlr3pipelines]{po}}, \code{\link[mlr3pipelines:po]{pos}}, \code{\link[mlr3pipelines]{ppl}}, \code{\link[mlr3pipelines:Selector]{selector_all}}, \code{\link[mlr3pipelines:Selector]{selector_cardinality_greater_than}}, \code{\link[mlr3pipelines:Selector]{selector_grep}}, \code{\link[mlr3pipelines:Selector]{selector_intersect}}, \code{\link[mlr3pipelines:Selector]{selector_invert}}, \code{\link[mlr3pipelines:Selector]{selector_missing}}, \code{\link[mlr3pipelines:Selector]{selector_name}}, \code{\link[mlr3pipelines:Selector]{selector_none}}, \code{\link[mlr3pipelines:Selector]{selector_setdiff}}, \code{\link[mlr3pipelines:Selector]{selector_type}}, \code{\link[mlr3pipelines:Selector]{selector_union}}}
 
-  \item{mlr3proba}{\code{\link[mlr3proba]{TaskDens}}, \code{\link[mlr3proba]{TaskSurv}}, \code{\link[mlr3proba]{as_prediction_surv}}, \code{\link[mlr3proba]{as_task_surv}}, \code{\link[mlr3proba]{pecs}}}
+  \item{mlr3proba}{\code{\link[mlr3proba]{TaskDens}}, \code{\link[mlr3proba]{TaskSurv}}, \code{\link[mlr3proba]{as_prediction_dens}}, \code{\link[mlr3proba]{as_prediction_surv}}, \code{\link[mlr3proba]{as_task_dens}}, \code{\link[mlr3proba]{as_task_surv}}, \code{\link[mlr3proba]{pecs}}}
 
   \item{mlr3tuning}{\code{\link[mlr3tuning]{AutoTuner}}, \code{\link[mlr3tuning]{TuningInstanceMultiCrit}}, \code{\link[mlr3tuning]{TuningInstanceSingleCrit}}, \code{\link[mlr3tuning]{auto_tuner}}, \code{\link[mlr3tuning]{extract_inner_tuning_archives}}, \code{\link[mlr3tuning]{extract_inner_tuning_results}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}, \code{\link[mlr3tuning]{tune}}, \code{\link[mlr3tuning]{tune_nested}}}
 
-  \item{mlr3tuningspaces}{\code{\link[mlr3tuningspaces]{lts}}, \code{\link[mlr3tuningspaces:lts]{ltss}}}
+  \item{mlr3tuningspaces}{\code{\link[mlr3tuningspaces]{lts}}, \code{\link[mlr3tuningspaces:lts]{ltss}}, \code{\link[mlr3tuningspaces]{mlr_tuning_spaces}}}
 
-  \item{mlr3viz}{\code{\link[mlr3viz:reexports]{autoplot}}, \code{\link[mlr3viz:reexports]{fortify}}}
+  \item{mlr3viz}{\code{\link[mlr3viz:reexports]{autoplot}}, \code{\link[mlr3viz:reexports]{fortify}}, \code{\link[mlr3viz]{plot_learner_prediction}}}
 
   \item{paradox}{\code{\link[paradox]{generate_design_grid}}, \code{\link[paradox]{generate_design_lhs}}, \code{\link[paradox]{generate_design_random}}, \code{\link[paradox:Domain]{p_dbl}}, \code{\link[paradox:Domain]{p_fct}}, \code{\link[paradox:Domain]{p_int}}, \code{\link[paradox:Domain]{p_lgl}}, \code{\link[paradox:Domain]{p_uty}}, \code{\link[paradox]{ps}}, \code{\link[paradox]{to_tune}}}
 }}
