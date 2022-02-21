@@ -30,6 +30,7 @@ Imports:
     mlr3data,
     mlr3filters,
     mlr3fselect (>= 0.6.0),
+    mlr3hyperband,
     mlr3learners,
     mlr3misc,
     mlr3pipelines (>= 0.4.0),
