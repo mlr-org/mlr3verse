@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mlr3verse.mlr-org.com/index.html</loc>
+    <loc>https://mlr3verse.mlr-org.com/dev/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://mlr3verse.mlr-org.com/reference/mlr3verse-package.html</loc>
+    <loc>https://mlr3verse.mlr-org.com/dev/authors.html</loc>
   </url>
   <url>
-    <loc>https://mlr3verse.mlr-org.com/reference/mlr3verse_info.html</loc>
+    <loc>https://mlr3verse.mlr-org.com/dev/index.html</loc>
   </url>
   <url>
-    <loc>https://mlr3verse.mlr-org.com/reference/reexports.html</loc>
+    <loc>https://mlr3verse.mlr-org.com/dev/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mlr3verse.mlr-org.com/dev/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mlr3verse.mlr-org.com/dev/reference/mlr3verse-package.html</loc>
+  </url>
+  <url>
+    <loc>https://mlr3verse.mlr-org.com/dev/reference/mlr3verse_info.html</loc>
+  </url>
+  <url>
+    <loc>https://mlr3verse.mlr-org.com/dev/reference/reexports.html</loc>
   </url>
 </urlset>
