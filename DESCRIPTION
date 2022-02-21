@@ -1,6 +1,6 @@
 Package: mlr3verse
 Title: Easily Install and Load the 'mlr3' Package Family
-Version: 0.2.3
+Version: 0.2.3.9000
 Authors@R:
     c(person(given = "Michel",
              family = "Lang",
@@ -35,6 +35,7 @@ Imports:
     mlr3pipelines (>= 0.4.0),
     mlr3proba (>= 0.4.0),
     mlr3tuning (>= 0.9.0),
+    mlr3tuningspaces (>= 0.1.1),
     mlr3viz,
     paradox (>= 0.6.0)
 Encoding: UTF-8
