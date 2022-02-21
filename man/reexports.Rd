@@ -2,8 +2,8 @@
 % Please edit documentation in R/reexports_bbotk.R, R/reexports_data.table.R,
 %   R/reexports_mlr3cluster.R, R/reexports_mlr3filters.R,
 %   R/reexports_mlr3fselect.R, R/reexports_mlr3pipelines.R,
-%   R/reexports_mlr3proba.R, R/reexports_mlr3tuning.R, R/reexports_mlr3viz.R,
-%   R/reexports_paradox.R
+%   R/reexports_mlr3proba.R, R/reexports_mlr3tuning.R,
+%   R/reexports_mlr3tuningspaces.R, R/reexports_mlr3viz.R, R/reexports_paradox.R
 \docType{import}
 \name{reexports}
 \alias{reexports}
@@ -65,6 +65,8 @@
 \alias{tune}
 \alias{tune_nested}
 \alias{auto_tuner}
+\alias{lts}
+\alias{ltss}
 \alias{autoplot}
 \alias{fortify}
 \alias{ps}
@@ -99,6 +101,8 @@ below to see their documentation.
   \item{mlr3proba}{\code{\link[mlr3proba]{TaskDens}}, \code{\link[mlr3proba]{TaskSurv}}, \code{\link[mlr3proba]{as_prediction_surv}}, \code{\link[mlr3proba]{as_task_surv}}, \code{\link[mlr3proba]{pecs}}}
 
   \item{mlr3tuning}{\code{\link[mlr3tuning]{AutoTuner}}, \code{\link[mlr3tuning]{TuningInstanceMultiCrit}}, \code{\link[mlr3tuning]{TuningInstanceSingleCrit}}, \code{\link[mlr3tuning]{auto_tuner}}, \code{\link[mlr3tuning]{extract_inner_tuning_archives}}, \code{\link[mlr3tuning]{extract_inner_tuning_results}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}, \code{\link[mlr3tuning]{tune}}, \code{\link[mlr3tuning]{tune_nested}}}
+
+  \item{mlr3tuningspaces}{\code{\link[mlr3tuningspaces]{lts}}, \code{\link[mlr3tuningspaces:lts]{ltss}}}
 
   \item{mlr3viz}{\code{\link[mlr3viz:reexports]{autoplot}}, \code{\link[mlr3viz:reexports]{fortify}}}
 
