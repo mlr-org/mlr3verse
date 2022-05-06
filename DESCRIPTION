@@ -34,7 +34,6 @@ Imports:
     mlr3learners,
     mlr3misc,
     mlr3pipelines (>= 0.4.0),
-    mlr3proba (>= 0.4.0),
     mlr3tuning (>= 0.9.0),
     mlr3tuningspaces (>= 0.1.1),
     mlr3viz,
