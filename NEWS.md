@@ -1,3 +1,7 @@
+# mlr3verse 0.2.5
+
+- Removed mlr3proba (not maintained on CRAN anymore).
+
 # mlr3verse 0.2.4
 
 - Updated reexports.
