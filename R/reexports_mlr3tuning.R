@@ -41,3 +41,7 @@ mlr3tuning::tune_nested
 #' @importFrom mlr3tuning auto_tuner
 #' @export
 mlr3tuning::auto_tuner
+
+#' @importFrom mlr3tuning ti
+#' @export
+mlr3tuning::ti

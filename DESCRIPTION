@@ -32,9 +32,9 @@ Imports:
     mlr3fselect (>= 0.6.0),
     mlr3hyperband,
     mlr3learners,
-    mlr3misc,
+    mlr3misc (>= 0.11.0),
     mlr3pipelines (>= 0.4.0),
-    mlr3tuning (>= 0.9.0),
+    mlr3tuning (>= 0.15.0),
     mlr3tuningspaces (>= 0.1.1),
     mlr3viz,
     paradox (>= 0.6.0)
