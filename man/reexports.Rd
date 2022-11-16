@@ -29,6 +29,7 @@
 \alias{fselect}
 \alias{fselect_nested}
 \alias{auto_fselector}
+\alias{fsi}
 \alias{mlr_pipeops}
 \alias{po}
 \alias{pos}
@@ -97,7 +98,7 @@ below to see their documentation.
 
   \item{mlr3filters}{\code{\link[mlr3filters]{flt}}, \code{\link[mlr3filters:flt]{flts}}, \code{\link[mlr3filters]{mlr_filters}}}
 
-  \item{mlr3fselect}{\code{\link[mlr3fselect]{auto_fselector}}, \code{\link[mlr3fselect]{AutoFSelector}}, \code{\link[mlr3fselect]{extract_inner_fselect_archives}}, \code{\link[mlr3fselect]{extract_inner_fselect_results}}, \code{\link[mlr3fselect]{fs}}, \code{\link[mlr3fselect]{fselect}}, \code{\link[mlr3fselect]{fselect_nested}}, \code{\link[mlr3fselect]{FSelectInstanceMultiCrit}}, \code{\link[mlr3fselect]{FSelectInstanceSingleCrit}}, \code{\link[mlr3fselect]{mlr_fselectors}}}
+  \item{mlr3fselect}{\code{\link[mlr3fselect]{auto_fselector}}, \code{\link[mlr3fselect]{AutoFSelector}}, \code{\link[mlr3fselect]{extract_inner_fselect_archives}}, \code{\link[mlr3fselect]{extract_inner_fselect_results}}, \code{\link[mlr3fselect]{fs}}, \code{\link[mlr3fselect]{fselect}}, \code{\link[mlr3fselect]{fselect_nested}}, \code{\link[mlr3fselect]{FSelectInstanceMultiCrit}}, \code{\link[mlr3fselect]{FSelectInstanceSingleCrit}}, \code{\link[mlr3fselect]{fsi}}, \code{\link[mlr3fselect]{mlr_fselectors}}}
 
   \item{mlr3misc}{\code{\link[mlr3misc]{clbk}}, \code{\link[mlr3misc:clbk]{clbks}}}
 

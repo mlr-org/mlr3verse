@@ -37,3 +37,9 @@ mlr3fselect::fselect_nested
 #' @importFrom mlr3fselect auto_fselector
 #' @export
 mlr3fselect::auto_fselector
+
+#' @importFrom mlr3fselect fsi
+#' @export
+mlr3fselect::fsi
+
+
