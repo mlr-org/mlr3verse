@@ -34,10 +34,10 @@ Imports:
     mlr3learners,
     mlr3misc (>= 0.11.0),
     mlr3pipelines (>= 0.4.0),
-    mlr3tuning (>= 0.15.0),
+    mlr3tuning (>= 0.17.0),
     mlr3tuningspaces (>= 0.1.1),
     mlr3viz,
     paradox (>= 0.6.0)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.2
