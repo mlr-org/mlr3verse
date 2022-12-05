@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 # mlr3verse
 
 <!-- badges: start -->
-[![tic](https://github.com/mlr-org/mlr3verse/workflows/tic/badge.svg?branch=master)](https://github.com/mlr-org/mlr3verse/actions)
+[![r-cmd-check](https://github.com/mlr-org/mlr3verse/actions/workflows/r-cmd-check.yml/badge.svg)](https://github.com/mlr-org/mlr3verse/actions/workflows/r-cmd-check.yml)
 [![CRAN Status](https://www.r-pkg.org/badges/version-ago/mlr3verse)](https://cran.r-project.org/package=mlr3verse)
 [![StackOverflow](https://img.shields.io/badge/stackoverflow-mlr3-orange.svg)](https://stackoverflow.com/questions/tagged/mlr3)
 [![Mattermost](https://img.shields.io/badge/chat-mattermost-orange.svg)](https://lmmisld-lmu-stats-slds.srv.mwn.de/mlr_invite/)

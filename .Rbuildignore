@@ -2,7 +2,6 @@
 ^renv\.lock$
 ^mlr3verse\.Rproj$
 ^\.Rproj\.user$
-^tic\.R$
 ^pkgdown$
 ^cran-comments\.md$
 ^LICENSE$

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-Package website: [release](https://mlr3verse.mlr-org.com/) \|
+Package website: [release](https://mlr3verse.mlr-org.com/) |
 [dev](https://mlr3verse.mlr-org.com/dev/)
 
 Meta-package for installing and using core [mlr3
@@ -11,7 +11,7 @@ packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
 
 <!-- badges: start -->
 
-[![tic](https://github.com/mlr-org/mlr3verse/workflows/tic/badge.svg?branch=master)](https://github.com/mlr-org/mlr3verse/actions)
+[![r-cmd-check](https://github.com/mlr-org/mlr3verse/actions/workflows/r-cmd-check.yml/badge.svg)](https://github.com/mlr-org/mlr3verse/actions/workflows/r-cmd-check.yml)
 [![CRAN
 Status](https://www.r-pkg.org/badges/version-ago/mlr3verse)](https://cran.r-project.org/package=mlr3verse)
 [![StackOverflow](https://img.shields.io/badge/stackoverflow-mlr3-orange.svg)](https://stackoverflow.com/questions/tagged/mlr3)
@@ -41,25 +41,26 @@ remotes::install_github("mlr-org/mlr3verse")
 Functions and objects from The following packages are imported by this
 meta package:
 
-| Name          | Title                                        | URL                                 |
-|:--------------|:---------------------------------------------|:------------------------------------|
-| mlr3          | Machine Learning in R - Next Generation      | <https://mlr3.mlr-org.com>          |
-| mlr3cluster   | Unsupervised Clustering                      | <https://mlr3cluster.mlr-org.com>   |
-| mlr3data      | Additional data sets and tasks               | <https://mlr3data.mlr-org.com>      |
-| mlr3filters   | Filter Based Feature Selection               | <https://mlr3filters.mlr-org.com>   |
-| mlr3fselect   | Wrapper Based Feature Selection              | <https://mlr3fselect.mlr-org.com>   |
-| mlr3learners  | Recommended Learners                         | <https://mlr3learners.mlr-org.com>  |
-| mlr3pipelines | Preprocessing Operators and Pipelines        | <https://mlr3pipelines.mlr-org.com> |
-| mlr3proba     | Probalistic Regression and Survival Analysis | <https://mlr3proba.mlr-org.com>     |
-| mlr3tuning    | Hyperparameter Tuning                        | <https://mlr3tuning.mlr-org.com>    |
-| mlr3viz       | Visualizations                               | <https://mlr3viz.mlr-org.com>       |
-| paradox       | Parameter Spaces                             | <https://paradox.mlr-org.com>       |
+| Name             | Title                                      | URL                                    |
+| :--------------- | :----------------------------------------- | :------------------------------------- |
+| mlr3             | Machine Learning in R - Next Generation    | <https://mlr3.mlr-org.com>             |
+| mlr3cluster      | Unsupervised Clustering                    | <https://mlr3cluster.mlr-org.com>      |
+| mlr3data         | Additional data sets and tasks             | <https://mlr3data.mlr-org.com>         |
+| mlr3filters      | Filter Based Feature Selection             | <https://mlr3filters.mlr-org.com>      |
+| mlr3fselect      | Wrapper Based Feature Selection            | <https://mlr3fselect.mlr-org.com>      |
+| mlr3learners     | Recommended Learners                       | <https://mlr3learners.mlr-org.com>     |
+| mlr3pipelines    | Preprocessing Operators and Pipelines      | <https://mlr3pipelines.mlr-org.com>    |
+| mlr3tuning       | Hyperparameter Tuning                      | <https://mlr3tuning.mlr-org.com>       |
+| mlr3tuningspaces | Collection of Hyperparameter Tuning Spaces | <https://mlr3tuningspaces.mlr-org.com> |
+| mlr3viz          | Visualizations                             | <https://mlr3viz.mlr-org.com>          |
+| paradox          | Parameter Spaces                           | <https://paradox.mlr-org.com>          |
 
 By loading the `mlr3verse` package, you are all set to deal with most
 regression, classification, cluster and survival tasks:
 
 ``` r
 library("mlr3verse")
+#> Loading required package: mlr3
 ```
 
 If you want to get more detailed information about the loaded packages,

@@ -102,3 +102,4 @@ revdep
 CRAN-SUBMISSION
 renv/
 renv.lock
+.vscode
