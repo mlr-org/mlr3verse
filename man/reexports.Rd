@@ -2,8 +2,9 @@
 % Please edit documentation in R/reexport_mlr3misc.R, R/reexports_bbotk.R,
 %   R/reexports_data.table.R, R/reexports_mlr3cluster.R,
 %   R/reexports_mlr3filters.R, R/reexports_mlr3fselect.R,
-%   R/reexports_mlr3pipelines.R, R/reexports_mlr3tuning.R,
-%   R/reexports_mlr3tuningspaces.R, R/reexports_mlr3viz.R, R/reexports_paradox.R
+%   R/reexports_mlr3hyperband.R, R/reexports_mlr3pipelines.R,
+%   R/reexports_mlr3tuning.R, R/reexports_mlr3tuningspaces.R,
+%   R/reexports_mlr3viz.R, R/reexports_paradox.R
 \docType{import}
 \name{reexports}
 \alias{reexports}
@@ -30,6 +31,9 @@
 \alias{fselect_nested}
 \alias{auto_fselector}
 \alias{fsi}
+\alias{hyperband_budget}
+\alias{hyperband_n_configs}
+\alias{hyperband_schedule}
 \alias{mlr_pipeops}
 \alias{po}
 \alias{pos}
@@ -99,6 +103,8 @@ below to see their documentation.
   \item{mlr3filters}{\code{\link[mlr3filters]{flt}}, \code{\link[mlr3filters:flt]{flts}}, \code{\link[mlr3filters]{mlr_filters}}}
 
   \item{mlr3fselect}{\code{\link[mlr3fselect]{auto_fselector}}, \code{\link[mlr3fselect]{AutoFSelector}}, \code{\link[mlr3fselect]{extract_inner_fselect_archives}}, \code{\link[mlr3fselect]{extract_inner_fselect_results}}, \code{\link[mlr3fselect]{fs}}, \code{\link[mlr3fselect]{fselect}}, \code{\link[mlr3fselect]{fselect_nested}}, \code{\link[mlr3fselect]{FSelectInstanceMultiCrit}}, \code{\link[mlr3fselect]{FSelectInstanceSingleCrit}}, \code{\link[mlr3fselect]{fsi}}, \code{\link[mlr3fselect]{mlr_fselectors}}}
+
+  \item{mlr3hyperband}{\code{\link[mlr3hyperband]{hyperband_budget}}, \code{\link[mlr3hyperband]{hyperband_n_configs}}, \code{\link[mlr3hyperband]{hyperband_schedule}}}
 
   \item{mlr3misc}{\code{\link[mlr3misc]{clbk}}, \code{\link[mlr3misc:clbk]{clbks}}}
 
