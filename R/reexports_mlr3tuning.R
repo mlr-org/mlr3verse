@@ -14,13 +14,13 @@ mlr3tuning::tnrs
 #' @export
 mlr3tuning::AutoTuner
 
-#' @importFrom mlr3tuning TuningInstanceSingleCrit
+#' @importFrom mlr3tuning TuningInstanceBatchSingleCrit
 #' @export
-mlr3tuning::TuningInstanceSingleCrit
+mlr3tuning::TuningInstanceBatchSingleCrit
 
-#' @importFrom mlr3tuning TuningInstanceMultiCrit
+#' @importFrom mlr3tuning TuningInstanceBatchMultiCrit
 #' @export
-mlr3tuning::TuningInstanceMultiCrit
+mlr3tuning::TuningInstanceBatchMultiCrit
 
 #' @importFrom mlr3tuning extract_inner_tuning_results
 #' @export
@@ -45,3 +45,7 @@ mlr3tuning::auto_tuner
 #' @importFrom mlr3tuning ti
 #' @export
 mlr3tuning::ti
+
+#' @importFrom mlr3tuning ti_async
+#' @export
+mlr3tuning::ti_async

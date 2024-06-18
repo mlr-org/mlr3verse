@@ -10,13 +10,13 @@ mlr3fselect::fs
 #' @export
 mlr3fselect::AutoFSelector
 
-#' @importFrom mlr3fselect FSelectInstanceSingleCrit
+#' @importFrom mlr3fselect FSelectInstanceBatchSingleCrit
 #' @export
-mlr3fselect::FSelectInstanceSingleCrit
+mlr3fselect::FSelectInstanceBatchSingleCrit
 
-#' @importFrom mlr3fselect FSelectInstanceMultiCrit
+#' @importFrom mlr3fselect FSelectInstanceBatchMultiCrit
 #' @export
-mlr3fselect::FSelectInstanceMultiCrit
+mlr3fselect::FSelectInstanceBatchMultiCrit
 
 #' @importFrom mlr3fselect extract_inner_fselect_results
 #' @export
