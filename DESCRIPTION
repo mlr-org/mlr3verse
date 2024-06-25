@@ -39,9 +39,6 @@ Imports:
     mlr3tuningspaces (>= 0.1.1),
     mlr3viz,
     paradox (>= 0.6.0)
-Remotes:
-    mlr-org/mlr3tuning,
-    mlr-org/mlr3fselect
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
