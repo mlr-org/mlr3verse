@@ -14,3 +14,4 @@
 ^clang-.*
 ^CRAN-RELEASE$
 ^\.vscode$
+^CRAN-SUBMISSION$
