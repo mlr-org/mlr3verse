@@ -1,34 +1,36 @@
-# mlr3verse 0.2.9
+# mlr3verse 0.3.0
 
-- Updated reexports.
+* BREAKING CHANGE: Various classes are removed and replaced with their sugar.
+* Compatibility: Work with new mlr3tuning and mlr3fselect 1.0.0.
+* Update package versions to latest CRAN versions.
 
 # mlr3verse 0.2.8
 
-- Updated reexports.
+* Updated reexports.
 
 # mlr3verse 0.2.7
 
-- Updated reexports.
+* Updated reexports.
 
 # mlr3verse 0.2.6
 
-- Updated reexports.
+* Updated reexports.
 
 # mlr3verse 0.2.5
 
-- Removed mlr3proba (currently not maintained on CRAN).
+* Removed mlr3proba (currently not maintained on CRAN).
 
 # mlr3verse 0.2.4
 
-- Updated reexports.
+* Updated reexports.
 
 # mlr3verse 0.2.3
 
-- Updated reexports.
+* Updated reexports.
 
 # mlr3verse 0.2.2
 
-- Updated reexports.
+* Updated reexports.
 
 # mlr3verse 0.2.1
 
@@ -48,12 +50,12 @@
 
 # mlr3verse 0.1.3
 
-- Maintenance release.
+* Maintenance release.
 
 
 # mlr3verse 0.1.2
 
-- Add mlr3data (#3)
+* Add mlr3data (#3)
 
 
 # mlr3verse 0.1.1
