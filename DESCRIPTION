@@ -1,17 +1,14 @@
 Package: mlr3verse
 Title: Easily Install and Load the 'mlr3' Package Family
-Version: 0.2.8
-Authors@R:
-    c(person(given = "Michel",
-             family = "Lang",
-             role = c("cre", "aut"),
-             email = "michellang@gmail.com",
-             comment = c(ORCID = "0000-0001-9754-0393")),
-      person(given = "Patrick",
-             family = "Schratz",
-             role = "aut",
-             email = "patrick.schratz@gmail.com",
-             comment = c(ORCID = "0000-0003-0748-6624")))
+Version: 0.3.0
+Authors@R:c(
+    person("Michel", "Lang", , "michellang@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9754-0393")),
+    person("Patrick", "Schratz", , "patrick.schratz@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-0748-6624")),
+    person("Marc", "Becker", , "marcbecker@posteo.de", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-8115-0400"))
+  )
 Description: The 'mlr3' package family is a set of packages for
     machine-learning purposes built in a modular fashion. This wrapper
     package is aimed to simplify the installation and loading of the core
@@ -21,24 +18,24 @@ License: LGPL-3
 URL: https://mlr3verse.mlr-org.com, https://github.com/mlr-org/mlr3verse
 BugReports: https://github.com/mlr-org/mlr3verse/issues
 Depends:
-    mlr3 (>= 0.12.0),
+    mlr3 (>= 0.20.0),
     R (>= 3.1.0)
 Imports:
-    bbotk,
+    bbotk (>= 1.0.0),
     data.table,
-    mlr3cluster,
-    mlr3data,
-    mlr3filters,
-    mlr3fselect (>= 0.8.0),
-    mlr3hyperband,
-    mlr3learners,
-    mlr3mbo,
-    mlr3misc (>= 0.11.0),
-    mlr3pipelines (>= 0.4.0),
-    mlr3tuning (>= 0.17.0),
-    mlr3tuningspaces (>= 0.1.1),
-    mlr3viz,
-    paradox (>= 0.6.0)
+    mlr3cluster (>= 0.1.9),
+    mlr3data (>= 0.7.0),
+    mlr3filters (>= 0.8.0),
+    mlr3fselect (>= 1.0.0),
+    mlr3hyperband (>= 0.5.0),
+    mlr3learners (>= 0.7.0),
+    mlr3mbo (>= 0.2.2),
+    mlr3misc (>= 0.15.1),
+    mlr3pipelines (>= 0.5.2),
+    mlr3tuning (>= 1.0.0),
+    mlr3tuningspaces (>= 0.5.1),
+    mlr3viz (>= 0.8.0),
+    paradox (>= 1.0.0)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
