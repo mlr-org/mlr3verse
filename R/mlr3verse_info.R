@@ -1,7 +1,7 @@
 #' @title Print mlr3* package versions
 #'
 #' @description
-#' Returns the package versions of imported mlr3 packages as a [data.table()].
+#' Returns the package versions of imported mlr3 packages as a [data.table::data.table()].
 #'
 #' @importFrom mlr3misc map_chr
 #' @importFrom data.table data.table
