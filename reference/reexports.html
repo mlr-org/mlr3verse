@@ -11,7 +11,7 @@ as.data.table
 
 
   mlr3cluster
-as_prediction_clust, as_task_clust, TaskClust
+as_prediction_clust, as_task_clust
 
 
   mlr3filters
@@ -19,7 +19,7 @@ flt, flts, mlr_filters
 
 
   mlr3fselect
-auto_fselector, AutoFSelector, extract_inner_fselect_archives, extract_inner_fselect_results, fs, fselect, fselect_nested, FSelectInstanceMultiCrit, FSelectInstanceSingleCrit, fsi, mlr_fselectors
+auto_fselector, callback_batch_fselect, ensemble_fselect, extract_inner_fselect_archives, extract_inner_fselect_results, fs, fselect, fselect_nested, fsi, fss, mlr_fselectors
 
 
   mlr3hyperband
@@ -27,7 +27,7 @@ hyperband_budget, hyperband_n_configs, hyperband_schedule
 
 
   mlr3misc
-clbk, clbks
+clbk, clbks, mlr_callbacks
 
 
   mlr3pipelines
@@ -35,7 +35,7 @@ clbk, clbks
 
 
   mlr3tuning
-auto_tuner, AutoTuner, extract_inner_tuning_archives, extract_inner_tuning_results, mlr_tuners, ti, tnr, tnrs, tune, tune_nested, TuningInstanceMultiCrit, TuningInstanceSingleCrit
+auto_tuner, callback_async_tuning, callback_batch_tuning, extract_inner_tuning_archives, extract_inner_tuning_results, mlr_tuners, ti, ti_async, tnr, tnrs, tune, tune_nested
 
 
   mlr3tuningspaces
@@ -50,7 +50,7 @@ autoplot, fortify, plot_learner_prediction
 generate_design_grid, generate_design_lhs, generate_design_random, p_dbl, p_fct, p_int, p_lgl, p_uty, ps, to_tune
 
 
-"><title>Objects exported from other packages — reexports • mlr3verse</title><!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png"><link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png"><link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png"><link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png"><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="../deps/Roboto-0.4.5/font.css" rel="stylesheet"><link href="../deps/JetBrains_Mono-0.4.5/font.css" rel="stylesheet"><link href="../deps/Roboto_Slab-0.4.5/font.css" rel="stylesheet"><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Objects exported from other packages — reexports"><meta property="og:description" content="These objects are imported from other packages. Follow the links
+"><title>Objects exported from other packages — reexports • mlr3verse</title><!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png"><link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png"><link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png"><link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png"><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/Roboto-0.4.9/font.css" rel="stylesheet"><link href="../deps/JetBrains_Mono-0.4.9/font.css" rel="stylesheet"><link href="../deps/Roboto_Slab-0.4.9/font.css" rel="stylesheet"><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Objects exported from other packages — reexports"><meta property="og:description" content="These objects are imported from other packages. Follow the links
 below to see their documentation.
 
   bbotk
@@ -62,7 +62,7 @@ as.data.table
 
 
   mlr3cluster
-as_prediction_clust, as_task_clust, TaskClust
+as_prediction_clust, as_task_clust
 
 
   mlr3filters
@@ -70,7 +70,7 @@ flt, flts, mlr_filters
 
 
   mlr3fselect
-auto_fselector, AutoFSelector, extract_inner_fselect_archives, extract_inner_fselect_results, fs, fselect, fselect_nested, FSelectInstanceMultiCrit, FSelectInstanceSingleCrit, fsi, mlr_fselectors
+auto_fselector, callback_batch_fselect, ensemble_fselect, extract_inner_fselect_archives, extract_inner_fselect_results, fs, fselect, fselect_nested, fsi, fss, mlr_fselectors
 
 
   mlr3hyperband
@@ -78,7 +78,7 @@ hyperband_budget, hyperband_n_configs, hyperband_schedule
 
 
   mlr3misc
-clbk, clbks
+clbk, clbks, mlr_callbacks
 
 
   mlr3pipelines
@@ -86,7 +86,7 @@ clbk, clbks
 
 
   mlr3tuning
-auto_tuner, AutoTuner, extract_inner_tuning_archives, extract_inner_tuning_results, mlr_tuners, ti, tnr, tnrs, tune, tune_nested, TuningInstanceMultiCrit, TuningInstanceSingleCrit
+auto_tuner, callback_async_tuning, callback_batch_tuning, extract_inner_tuning_archives, extract_inner_tuning_results, mlr_tuners, ti, ti_async, tnr, tnrs, tune, tune_nested
 
 
   mlr3tuningspaces
@@ -108,11 +108,11 @@ generate_design_grid, generate_design_lhs, generate_design_random, p_dbl, p_fct,
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light" data-bs-theme="light"><div class="container">
     
     <a class="navbar-brand me-2" href="../index.html">mlr3verse</a>
 
-    <small class="nav-text text-default me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.2.8</small>
+    <small class="nav-text text-default me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.3.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -184,11 +184,11 @@ below to see their documentation.</p>
 
 
   <dt>data.table</dt>
-<dd><p><code><a href="https://Rdatatable.gitlab.io/data.table/reference/as.data.table.html" class="external-link">as.data.table</a></code></p></dd>
+<dd><p><code><a href="https://rdatatable.gitlab.io/data.table/reference/as.data.table.html" class="external-link">as.data.table</a></code></p></dd>
 
 
   <dt>mlr3cluster</dt>
-<dd><p><code><a href="https://mlr3cluster.mlr-org.com/reference/as_prediction_clust.html" class="external-link">as_prediction_clust</a></code>, <code><a href="https://mlr3cluster.mlr-org.com/reference/as_task_clust.html" class="external-link">as_task_clust</a></code>, <code><a href="https://mlr3cluster.mlr-org.com/reference/TaskClust.html" class="external-link">TaskClust</a></code></p></dd>
+<dd><p><code><a href="https://mlr3cluster.mlr-org.com/reference/as_prediction_clust.html" class="external-link">as_prediction_clust</a></code>, <code><a href="https://mlr3cluster.mlr-org.com/reference/as_task_clust.html" class="external-link">as_task_clust</a></code></p></dd>
 
 
   <dt>mlr3filters</dt>
@@ -196,7 +196,7 @@ below to see their documentation.</p>
 
 
   <dt>mlr3fselect</dt>
-<dd><p><code><a href="https://mlr3fselect.mlr-org.com/reference/auto_fselector.html" class="external-link">auto_fselector</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/AutoFSelector.html" class="external-link">AutoFSelector</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/extract_inner_fselect_archives.html" class="external-link">extract_inner_fselect_archives</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/extract_inner_fselect_results.html" class="external-link">extract_inner_fselect_results</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/fs.html" class="external-link">fs</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/fselect.html" class="external-link">fselect</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/fselect_nested.html" class="external-link">fselect_nested</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/FSelectInstanceMultiCrit.html" class="external-link">FSelectInstanceMultiCrit</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/FSelectInstanceSingleCrit.html" class="external-link">FSelectInstanceSingleCrit</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/fsi.html" class="external-link">fsi</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/mlr_fselectors.html" class="external-link">mlr_fselectors</a></code></p></dd>
+<dd><p><code><a href="https://mlr3fselect.mlr-org.com/reference/auto_fselector.html" class="external-link">auto_fselector</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/callback_batch_fselect.html" class="external-link">callback_batch_fselect</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/ensemble_fselect.html" class="external-link">ensemble_fselect</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/extract_inner_fselect_archives.html" class="external-link">extract_inner_fselect_archives</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/extract_inner_fselect_results.html" class="external-link">extract_inner_fselect_results</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/fs.html" class="external-link">fs</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/fselect.html" class="external-link">fselect</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/fselect_nested.html" class="external-link">fselect_nested</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/fsi.html" class="external-link">fsi</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/fs.html" class="external-link">fss</a></code>, <code><a href="https://mlr3fselect.mlr-org.com/reference/mlr_fselectors.html" class="external-link">mlr_fselectors</a></code></p></dd>
 
 
   <dt>mlr3hyperband</dt>
@@ -204,7 +204,7 @@ below to see their documentation.</p>
 
 
   <dt>mlr3misc</dt>
-<dd><p><code><a href="https://mlr3misc.mlr-org.com/reference/clbk.html" class="external-link">clbk</a></code>, <code><a href="https://mlr3misc.mlr-org.com/reference/clbk.html" class="external-link">clbks</a></code></p></dd>
+<dd><p><code><a href="https://mlr3misc.mlr-org.com/reference/clbk.html" class="external-link">clbk</a></code>, <code><a href="https://mlr3misc.mlr-org.com/reference/clbk.html" class="external-link">clbks</a></code>, <code><a href="https://mlr3misc.mlr-org.com/reference/mlr_callbacks.html" class="external-link">mlr_callbacks</a></code></p></dd>
 
 
   <dt>mlr3pipelines</dt>
@@ -212,7 +212,7 @@ below to see their documentation.</p>
 
 
   <dt>mlr3tuning</dt>
-<dd><p><code><a href="https://mlr3tuning.mlr-org.com/reference/auto_tuner.html" class="external-link">auto_tuner</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/AutoTuner.html" class="external-link">AutoTuner</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/extract_inner_tuning_archives.html" class="external-link">extract_inner_tuning_archives</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/extract_inner_tuning_results.html" class="external-link">extract_inner_tuning_results</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/mlr_tuners.html" class="external-link">mlr_tuners</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/ti.html" class="external-link">ti</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/tnr.html" class="external-link">tnr</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/tnr.html" class="external-link">tnrs</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/tune.html" class="external-link">tune</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/tune_nested.html" class="external-link">tune_nested</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/TuningInstanceMultiCrit.html" class="external-link">TuningInstanceMultiCrit</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/TuningInstanceSingleCrit.html" class="external-link">TuningInstanceSingleCrit</a></code></p></dd>
+<dd><p><code><a href="https://mlr3tuning.mlr-org.com/reference/auto_tuner.html" class="external-link">auto_tuner</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/callback_async_tuning.html" class="external-link">callback_async_tuning</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/callback_batch_tuning.html" class="external-link">callback_batch_tuning</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/extract_inner_tuning_archives.html" class="external-link">extract_inner_tuning_archives</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/extract_inner_tuning_results.html" class="external-link">extract_inner_tuning_results</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/mlr_tuners.html" class="external-link">mlr_tuners</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/ti.html" class="external-link">ti</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/ti_async.html" class="external-link">ti_async</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/tnr.html" class="external-link">tnr</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/tnr.html" class="external-link">tnrs</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/tune.html" class="external-link">tune</a></code>, <code><a href="https://mlr3tuning.mlr-org.com/reference/tune_nested.html" class="external-link">tune_nested</a></code></p></dd>
 
 
   <dt>mlr3tuningspaces</dt>
@@ -235,11 +235,11 @@ below to see their documentation.</p>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p></p><p>Developed by Michel Lang, Patrick Schratz.</p>
+  <p>Developed by Michel Lang, Patrick Schratz, Marc Becker.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.</p>
 </div>
 
     </footer></div>
