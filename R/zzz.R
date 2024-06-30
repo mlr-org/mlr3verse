@@ -36,7 +36,6 @@
   if (FALSE) {
     mlr3data::titanic
     mlr3learners::LearnerClassifLDA
-    mlr3hyperband::TunerHyperband
     mlr3mbo::TunerMbo
   }
 }
