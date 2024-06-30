@@ -10,26 +10,26 @@
 \alias{reexports}
 \alias{clbk}
 \alias{clbks}
+\alias{mlr_callbacks}
 \alias{mlr_terminators}
 \alias{trm}
 \alias{trms}
 \alias{as.data.table}
-\alias{TaskClust}
 \alias{as_task_clust}
 \alias{as_prediction_clust}
 \alias{mlr_filters}
 \alias{flt}
 \alias{flts}
-\alias{mlr_fselectors}
-\alias{fs}
-\alias{AutoFSelector}
-\alias{FSelectInstanceBatchSingleCrit}
-\alias{FSelectInstanceBatchMultiCrit}
+\alias{auto_fselector}
+\alias{callback_batch_fselect}
+\alias{ensemble_fselect}
 \alias{extract_inner_fselect_results}
 \alias{extract_inner_fselect_archives}
-\alias{fselect}
 \alias{fselect_nested}
-\alias{auto_fselector}
+\alias{fselect}
+\alias{mlr_fselectors}
+\alias{fs}
+\alias{fss}
 \alias{fsi}
 \alias{hyperband_budget}
 \alias{hyperband_n_configs}
@@ -59,19 +59,18 @@
 \alias{selector_setdiff}
 \alias{selector_type}
 \alias{selector_union}
+\alias{auto_tuner}
+\alias{callback_async_tuning}
+\alias{callback_batch_tuning}
+\alias{extract_inner_tuning_results}
+\alias{extract_inner_tuning_archives}
 \alias{mlr_tuners}
 \alias{tnr}
 \alias{tnrs}
-\alias{AutoTuner}
-\alias{TuningInstanceBatchSingleCrit}
-\alias{TuningInstanceBatchMultiCrit}
-\alias{extract_inner_tuning_results}
-\alias{extract_inner_tuning_archives}
-\alias{tune}
-\alias{tune_nested}
-\alias{auto_tuner}
 \alias{ti}
 \alias{ti_async}
+\alias{tune_nested}
+\alias{tune}
 \alias{mlr_tuning_spaces}
 \alias{lts}
 \alias{ltss}
@@ -99,19 +98,19 @@ below to see their documentation.
 
   \item{data.table}{\code{\link[data.table]{as.data.table}}}
 
-  \item{mlr3cluster}{\code{\link[mlr3cluster]{as_prediction_clust}}, \code{\link[mlr3cluster]{as_task_clust}}, \code{\link[mlr3cluster]{TaskClust}}}
+  \item{mlr3cluster}{\code{\link[mlr3cluster]{as_prediction_clust}}, \code{\link[mlr3cluster]{as_task_clust}}}
 
   \item{mlr3filters}{\code{\link[mlr3filters]{flt}}, \code{\link[mlr3filters:flt]{flts}}, \code{\link[mlr3filters]{mlr_filters}}}
 
-  \item{mlr3fselect}{\code{\link[mlr3fselect]{auto_fselector}}, \code{\link[mlr3fselect]{AutoFSelector}}, \code{\link[mlr3fselect]{extract_inner_fselect_archives}}, \code{\link[mlr3fselect]{extract_inner_fselect_results}}, \code{\link[mlr3fselect]{fs}}, \code{\link[mlr3fselect]{fselect}}, \code{\link[mlr3fselect]{fselect_nested}}, \code{\link[mlr3fselect]{FSelectInstanceBatchMultiCrit}}, \code{\link[mlr3fselect]{FSelectInstanceBatchSingleCrit}}, \code{\link[mlr3fselect]{fsi}}, \code{\link[mlr3fselect]{mlr_fselectors}}}
+  \item{mlr3fselect}{\code{\link[mlr3fselect]{auto_fselector}}, \code{\link[mlr3fselect]{callback_batch_fselect}}, \code{\link[mlr3fselect]{ensemble_fselect}}, \code{\link[mlr3fselect]{extract_inner_fselect_archives}}, \code{\link[mlr3fselect]{extract_inner_fselect_results}}, \code{\link[mlr3fselect]{fs}}, \code{\link[mlr3fselect]{fselect}}, \code{\link[mlr3fselect]{fselect_nested}}, \code{\link[mlr3fselect]{fsi}}, \code{\link[mlr3fselect:fs]{fss}}, \code{\link[mlr3fselect]{mlr_fselectors}}}
 
   \item{mlr3hyperband}{\code{\link[mlr3hyperband]{hyperband_budget}}, \code{\link[mlr3hyperband]{hyperband_n_configs}}, \code{\link[mlr3hyperband]{hyperband_schedule}}}
 
-  \item{mlr3misc}{\code{\link[mlr3misc]{clbk}}, \code{\link[mlr3misc:clbk]{clbks}}}
+  \item{mlr3misc}{\code{\link[mlr3misc]{clbk}}, \code{\link[mlr3misc:clbk]{clbks}}, \code{\link[mlr3misc]{mlr_callbacks}}}
 
   \item{mlr3pipelines}{\code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{\%>>!\%}}, \code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{\%>>\%}}, \code{\link[mlr3pipelines]{as_graph}}, \code{\link[mlr3pipelines]{as_pipeop}}, \code{\link[mlr3pipelines]{chain_graphs}}, \code{\link[mlr3pipelines:grapes-greater-than-greater-than-grapes]{concat_graphs}}, \code{\link[mlr3pipelines:mlr_learners_graph]{GraphLearner}}, \code{\link[mlr3pipelines]{greplicate}}, \code{\link[mlr3pipelines]{gunion}}, \code{\link[mlr3pipelines]{mlr_graphs}}, \code{\link[mlr3pipelines]{mlr_pipeops}}, \code{\link[mlr3pipelines]{po}}, \code{\link[mlr3pipelines:po]{pos}}, \code{\link[mlr3pipelines]{ppl}}, \code{\link[mlr3pipelines:Selector]{selector_all}}, \code{\link[mlr3pipelines:Selector]{selector_cardinality_greater_than}}, \code{\link[mlr3pipelines:Selector]{selector_grep}}, \code{\link[mlr3pipelines:Selector]{selector_intersect}}, \code{\link[mlr3pipelines:Selector]{selector_invert}}, \code{\link[mlr3pipelines:Selector]{selector_missing}}, \code{\link[mlr3pipelines:Selector]{selector_name}}, \code{\link[mlr3pipelines:Selector]{selector_none}}, \code{\link[mlr3pipelines:Selector]{selector_setdiff}}, \code{\link[mlr3pipelines:Selector]{selector_type}}, \code{\link[mlr3pipelines:Selector]{selector_union}}}
 
-  \item{mlr3tuning}{\code{\link[mlr3tuning]{auto_tuner}}, \code{\link[mlr3tuning]{AutoTuner}}, \code{\link[mlr3tuning]{extract_inner_tuning_archives}}, \code{\link[mlr3tuning]{extract_inner_tuning_results}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{ti}}, \code{\link[mlr3tuning]{ti_async}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}, \code{\link[mlr3tuning]{tune}}, \code{\link[mlr3tuning]{tune_nested}}, \code{\link[mlr3tuning]{TuningInstanceBatchMultiCrit}}, \code{\link[mlr3tuning]{TuningInstanceBatchSingleCrit}}}
+  \item{mlr3tuning}{\code{\link[mlr3tuning]{auto_tuner}}, \code{\link[mlr3tuning]{callback_async_tuning}}, \code{\link[mlr3tuning]{callback_batch_tuning}}, \code{\link[mlr3tuning]{extract_inner_tuning_archives}}, \code{\link[mlr3tuning]{extract_inner_tuning_results}}, \code{\link[mlr3tuning]{mlr_tuners}}, \code{\link[mlr3tuning]{ti}}, \code{\link[mlr3tuning]{ti_async}}, \code{\link[mlr3tuning]{tnr}}, \code{\link[mlr3tuning:tnr]{tnrs}}, \code{\link[mlr3tuning]{tune}}, \code{\link[mlr3tuning]{tune_nested}}}
 
   \item{mlr3tuningspaces}{\code{\link[mlr3tuningspaces]{lts}}, \code{\link[mlr3tuningspaces:lts]{ltss}}, \code{\link[mlr3tuningspaces]{mlr_tuning_spaces}}}
 
