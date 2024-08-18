@@ -36,6 +36,17 @@ Imports:
     mlr3tuningspaces (>= 0.5.1),
     mlr3viz (>= 0.8.0),
     paradox (>= 1.0.0)
+Suggests:
+	mlr3torch,
+	mlr3fda,
+	mlr3oml,
+	mlr3summary,
+	mlr3db,
+	mlr3batchmark,
+	mlr3fairness,
+	mlr3spatial,
+	mlr3spatiotempcv,
+	miesmuschel
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
