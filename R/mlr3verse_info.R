@@ -13,6 +13,7 @@ mlr3verse_info = function() {
   imports = strsplit(imports, ",[[:space:]]*")[[1L]]
   imports = sub("^([[:alnum:].]+).*", "\\1", imports)
   imports = setdiff(imports, "data.table")
+  imports = unique(c("mlr3", imports))
 
   data.table(package = imports, version = map_chr(imports, function(x) {
     as.character(utils::packageVersion(x))
