@@ -18,7 +18,7 @@ mlr3verse_info = function() {
 
   imports = setdiff(f("Imports"), "data.table")
   suggests = f("Suggests")
-  pkgs = c(imports, suggests)
+  pkgs = c("mlr3", imports, suggests)
 
   versions = mlr3misc::map_chr(pkgs, function(pkg) {
     tryCatch(as.character(utils::packageVersion(pkg)), error = function(e) NA_character_)
