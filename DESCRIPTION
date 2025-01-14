@@ -21,21 +21,22 @@ Depends:
     mlr3 (>= 0.20.0),
     R (>= 3.1.0)
 Imports:
-    bbotk (>= 1.0.0),
+    bbotk (>= 1.5.0),
     data.table,
-    mlr3cluster (>= 0.1.9),
-    mlr3data (>= 0.7.0),
-    mlr3filters (>= 0.8.0),
-    mlr3fselect (>= 1.0.0),
-    mlr3hyperband (>= 0.5.0),
-    mlr3learners (>= 0.7.0),
-    mlr3mbo (>= 0.2.2),
-    mlr3misc (>= 0.15.1),
-    mlr3pipelines (>= 0.5.2),
-    mlr3tuning (>= 1.0.0),
-    mlr3tuningspaces (>= 0.5.1),
-    mlr3viz (>= 0.8.0),
-    paradox (>= 1.0.0)
+    mlr3cluster (>= 0.1.10),
+    mlr3data (>= 0.9.0),
+    mlr3filters (>= 0.8.1),
+    mlr3fselect (>= 1.2.1),
+    mlr3hyperband (>= 0.6.0),
+    mlr3inferr (>= 0.1.0),
+    mlr3learners (>= 0.9.0),
+    mlr3mbo (>= 0.2.8),
+    mlr3misc (>= 0.16.0),
+    mlr3pipelines (>= 0.7.1),
+    mlr3tuning (>= 1.3.0),
+    mlr3tuningspaces (>= 0.5.2),
+    mlr3viz (>= 0.10.0),
+    paradox (>= 1.0.1)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
