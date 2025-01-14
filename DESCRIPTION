@@ -50,6 +50,8 @@ Suggests:
     mlr3summary,
     mlr3torch,
     rush
+Remotes:
+    mlr-org/mlr3proba
 Additional_repositories:
   https://mlr-org.r-universe.dev
 Encoding: UTF-8
