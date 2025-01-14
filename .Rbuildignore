@@ -6,6 +6,7 @@
 ^cran-comments\.md$
 ^LICENSE$
 ^README\.Rmd$
+^README\.html$
 ^\.editorconfig$
 ^\.pre-commit-config\.yaml$
 ^\.ccache$
@@ -15,3 +16,4 @@
 ^CRAN-RELEASE$
 ^\.vscode$
 ^CRAN-SUBMISSION$
+.lintr

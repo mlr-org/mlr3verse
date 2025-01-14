@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-Package website: [release](https://mlr3verse.mlr-org.com/) |
+Package website: [release](https://mlr3verse.mlr-org.com/) \|
 [dev](https://mlr3verse.mlr-org.com/dev/)
 
 Meta-package for installing and using core [mlr3
@@ -42,7 +42,7 @@ Functions and objects from The following packages are imported by this
 meta package:
 
 | Name             | Title                                      | URL                                    |
-| :--------------- | :----------------------------------------- | :------------------------------------- |
+|:-----------------|:-------------------------------------------|:---------------------------------------|
 | mlr3             | Machine Learning in R - Next Generation    | <https://mlr3.mlr-org.com>             |
 | mlr3cluster      | Unsupervised Clustering                    | <https://mlr3cluster.mlr-org.com>      |
 | mlr3data         | Additional data sets and tasks             | <https://mlr3data.mlr-org.com>         |
@@ -70,9 +70,25 @@ you can call `mlr3verse_info()`:
 mlr3verse_info()
 ```
 
-More [extension
-packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages) are
-available on CRAN/GitHub, and may be included in this meta package in
-the future.
+Additional packages can be installed with
+
+``` r
+install.packages("mlr3verse", dependencies = TRUE)
+```
+
+| Name             | Title                                               | URL                                    |
+|:-----------------|:----------------------------------------------------|:---------------------------------------|
+| miesmuschel      | Mixed Integer Evolution Strategies                  |                                        |
+| mlr3batchmark    | Batch Experiments                                   | <https://mlr3batchmark.mlr-org.com>    |
+| mlr3benchmark    | Analysis and Visualisation of Benchmark Experiments | <https://mlr3benchmark.mlr-org.com>    |
+| mlr3db           | Database Backend                                    | <https://mlr3db.mlr-org.com>           |
+| mlr3fairness     | Fairness Auditing and Debiasing                     | <https://mlr3fairness.mlr-org.com>     |
+| mlr3fda          | Functional Data Analysis                            | <https://mlr3fda.mlr-org.com>          |
+| mlr3oml          | OpenML Integration                                  | <https://mlr3oml.mlr-org.com>          |
+| mlr3spatial      | Spatial Data Analysis                               | <https://mlr3spatial.mlr-org.com>      |
+| mlr3spatiotempcv | Spatiotemporal Resampling Methods                   | <https://mlr3spatiotempcv.mlr-org.com> |
+| mlr3summary      | Model and Learner Summaries                         |                                        |
+| mlr3torch        | Deep Learning                                       | <https://mlr3torch.mlr-org.com>        |
+| rush             | Decentralized and Distributed Computing             | <https://rush.mlr-org.com>             |
 
 <a href="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"><img src="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true" /></a>
