@@ -40,6 +40,7 @@ Imports:
 Suggests:
     miesmuschel,
     mlr3batchmark,
+    mlr3benchmark,
     mlr3db,
     mlr3fairness,
     mlr3fda,
