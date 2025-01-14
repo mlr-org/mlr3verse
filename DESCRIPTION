@@ -38,17 +38,20 @@ Imports:
     mlr3viz (>= 0.10.0),
     paradox (>= 1.0.1)
 Suggests:
-	mlr3torch,
-	mlr3fda,
-	mlr3oml,
-	mlr3summary,
-	mlr3db,
-	mlr3batchmark,
-	mlr3fairness,
-	mlr3spatial,
-	mlr3spatiotempcv,
-	miesmuschel,
-	rush
+    miesmuschel,
+    mlr3batchmark,
+    mlr3db,
+    mlr3fairness,
+    mlr3fda,
+    mlr3oml,
+    mlr3proba (>= 0.7.4),
+    mlr3spatial,
+    mlr3spatiotempcv,
+    mlr3summary,
+    mlr3torch,
+    rush
+Additional_repositories:
+  https://mlr-org.r-universe.dev
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
