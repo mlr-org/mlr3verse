@@ -5,6 +5,7 @@
 * BREAKING CHANGE: Various classes are removed and replaced with their sugar.
 * Compatibility: Work with new mlr3tuning and mlr3fselect 1.0.0.
 * Update package versions to latest CRAN versions.
+* Added not yet included mlr3 packages to suggests and include them in `mlr3verse_info()`
 
 # mlr3verse 0.2.8
 
