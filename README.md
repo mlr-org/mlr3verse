@@ -78,7 +78,7 @@ install.packages("mlr3verse", dependencies = TRUE)
 
 | Name             | Title                                               | URL                                    |
 |:-----------------|:----------------------------------------------------|:---------------------------------------|
-| miesmuschel      | Mixed Integer Evolution Strategies                  | <https://miesmuschel.mlr-org.com>      |
+| miesmuschel      | Mixed Integer Evolution Strategies                  |                                        |
 | mlr3batchmark    | Batch Experiments                                   | <https://mlr3batchmark.mlr-org.com>    |
 | mlr3benchmark    | Analysis and Visualisation of Benchmark Experiments | <https://mlr3benchmark.mlr-org.com>    |
 | mlr3db           | Database Backend                                    | <https://mlr3db.mlr-org.com>           |
@@ -87,7 +87,7 @@ install.packages("mlr3verse", dependencies = TRUE)
 | mlr3oml          | OpenML Integration                                  | <https://mlr3oml.mlr-org.com>          |
 | mlr3spatial      | Spatial Data Analysis                               | <https://mlr3spatial.mlr-org.com>      |
 | mlr3spatiotempcv | Spatiotemporal Resampling Methods                   | <https://mlr3spatiotempcv.mlr-org.com> |
-| mlr3summary      | Model and Learner Summaries                         | <https://mlr3summary.mlr-org.com>      |
+| mlr3summary      | Model and Learner Summaries                         |                                        |
 | mlr3torch        | Deep Learning                                       | <https://mlr3torch.mlr-org.com>        |
 | rush             | Decentralized and Distributed Computing             | <https://rush.mlr-org.com>             |
 
