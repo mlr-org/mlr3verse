@@ -28,6 +28,7 @@ Imports:
     mlr3filters (>= 0.8.0),
     mlr3fselect (>= 1.0.0),
     mlr3hyperband (>= 0.5.0),
+	mlr3inferr,
     mlr3learners (>= 0.7.0),
     mlr3mbo (>= 0.2.2),
     mlr3misc (>= 0.15.1),
