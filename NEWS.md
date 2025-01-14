@@ -1,5 +1,7 @@
 # mlr3verse (development version)
 
+* feat: add `mlr3inferr` package.
+
 # mlr3verse 0.3.0
 
 * BREAKING CHANGE: Various classes are removed and replaced with their sugar.
