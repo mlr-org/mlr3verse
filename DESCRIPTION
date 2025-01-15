@@ -1,6 +1,6 @@
 Package: mlr3verse
 Title: Easily Install and Load the 'mlr3' Package Family
-Version: 0.3.0.9000
+Version: 0.3.1
 Authors@R: c(
     person("Michel", "Lang", , "michellang@gmail.com", role = "aut",
            comment = c(ORCID = "0000-0001-9754-0393")),

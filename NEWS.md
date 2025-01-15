@@ -1,4 +1,4 @@
-# mlr3verse (development version)
+# mlr3verse 0.3.1
 
 * feat: add `mlr3inferr` package.
 
