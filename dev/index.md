@@ -1,0 +1,83 @@
+# mlr3verse
+
+Package website: [release](https://mlr3verse.mlr-org.com/) \|
+[dev](https://mlr3verse.mlr-org.com/dev/)
+
+Meta-package for installing and using core [mlr3
+packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
+
+## Overview
+
+This package is intended to simplify both installation and loading of
+packages from the mlr3 ecosystem. Instead of depending on the extension
+packages, functions required for data analysis are re-exported,
+providing a thin view on the most important functionality of the mlr3
+ecosystem.
+
+## Installation
+
+``` r
+# From CRAN:
+install.packages("mlr3verse")
+
+# From Github:
+remotes::install_github("mlr-org/mlr3verse")
+```
+
+## Batteries included
+
+Functions and objects from The following packages are imported by this
+meta package:
+
+| Name             | Title                                      | URL                                    |
+|:-----------------|:-------------------------------------------|:---------------------------------------|
+| mlr3             | Machine Learning in R - Next Generation    | <https://mlr3.mlr-org.com>             |
+| mlr3cluster      | Unsupervised Clustering                    | <https://mlr3cluster.mlr-org.com>      |
+| mlr3data         | Additional data sets and tasks             | <https://mlr3data.mlr-org.com>         |
+| mlr3filters      | Filter Based Feature Selection             | <https://mlr3filters.mlr-org.com>      |
+| mlr3fselect      | Wrapper Based Feature Selection            | <https://mlr3fselect.mlr-org.com>      |
+| mlr3learners     | Recommended Learners                       | <https://mlr3learners.mlr-org.com>     |
+| mlr3pipelines    | Preprocessing Operators and Pipelines      | <https://mlr3pipelines.mlr-org.com>    |
+| mlr3tuning       | Hyperparameter Tuning                      | <https://mlr3tuning.mlr-org.com>       |
+| mlr3tuningspaces | Collection of Hyperparameter Tuning Spaces | <https://mlr3tuningspaces.mlr-org.com> |
+| mlr3viz          | Visualizations                             | <https://mlr3viz.mlr-org.com>          |
+| paradox          | Parameter Spaces                           | <https://paradox.mlr-org.com>          |
+
+By loading the `mlr3verse` package, you are all set to deal with most
+regression, classification, cluster and survival tasks:
+
+``` r
+library("mlr3verse")
+#> Loading required package: mlr3
+```
+
+If you want to get more detailed information about the loaded packages,
+you can call
+[`mlr3verse_info()`](https://mlr3verse.mlr-org.com/dev/reference/mlr3verse_info.md):
+
+``` r
+mlr3verse_info()
+```
+
+Additional packages can be installed with
+
+``` r
+install.packages("mlr3verse", dependencies = TRUE)
+```
+
+| Name             | Title                                               | URL                                    |
+|:-----------------|:----------------------------------------------------|:---------------------------------------|
+| miesmuschel      | Mixed Integer Evolution Strategies                  |                                        |
+| mlr3batchmark    | Batch Experiments                                   | <https://mlr3batchmark.mlr-org.com>    |
+| mlr3benchmark    | Analysis and Visualisation of Benchmark Experiments | <https://mlr3benchmark.mlr-org.com>    |
+| mlr3db           | Database Backend                                    | <https://mlr3db.mlr-org.com>           |
+| mlr3fairness     | Fairness Auditing and Debiasing                     | <https://mlr3fairness.mlr-org.com>     |
+| mlr3fda          | Functional Data Analysis                            | <https://mlr3fda.mlr-org.com>          |
+| mlr3oml          | OpenML Integration                                  | <https://mlr3oml.mlr-org.com>          |
+| mlr3spatial      | Spatial Data Analysis                               | <https://mlr3spatial.mlr-org.com>      |
+| mlr3spatiotempcv | Spatiotemporal Resampling Methods                   | <https://mlr3spatiotempcv.mlr-org.com> |
+| mlr3summary      | Model and Learner Summaries                         |                                        |
+| mlr3torch        | Deep Learning                                       | <https://mlr3torch.mlr-org.com>        |
+| rush             | Decentralized and Distributed Computing             | <https://rush.mlr-org.com>             |
+
+[![](https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true)](https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true)
