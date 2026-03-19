@@ -1,4 +1,5 @@
-# r cmd check workflow of the mlr3 ecosystem v0.6.0
+# R CMD check workflow without suggested packages v0.4.0
+# Without `cache: false` packages can leak from the cache of the previous workflow runs
 # You can remove the `services.redis` section if the package does not require `rush` for the tests
 # https://github.com/mlr-org/actions
 on:
@@ -16,10 +17,10 @@ on:
     branches:
       - main
 
-name: r-cmd-check
+name: no-suggest-cmd-check
 
 jobs:
-  r-cmd-check:
+  no-suggest-cmd-check:
     runs-on: ${{ matrix.config.os }}
     services:
       redis:
@@ -42,7 +43,6 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - {os: ubuntu-latest,   r: 'devel'}
           - {os: ubuntu-latest,   r: 'release'}
 
     steps:
@@ -56,8 +56,14 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::rcmdcheck
+          extra-packages: |
+            any::rcmdcheck
+            any::testthat
+            any::knitr
+            any::rmarkdown
           needs: check
+          dependencies: '"hard"'
+          cache: false
 
       - uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
@@ -66,5 +72,4 @@ jobs:
 
       - uses: r-lib/actions/check-r-package@v2
         with:
-          error-on: '"note"'
           args: 'c("--no-manual", "--as-cran")'
