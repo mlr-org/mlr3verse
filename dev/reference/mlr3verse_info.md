@@ -18,16 +18,16 @@ mlr3verse_info()
 #> Key: <package>
 #>              package version
 #>               <char>  <char>
-#>  1:            bbotk   1.9.0
+#>  1:            bbotk  1.10.0
 #>  2:      miesmuschel 0.0.4.3
-#>  3:             mlr3   1.5.0
+#>  3:             mlr3   1.6.0
 #>  4:    mlr3batchmark   0.2.2
 #>  5:    mlr3benchmark   0.1.7
 #>  6:      mlr3cluster   0.3.0
 #>  7:         mlr3data   0.9.0
 #>  8:           mlr3db   0.7.1
 #>  9:     mlr3fairness   0.4.0
-#> 10:          mlr3fda   0.3.0
+#> 10:          mlr3fda   0.4.0
 #> 11:      mlr3filters   0.9.0
 #> 12:      mlr3fselect   1.5.1
 #> 13:    mlr3hyperband   1.1.0
@@ -46,7 +46,7 @@ mlr3verse_info()
 #> 26: mlr3tuningspaces   0.6.0
 #> 27:          mlr3viz  0.11.0
 #> 28:          paradox   1.0.1
-#> 29:             rush   1.0.0
+#> 29:             rush   1.0.1
 #>              package version
 #>               <char>  <char>
 ```
