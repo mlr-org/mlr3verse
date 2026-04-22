@@ -37,7 +37,7 @@ mlr3verse_info()
 #> 17:         mlr3misc  0.21.0
 #> 18:          mlr3oml  0.12.0
 #> 19:    mlr3pipelines  0.11.0
-#> 20:        mlr3proba   0.8.8
+#> 20:        mlr3proba   0.8.9
 #> 21:      mlr3spatial   0.6.1
 #> 22: mlr3spatiotempcv   2.3.4
 #> 23:      mlr3summary   0.1.2
