@@ -32,7 +32,7 @@ mlr3verse_info()
 #> 12:      mlr3fselect   1.6.0
 #> 13:    mlr3hyperband   1.1.0
 #> 14:       mlr3inferr   0.2.1
-#> 15:     mlr3learners  0.14.0
+#> 15:     mlr3learners  0.15.0
 #> 16:          mlr3mbo   1.1.1
 #> 17:         mlr3misc  0.21.0
 #> 18:          mlr3oml  0.12.0
