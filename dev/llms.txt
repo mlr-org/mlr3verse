@@ -73,7 +73,7 @@ install.packages("mlr3verse", dependencies = TRUE)
 |:---|:---|:---|
 | miesmuschel | Mixed Integer Evolution Strategies |  |
 | mlr3batchmark | Batch Experiments | <https://mlr3batchmark.mlr-org.com> |
-| mlr3benchmark | Analysis and Visualisation of Benchmark Experiments | <https://mlr3benchmark.mlr-org.com> |
+| mlr3benchmark | Analysis and Visualization of Benchmark Experiments | <https://mlr3benchmark.mlr-org.com> |
 | mlr3db | Database Backend | <https://mlr3db.mlr-org.com> |
 | mlr3fairness | Fairness Auditing and Debiasing | <https://mlr3fairness.mlr-org.com> |
 | mlr3fda | Functional Data Analysis | <https://mlr3fda.mlr-org.com> |
