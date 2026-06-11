@@ -20,7 +20,7 @@ mlr3verse_info()
 #>               <char>  <char>
 #>  1:            bbotk  1.10.0
 #>  2:      miesmuschel 0.0.4.3
-#>  3:             mlr3   1.6.0
+#>  3:             mlr3   1.7.0
 #>  4:    mlr3batchmark   0.2.2
 #>  5:    mlr3benchmark   0.1.7
 #>  6:      mlr3cluster   0.3.0
@@ -34,7 +34,7 @@ mlr3verse_info()
 #> 14:       mlr3inferr   0.2.1
 #> 15:     mlr3learners  0.15.0
 #> 16:          mlr3mbo   1.1.1
-#> 17:         mlr3misc  0.21.0
+#> 17:         mlr3misc  0.22.0
 #> 18:          mlr3oml  0.12.0
 #> 19:    mlr3pipelines  0.11.0
 #> 20:        mlr3proba  0.8.10
