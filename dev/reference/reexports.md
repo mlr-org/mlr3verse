@@ -59,7 +59,6 @@ to see their documentation.
   [`chain_graphs()`](https://mlr3pipelines.mlr-org.com/reference/chain_graphs.html),
   [`concat_graphs()`](https://mlr3pipelines.mlr-org.com/reference/grapes-greater-than-greater-than-grapes.html),
   [`GraphLearner`](https://mlr3pipelines.mlr-org.com/reference/mlr_learners_graph.html),
-  [`greplicate()`](https://mlr3pipelines.mlr-org.com/reference/greplicate.html),
   [`gunion()`](https://mlr3pipelines.mlr-org.com/reference/gunion.html),
   [`mlr_graphs`](https://mlr3pipelines.mlr-org.com/reference/mlr_graphs.html),
   [`mlr_pipeops`](https://mlr3pipelines.mlr-org.com/reference/mlr_pipeops.html),

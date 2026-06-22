@@ -18,12 +18,12 @@ mlr3verse_info()
 #> Key: <package>
 #>              package version
 #>               <char>  <char>
-#>  1:            bbotk  1.10.0
+#>  1:            bbotk  1.10.1
 #>  2:      miesmuschel 0.0.4.3
-#>  3:             mlr3   1.7.0
+#>  3:             mlr3   1.7.1
 #>  4:    mlr3batchmark   0.2.2
 #>  5:    mlr3benchmark   0.1.7
-#>  6:      mlr3cluster   0.3.0
+#>  6:      mlr3cluster   0.4.0
 #>  7:         mlr3data   0.9.0
 #>  8:           mlr3db   0.7.2
 #>  9:     mlr3fairness   0.4.0

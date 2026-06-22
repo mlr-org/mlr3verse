@@ -2,6 +2,9 @@
 
 ## mlr3verse (development version)
 
+- Compatibility: Removed reexport of `greplicate()` which was removed
+  from `mlr3pipelines`. Use `ppl("greplicate")` instead.
+
 ## mlr3verse 0.3.1
 
 CRAN release: 2025-01-14
