@@ -26,10 +26,6 @@ mlr3pipelines::`%>>%`
 #' @export
 mlr3pipelines::`%>>!%`
 
-#' @importFrom mlr3pipelines greplicate
-#' @export
-mlr3pipelines::greplicate
-
 #' @importFrom mlr3pipelines gunion
 #' @export
 mlr3pipelines::gunion
