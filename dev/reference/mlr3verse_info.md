@@ -18,7 +18,7 @@ mlr3verse_info()
 #> Key: <package>
 #>              package version
 #>               <char>  <char>
-#>  1:            bbotk  1.10.1
+#>  1:            bbotk  1.11.0
 #>  2:      miesmuschel 0.0.4.3
 #>  3:             mlr3   1.7.1
 #>  4:    mlr3batchmark   0.2.2
