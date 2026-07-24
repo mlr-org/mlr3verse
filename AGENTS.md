@@ -116,6 +116,7 @@ Rscript -e "devtools::check()"
 
 @extra-rules/commit-messages.md
 @extra-rules/mlr3.md
+@extra-rules/bbotk.md
 @extra-rules/rush.md
 @extra-rules/yolobox.md
 
