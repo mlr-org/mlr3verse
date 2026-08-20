@@ -18,11 +18,11 @@ mlr3pipelines::mlr_graphs
 #' @export
 mlr3pipelines::ppl
 
-#' @importFrom mlr3pipelines `%>>%`
+#' @importFrom mlr3pipelines "%>>%"
 #' @export
 mlr3pipelines::`%>>%`
 
-#' @importFrom mlr3pipelines `%>>!%`
+#' @importFrom mlr3pipelines "%>>!%"
 #' @export
 mlr3pipelines::`%>>!%`
 

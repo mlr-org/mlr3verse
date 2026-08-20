@@ -124,9 +124,9 @@ importFrom(mlr3misc,
   mlr_callbacks
 )
 importFrom(mlr3pipelines,
+  "%>>!%",
+  "%>>%",
   GraphLearner,
-  `%>>!%`,
-  `%>>%`,
   as_graph,
   as_pipeop,
   chain_graphs,
