@@ -3,8 +3,9 @@
 %   R/reexports_data.table.R, R/reexports_mlr3cluster.R,
 %   R/reexports_mlr3filters.R, R/reexports_mlr3fselect.R,
 %   R/reexports_mlr3hyperband.R, R/reexports_mlr3pipelines.R,
-%   R/reexports_mlr3tuning.R, R/reexports_mlr3tuningspaces.R,
-%   R/reexports_mlr3viz.R, R/reexports_paradox.R
+%   R/reexports_mlr3torch.R, R/reexports_mlr3tuning.R,
+%   R/reexports_mlr3tuningspaces.R, R/reexports_mlr3viz.R,
+%   R/reexports_paradox.R
 \docType{import}
 \name{reexports}
 \alias{reexports}
@@ -58,6 +59,23 @@
 \alias{selector_setdiff}
 \alias{selector_type}
 \alias{selector_union}
+\alias{mlr3torch_callbacks}
+\alias{t_clbk}
+\alias{t_clbks}
+\alias{mlr3torch_losses}
+\alias{t_loss}
+\alias{t_losses}
+\alias{mlr3torch_optimizers}
+\alias{t_opt}
+\alias{t_opts}
+\alias{nn}
+\alias{as_torch_callback}
+\alias{as_torch_callbacks}
+\alias{as_torch_loss}
+\alias{as_torch_optimizer}
+\alias{lazy_tensor}
+\alias{as_lazy_tensor}
+\alias{materialize}
 \alias{auto_tuner}
 \alias{callback_async_tuning}
 \alias{callback_batch_tuning}
@@ -108,6 +126,8 @@ below to see their documentation.
   \item{mlr3misc}{\code{\link[mlr3misc:clbk]{clbk()}}, \code{\link[mlr3misc:clbks]{clbks()}}, \code{\link[mlr3misc:mlr_callbacks]{mlr_callbacks}}}
 
   \item{mlr3pipelines}{\code{\link[mlr3pipelines:\%>>!\%]{\%>>!\%}}, \code{\link[mlr3pipelines:\%>>\%]{\%>>\%}}, \code{\link[mlr3pipelines:as_graph]{as_graph()}}, \code{\link[mlr3pipelines:as_pipeop]{as_pipeop()}}, \code{\link[mlr3pipelines:chain_graphs]{chain_graphs()}}, \code{\link[mlr3pipelines:concat_graphs]{concat_graphs()}}, \code{\link[mlr3pipelines:GraphLearner]{GraphLearner}}, \code{\link[mlr3pipelines:gunion]{gunion()}}, \code{\link[mlr3pipelines:mlr_graphs]{mlr_graphs}}, \code{\link[mlr3pipelines:mlr_pipeops]{mlr_pipeops}}, \code{\link[mlr3pipelines:po]{po()}}, \code{\link[mlr3pipelines:pos]{pos()}}, \code{\link[mlr3pipelines:ppl]{ppl()}}, \code{\link[mlr3pipelines:selector_all]{selector_all()}}, \code{\link[mlr3pipelines:selector_cardinality_greater_than]{selector_cardinality_greater_than()}}, \code{\link[mlr3pipelines:selector_grep]{selector_grep()}}, \code{\link[mlr3pipelines:selector_intersect]{selector_intersect()}}, \code{\link[mlr3pipelines:selector_invert]{selector_invert()}}, \code{\link[mlr3pipelines:selector_missing]{selector_missing()}}, \code{\link[mlr3pipelines:selector_name]{selector_name()}}, \code{\link[mlr3pipelines:selector_none]{selector_none()}}, \code{\link[mlr3pipelines:selector_setdiff]{selector_setdiff()}}, \code{\link[mlr3pipelines:selector_type]{selector_type()}}, \code{\link[mlr3pipelines:selector_union]{selector_union()}}}
+
+  \item{mlr3torch}{\code{\link[mlr3torch:as_lazy_tensor]{as_lazy_tensor()}}, \code{\link[mlr3torch:as_torch_callback]{as_torch_callback()}}, \code{\link[mlr3torch:as_torch_callbacks]{as_torch_callbacks()}}, \code{\link[mlr3torch:as_torch_loss]{as_torch_loss()}}, \code{\link[mlr3torch:as_torch_optimizer]{as_torch_optimizer()}}, \code{\link[mlr3torch:lazy_tensor]{lazy_tensor()}}, \code{\link[mlr3torch:materialize]{materialize()}}, \code{\link[mlr3torch:mlr3torch_callbacks]{mlr3torch_callbacks}}, \code{\link[mlr3torch:mlr3torch_losses]{mlr3torch_losses}}, \code{\link[mlr3torch:mlr3torch_optimizers]{mlr3torch_optimizers}}, \code{\link[mlr3torch:nn]{nn()}}, \code{\link[mlr3torch:t_clbk]{t_clbk()}}, \code{\link[mlr3torch:t_clbks]{t_clbks()}}, \code{\link[mlr3torch:t_loss]{t_loss()}}, \code{\link[mlr3torch:t_losses]{t_losses()}}, \code{\link[mlr3torch:t_opt]{t_opt()}}, \code{\link[mlr3torch:t_opts]{t_opts()}}}
 
   \item{mlr3tuning}{\code{\link[mlr3tuning:auto_tuner]{auto_tuner()}}, \code{\link[mlr3tuning:callback_async_tuning]{callback_async_tuning()}}, \code{\link[mlr3tuning:callback_batch_tuning]{callback_batch_tuning()}}, \code{\link[mlr3tuning:extract_inner_tuning_archives]{extract_inner_tuning_archives()}}, \code{\link[mlr3tuning:extract_inner_tuning_results]{extract_inner_tuning_results()}}, \code{\link[mlr3tuning:mlr_tuners]{mlr_tuners}}, \code{\link[mlr3tuning:ti]{ti()}}, \code{\link[mlr3tuning:ti_async]{ti_async()}}, \code{\link[mlr3tuning:tnr]{tnr()}}, \code{\link[mlr3tuning:tnrs]{tnrs()}}, \code{\link[mlr3tuning:tune]{tune()}}, \code{\link[mlr3tuning:tune_nested]{tune_nested()}}}
 

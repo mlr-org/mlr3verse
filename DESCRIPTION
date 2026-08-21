@@ -33,6 +33,7 @@ Imports:
     mlr3mbo (>= 0.2.8),
     mlr3misc (>= 0.16.0),
     mlr3pipelines (>= 0.7.1),
+    mlr3torch (>= 0.3.3),
     mlr3tuning (>= 1.3.0),
     mlr3tuningspaces (>= 0.5.2),
     mlr3viz (>= 0.10.0),
@@ -49,7 +50,6 @@ Suggests:
     mlr3spatial,
     mlr3spatiotempcv,
     mlr3summary,
-    mlr3torch,
     rush
 Additional_repositories:
   https://mlr-org.r-universe.dev
