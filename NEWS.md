@@ -1,5 +1,6 @@
 # mlr3verse (development version)
 
+* feat: add `mlr3forecast` as a suggested package.
 * feat: add `mlr3torch` package and reexport its sugar functions, such as `nn()`, `t_opt()`, `t_loss()`, and `t_clbk()`.
 
 # mlr3verse 0.3.2
