@@ -9,6 +9,9 @@
 - **Marc Becker**. Maintainer, author.
   [](https://orcid.org/0000-0002-8115-0400)
 
+- **John Zobolas**. Contributor.
+  [](https://orcid.org/0000-0002-3609-8674)
+
 ## Citation
 
 Source:

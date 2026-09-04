@@ -71,7 +71,7 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><p>Package website: <a href="https://mlr3verse.mlr-org.com/">release</a> | <a href="https://mlr3verse.mlr-org.com/dev/">dev</a></p>
-<p>Meta-package for installing and using core <a href="https://github.com/mlr-org/mlr3/wiki/Extension-Packages" class="external-link">mlr3 packages</a>.</p>
+<p>Meta-package for installing and using core <a href="https://mlr-org.com/ecosystem.html" class="external-link">mlr3 packages</a>.</p>
 <div class="section level1">
 <div class="page-header"><h1 id="mlr3verse">mlr3verse<a class="anchor" aria-label="anchor" href="#mlr3verse"></a>
 </h1></div>
@@ -80,7 +80,7 @@
 <div class="section level2">
 <h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
-<p>This package is intended to simplify both installation and loading of packages from the mlr3 ecosystem. Instead of depending on the extension packages, functions required for data analysis are re-exported, providing a thin view on the most important functionality of the mlr3 ecosystem.</p>
+<p>This package simplifies installing and loading packages from the mlr3 ecosystem. Instead of attaching extension packages directly, this package re-exports commonly used functions for data analysis and provides a lightweight interface to core mlr3 ecosystem functionality.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -89,18 +89,18 @@
 <code class="sourceCode R"><span><span class="co"># From CRAN:</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"mlr3verse"</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># From Github:</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mlr-org/mlr3verse"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="co"># From GitHub:</span></span>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"mlr-org/mlr3verse"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="batteries-included">Batteries included<a class="anchor" aria-label="anchor" href="#batteries-included"></a>
+<h2 id="whats-included">What’s included<a class="anchor" aria-label="anchor" href="#whats-included"></a>
 </h2>
-<p>Functions and objects from The following packages are imported by this meta package:</p>
+<p>Functions and objects from the following packages are imported by this meta-package:</p>
 <table class="table">
 <colgroup>
-<col width="17%">
-<col width="43%">
-<col width="39%">
+<col width="33%">
+<col width="33%">
+<col width="33%">
 </colgroup>
 <thead><tr>
 <th align="left">Name</th>
@@ -170,21 +170,20 @@
 </tr>
 </tbody>
 </table>
-<p>By loading the <code>mlr3verse</code> package, you are all set to deal with most regression, classification, cluster and survival tasks:</p>
+<p>After loading <code>mlr3verse</code>, you are ready to work on most regression, classification, clustering and survival tasks:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://mlr3verse.mlr-org.com">"mlr3verse"</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; Loading required package: mlr3</span></span></code></pre></div>
-<p>If you want to get more detailed information about the loaded packages, you can call <code><a href="reference/mlr3verse_info.html">mlr3verse_info()</a></code>:</p>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://mlr3verse.mlr-org.com">"mlr3verse"</a></span><span class="op">)</span></span></code></pre></div>
+<p>For more detailed information about loaded packages, call <code><a href="reference/mlr3verse_info.html">mlr3verse_info()</a></code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/mlr3verse_info.html">mlr3verse_info</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p>Additional packages can be installed with</p>
+<p>You can install additional packages with:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"mlr3verse"</span>, dependencies <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
-<col width="16%">
-<col width="47%">
-<col width="36%">
+<col width="33%">
+<col width="33%">
+<col width="33%">
 </colgroup>
 <thead><tr>
 <th align="left">Name</th>
@@ -233,6 +232,11 @@
 <td align="left"><a href="https://mlr3spatial.mlr-org.com" class="external-link uri">https://mlr3spatial.mlr-org.com</a></td>
 </tr>
 <tr>
+<td align="left">mlr3proba</td>
+<td align="left">Probabilistic Supervised Learning</td>
+<td align="left"><a href="https://mlr3proba.mlr-org.com" class="external-link uri">https://mlr3proba.mlr-org.com</a></td>
+</tr>
+<tr>
 <td align="left">mlr3spatiotempcv</td>
 <td align="left">Spatiotemporal Resampling Methods</td>
 <td align="left"><a href="https://mlr3spatiotempcv.mlr-org.com" class="external-link uri">https://mlr3spatiotempcv.mlr-org.com</a></td>
@@ -240,7 +244,7 @@
 <tr>
 <td align="left">mlr3summary</td>
 <td align="left">Model and Learner Summaries</td>
-<td align="left"></td>
+<td align="left"><a href="https://mlr3summary.mlr-org.com" class="external-link uri">https://mlr3summary.mlr-org.com</a></td>
 </tr>
 <tr>
 <td align="left">rush</td>
@@ -249,7 +253,7 @@
 </tr>
 </tbody>
 </table>
-<p><a href="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true" class="external-link"><img src="https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true"></a></p>
+<p><a href="https://raw.githubusercontent.com/mlr-org/mlr3website/main/mlr-org/images/mlr3_ecosystem.svg" class="external-link"><img src="https://raw.githubusercontent.com/mlr-org/mlr3website/main/mlr-org/images/mlr3_ecosystem.svg"></a></p>
 </div>
 </div>
 
@@ -284,6 +288,7 @@
 <li>Michel Lang <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0001-9754-0393" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
 <li>Patrick Schratz <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-0748-6624" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
 <li>Marc Becker <br><small class="roles"> Maintainer, author </small> <a href="https://orcid.org/0000-0002-8115-0400" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
+<li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
 

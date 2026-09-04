@@ -7,6 +7,7 @@
   [`t_opt()`](https://mlr3torch.mlr-org.com/reference/t_opt.html),
   [`t_loss()`](https://mlr3torch.mlr-org.com/reference/t_loss.html), and
   [`t_clbk()`](https://mlr3torch.mlr-org.com/reference/t_clbk.html).
+- docs: refine `README`, fix ecosystem image link
 
 ## mlr3verse 0.3.2
 

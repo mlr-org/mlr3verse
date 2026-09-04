@@ -4,15 +4,14 @@ Package website: [release](https://mlr3verse.mlr-org.com/) \|
 [dev](https://mlr3verse.mlr-org.com/dev/)
 
 Meta-package for installing and using core [mlr3
-packages](https://github.com/mlr-org/mlr3/wiki/Extension-Packages).
+packages](https://mlr-org.com/ecosystem.html).
 
 ## Overview
 
-This package is intended to simplify both installation and loading of
-packages from the mlr3 ecosystem. Instead of depending on the extension
-packages, functions required for data analysis are re-exported,
-providing a thin view on the most important functionality of the mlr3
-ecosystem.
+This package simplifies installing and loading packages from the mlr3
+ecosystem. Instead of attaching extension packages directly, this
+package re-exports commonly used functions for data analysis and
+provides a lightweight interface to core mlr3 ecosystem functionality.
 
 ## Installation
 
@@ -21,14 +20,14 @@ ecosystem.
 # From CRAN:
 install.packages("mlr3verse")
 
-# From Github:
-remotes::install_github("mlr-org/mlr3verse")
+# From GitHub:
+pak::pak("mlr-org/mlr3verse")
 ```
 
-## Batteries included
+## What’s included
 
-Functions and objects from The following packages are imported by this
-meta package:
+Functions and objects from the following packages are imported by this
+meta-package:
 
 | Name | Title | URL |
 |:---|:---|:---|
@@ -45,17 +44,15 @@ meta package:
 | mlr3viz | Visualizations | <https://mlr3viz.mlr-org.com> |
 | paradox | Parameter Spaces | <https://paradox.mlr-org.com> |
 
-By loading the `mlr3verse` package, you are all set to deal with most
-regression, classification, cluster and survival tasks:
+After loading `mlr3verse`, you are ready to work on most regression,
+classification, clustering and survival tasks:
 
 ``` r
 
 library("mlr3verse")
-#> Loading required package: mlr3
 ```
 
-If you want to get more detailed information about the loaded packages,
-you can call
+For more detailed information about loaded packages, call
 [`mlr3verse_info()`](https://mlr3verse.mlr-org.com/dev/reference/mlr3verse_info.md):
 
 ``` r
@@ -63,7 +60,7 @@ you can call
 mlr3verse_info()
 ```
 
-Additional packages can be installed with
+You can install additional packages with:
 
 ``` r
 
@@ -80,8 +77,9 @@ install.packages("mlr3verse", dependencies = TRUE)
 | mlr3fda | Functional Data Analysis | <https://mlr3fda.mlr-org.com> |
 | mlr3oml | OpenML Integration | <https://mlr3oml.mlr-org.com> |
 | mlr3spatial | Spatial Data Analysis | <https://mlr3spatial.mlr-org.com> |
+| mlr3proba | Probabilistic Supervised Learning | <https://mlr3proba.mlr-org.com> |
 | mlr3spatiotempcv | Spatiotemporal Resampling Methods | <https://mlr3spatiotempcv.mlr-org.com> |
-| mlr3summary | Model and Learner Summaries |  |
+| mlr3summary | Model and Learner Summaries | <https://mlr3summary.mlr-org.com> |
 | rush | Decentralized and Distributed Computing | <https://rush.mlr-org.com> |
 
-[![](https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true)](https://raw.githubusercontent.com/mlr-org/mlr3/master/man/figures/mlr3verse.svg?sanitize=true)
+[![](https://raw.githubusercontent.com/mlr-org/mlr3website/main/mlr-org/images/mlr3_ecosystem.svg)](https://raw.githubusercontent.com/mlr-org/mlr3website/main/mlr-org/images/mlr3_ecosystem.svg)
