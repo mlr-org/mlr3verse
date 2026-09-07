@@ -7,7 +7,9 @@ Authors@R: c(
     person("Patrick", "Schratz", , "patrick.schratz@gmail.com", role = "aut",
            comment = c(ORCID = "0000-0003-0748-6624")),
     person("Marc", "Becker", , "marcbecker@posteo.de", role = c("cre", "aut"),
-           comment = c(ORCID = "0000-0002-8115-0400"))
+           comment = c(ORCID = "0000-0002-8115-0400")),
+    person("John", "Zobolas", , "bblodfon@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-3609-8674"))
   )
 Description: The 'mlr3' package family is a set of packages for
     machine-learning purposes built in a modular fashion. This wrapper
