@@ -87,11 +87,13 @@ install.packages("mlr3verse", dependencies = TRUE)
 | mlr3db           | Database Backend                                    | <https://mlr3db.mlr-org.com>           |
 | mlr3fairness     | Fairness Auditing and Debiasing                     | <https://mlr3fairness.mlr-org.com>     |
 | mlr3fda          | Functional Data Analysis                            | <https://mlr3fda.mlr-org.com>          |
+| mlr3forecast     | Time Series Forecasting                             | <https://mlr3forecast.mlr-org.com>     |
 | mlr3oml          | OpenML Integration                                  | <https://mlr3oml.mlr-org.com>          |
-| mlr3spatial      | Spatial Data Analysis                               | <https://mlr3spatial.mlr-org.com>      |
 | mlr3proba        | Probabilistic Supervised Learning                   | <https://mlr3proba.mlr-org.com>        |
+| mlr3spatial      | Spatial Data Analysis                               | <https://mlr3spatial.mlr-org.com>      |
 | mlr3spatiotempcv | Spatiotemporal Resampling Methods                   | <https://mlr3spatiotempcv.mlr-org.com> |
 | mlr3summary      | Model and Learner Summaries                         | <https://mlr3summary.mlr-org.com>      |
+| mlr3extralearners| Extra Learners                                      | <https://mlr3extralearners.mlr-org.com>|
 | rush             | Decentralized and Distributed Computing             | <https://rush.mlr-org.com>             |
 
 <a href="https://raw.githubusercontent.com/mlr-org/mlr3website/main/mlr-org/images/mlr3_ecosystem.svg"><img src="https://raw.githubusercontent.com/mlr-org/mlr3website/main/mlr-org/images/mlr3_ecosystem.svg"/></a>
