@@ -49,10 +49,11 @@ Suggests:
     mlr3fda,
     mlr3forecast (>= 0.2.0),
     mlr3oml,
-    mlr3proba (>= 0.7.4),
+    mlr3proba (>= 0.8.10),
     mlr3spatial,
     mlr3spatiotempcv,
     mlr3summary,
+    mlr3extralearners (>= 1.6.0),
     rush
 Additional_repositories:
   https://mlr-org.r-universe.dev
