@@ -56,9 +56,7 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: |
-            any::rcmdcheck
-            mlr-org/mlr3proba
+          extra-packages: any::rcmdcheck
           needs: check
 
       - uses: mxschmitt/action-tmate@v3
