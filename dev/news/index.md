@@ -2,6 +2,10 @@
 
 ## mlr3verse (development version)
 
+## mlr3verse 0.4.0
+
+- feat: add `mlr3forecast` and `mlr3extralearners` as suggested
+  packages.
 - feat: add `mlr3torch` package and reexport its sugar functions, such
   as [`nn()`](https://mlr3torch.mlr-org.com/reference/nn.html),
   [`t_opt()`](https://mlr3torch.mlr-org.com/reference/t_opt.html),

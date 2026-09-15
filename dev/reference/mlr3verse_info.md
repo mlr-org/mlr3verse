@@ -16,37 +16,39 @@ mlr3verse_info()
 ``` r
 mlr3verse_info()
 #> Key: <package>
-#>              package version
-#>               <char>  <char>
-#>  1:            bbotk  1.13.0
-#>  2:      miesmuschel 0.0.4.3
-#>  3:             mlr3   1.8.0
-#>  4:    mlr3batchmark   0.2.2
-#>  5:    mlr3benchmark   0.1.8
-#>  6:      mlr3cluster   0.5.0
-#>  7:         mlr3data   0.9.0
-#>  8:           mlr3db   0.7.2
-#>  9:     mlr3fairness   0.4.0
-#> 10:          mlr3fda   0.7.2
-#> 11:      mlr3filters   0.9.1
-#> 12:      mlr3fselect   1.7.0
-#> 13:    mlr3hyperband   1.1.1
-#> 14:       mlr3inferr   0.2.2
-#> 15:     mlr3learners  0.15.1
-#> 16:          mlr3mbo   1.2.1
-#> 17:         mlr3misc  0.23.0
-#> 18:          mlr3oml  0.12.0
-#> 19:    mlr3pipelines  0.11.0
-#> 20:        mlr3proba  0.8.10
-#> 21:      mlr3spatial   0.7.0
-#> 22: mlr3spatiotempcv   2.3.5
-#> 23:      mlr3summary   0.1.2
-#> 24:        mlr3torch   0.3.3
-#> 25:       mlr3tuning   1.7.0
-#> 26: mlr3tuningspaces   0.7.0
-#> 27:          mlr3viz  0.11.1
-#> 28:          paradox   1.0.1
-#> 29:             rush   1.3.0
-#>              package version
-#>               <char>  <char>
+#>               package    version
+#>                <char>     <char>
+#>  1:             bbotk     1.13.0
+#>  2:       miesmuschel    0.0.4.3
+#>  3:              mlr3      1.8.0
+#>  4:     mlr3batchmark      0.2.2
+#>  5:     mlr3benchmark      0.1.8
+#>  6:       mlr3cluster      0.5.0
+#>  7:          mlr3data      0.9.0
+#>  8:            mlr3db      0.7.2
+#>  9: mlr3extralearners 1.6.0.9000
+#> 10:      mlr3fairness      0.4.0
+#> 11:           mlr3fda      0.7.2
+#> 12:       mlr3filters      0.9.1
+#> 13:      mlr3forecast      0.2.0
+#> 14:       mlr3fselect      1.7.0
+#> 15:     mlr3hyperband      1.1.1
+#> 16:        mlr3inferr      0.2.2
+#> 17:      mlr3learners     0.16.0
+#> 18:           mlr3mbo      1.2.1
+#> 19:          mlr3misc     0.23.0
+#> 20:           mlr3oml     0.12.0
+#> 21:     mlr3pipelines     0.12.0
+#> 22:         mlr3proba     0.8.10
+#> 23:       mlr3spatial      0.7.0
+#> 24:  mlr3spatiotempcv      2.3.5
+#> 25:       mlr3summary      0.1.2
+#> 26:         mlr3torch      0.3.3
+#> 27:        mlr3tuning      1.7.0
+#> 28:  mlr3tuningspaces      0.7.0
+#> 29:           mlr3viz     0.11.1
+#> 30:           paradox      1.0.1
+#> 31:              rush      1.3.0
+#>               package    version
+#>                <char>     <char>
 ```
