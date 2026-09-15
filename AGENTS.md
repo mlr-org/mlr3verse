@@ -142,4 +142,4 @@
 ## Further agents files
 
 @extra-rules/commit-messages.md @extra-rules/mlr3.md
-@extra-rules/rush.md @extra-rules/yolobox.md
+@extra-rules/bbotk.md @extra-rules/rush.md @extra-rules/yolobox.md

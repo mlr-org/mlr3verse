@@ -9,19 +9,22 @@
 - **Marc Becker**. Maintainer, author.
   [](https://orcid.org/0000-0002-8115-0400)
 
+- **John Zobolas**. Contributor.
+  [](https://orcid.org/0000-0002-3609-8674)
+
 ## Citation
 
 Source:
 [`DESCRIPTION`](https://github.com/mlr-org/mlr3verse/blob/main/DESCRIPTION)
 
 Lang M, Schratz P, Becker M (2026). *mlr3verse: Easily Install and Load
-the 'mlr3' Package Family*. R package version 0.3.2,
+the 'mlr3' Package Family*. R package version 0.4.0,
 <https://mlr3verse.mlr-org.com>.
 
     @Manual{,
       title = {mlr3verse: Easily Install and Load the 'mlr3' Package Family},
       author = {Michel Lang and Patrick Schratz and Marc Becker},
       year = {2026},
-      note = {R package version 0.3.2},
+      note = {R package version 0.4.0},
       url = {https://mlr3verse.mlr-org.com},
     }

@@ -77,6 +77,26 @@ to see their documentation.
   [`selector_type()`](https://mlr3pipelines.mlr-org.com/reference/Selector.html),
   [`selector_union()`](https://mlr3pipelines.mlr-org.com/reference/Selector.html)
 
+- mlr3torch:
+
+  [`as_lazy_tensor()`](https://mlr3torch.mlr-org.com/reference/as_lazy_tensor.html),
+  [`as_torch_callback()`](https://mlr3torch.mlr-org.com/reference/as_torch_callback.html),
+  [`as_torch_callbacks()`](https://mlr3torch.mlr-org.com/reference/as_torch_callbacks.html),
+  [`as_torch_loss()`](https://mlr3torch.mlr-org.com/reference/as_torch_loss.html),
+  [`as_torch_optimizer()`](https://mlr3torch.mlr-org.com/reference/as_torch_optimizer.html),
+  [`lazy_tensor()`](https://mlr3torch.mlr-org.com/reference/lazy_tensor.html),
+  [`materialize()`](https://mlr3torch.mlr-org.com/reference/materialize.html),
+  [`mlr3torch_callbacks`](https://mlr3torch.mlr-org.com/reference/mlr3torch_callbacks.html),
+  [`mlr3torch_losses`](https://mlr3torch.mlr-org.com/reference/mlr3torch_losses.html),
+  [`mlr3torch_optimizers`](https://mlr3torch.mlr-org.com/reference/mlr3torch_optimizers.html),
+  [`nn()`](https://mlr3torch.mlr-org.com/reference/nn.html),
+  [`t_clbk()`](https://mlr3torch.mlr-org.com/reference/t_clbk.html),
+  [`t_clbks()`](https://mlr3torch.mlr-org.com/reference/t_clbk.html),
+  [`t_loss()`](https://mlr3torch.mlr-org.com/reference/t_loss.html),
+  [`t_losses()`](https://mlr3torch.mlr-org.com/reference/t_loss.html),
+  [`t_opt()`](https://mlr3torch.mlr-org.com/reference/t_opt.html),
+  [`t_opts()`](https://mlr3torch.mlr-org.com/reference/t_opt.html)
+
 - mlr3tuning:
 
   [`auto_tuner()`](https://mlr3tuning.mlr-org.com/reference/auto_tuner.html),
