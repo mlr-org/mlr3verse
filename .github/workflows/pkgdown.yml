@@ -47,6 +47,7 @@ jobs:
         with:
           extra-packages: |
             any::pkgdown
+            local::.
             mlr-org/mlr3proba
             mlr-org/mlr3extralearners
           needs: website
