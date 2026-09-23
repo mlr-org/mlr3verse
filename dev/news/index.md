@@ -4,6 +4,8 @@
 
 ## mlr3verse 0.4.0
 
+CRAN release: 2026-09-15
+
 - feat: add `mlr3forecast` and `mlr3extralearners` as suggested
   packages.
 - feat: add `mlr3torch` package and reexport its sugar functions, such
